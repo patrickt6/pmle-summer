@@ -16,9 +16,8 @@ from pathlib import Path
 from pydantic import BaseModel, Field
 
 from models.questions import Question
-from utils import QUIZ_FILE
+from utils import DATA_DIR, QUIZ_FILE
 
-DATA_DIR = Path("data")
 WEEKS_FILE = DATA_DIR / "weeks.json"
 REBRANDS_FILE = DATA_DIR / "rebrands.json"
 

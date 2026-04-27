@@ -17,11 +17,8 @@ from pathlib import Path
 import streamlit as st
 
 from models.questions import Question
-from utils import set_css_style
+from utils import QUIZ_FILE, set_css_style
 from utils.weekly import quizzes_for_week  # not used directly; keeps lazy-loaded modules warm
-
-DATA_DIR = Path("data")
-QUIZ_FILE = DATA_DIR / "quizzes.jsonl"
 
 MOCK_DURATION_SECONDS = 2 * 60 * 60  # 2 hours
 MOCK_QUESTION_COUNT = 50

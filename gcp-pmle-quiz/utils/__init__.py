@@ -6,7 +6,8 @@ import streamlit as st
 
 from models.questions import Question
 
-DATA_DIR = Path("data")
+_APP_DIR = Path(__file__).resolve().parent.parent  # gcp-pmle-quiz/
+DATA_DIR = _APP_DIR / "data"
 QUIZ_FILE = DATA_DIR / "quizzes.jsonl"
 PROGRESS_FILE = DATA_DIR / "progress.json"
 
@@ -51,7 +52,7 @@ def load_progress() -> dict[int, bool]:
 
 
 def save_progress(progress):
-    DATA_DIR.mkdir(exist_ok=True)
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
     with PROGRESS_FILE.open("w", encoding="utf-8") as f:
         json.dump(progress, f, ensure_ascii=False, indent=2)
 
@@ -69,7 +70,16 @@ def reset_progress():
         PROGRESS_FILE.unlink()
 
 
-def set_css_style(css_path: Path):
+def set_css_style(css_path: Path | None = None):
+    if css_path is None:
+        css_path = _APP_DIR / "style.css"
+    elif not css_path.is_absolute() and not css_path.exists():
+        # Existing pages pass Path("style.css") relative to their CWD,
+        # which breaks on Streamlit Cloud where CWD = repo root. Resolve
+        # against the app dir as a fallback.
+        candidate = _APP_DIR / css_path
+        if candidate.exists():
+            css_path = candidate
     if not css_path.exists():
         return
     with css_path.open("r", encoding="utf-8") as f:

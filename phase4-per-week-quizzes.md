@@ -288,10 +288,17 @@ Estimated time: 2.5-4 hours of agent time.
 
 ## 12. After Phase 4 ships
 
-Likely Phase 5 candidates (don't commit until Phase 4 is in use):
+**Phase 5 is already drafted** at `phase5-graph-library-labs.md`. Three independent moves:
+1. **🕸 Knowledge Graph** — interactive node-edge view of sections / products / concepts / labs / rebrands
+2. **📖 Knowledge Library** — searchable concept cards + cheat sheets
+3. **🧪 Labs Integration** ⭐ — the highest-leverage of the three; tracks lab completion, shared paired-session notes, "ohhh" insights, post-lab drill quizzes (re-uses Phase 4's `utils/quiz_runtime.py`)
 
-1. **Adaptive sampling** — re-weight a learner's next attempt toward sub-sections they've scored < 70% on
-2. **Cross-week themed quizzes** (all of §5 across Weeks 7-8; all of §6 across Week 9-12)
-3. **Multi-user progress isolation** — both `progress.json` and `week_quiz_results.json` get a per-user split
-4. **Auto-generated wrong-answer Anki-deck export** — wire Andy's existing NotebookLM-export pattern
-5. **Question import pipeline** — when adding the Google sample form (~25 Qs) or a paid bank (~50 Qs)
+The spec recommends doing Move 3 first if you're time-boxed.
+
+Other longer-tail candidates (don't commit until Phase 4 is in use):
+
+- **Adaptive sampling** — re-weight a learner's next attempt toward sub-sections they've scored < 70% on
+- **Cross-week themed quizzes** (all of §5 across Weeks 7-8; all of §6 across Week 9-12)
+- **Multi-user progress isolation** — both `progress.json` and `week_quiz_results.json` get a per-user split (deferred to Phase 6 along with the Phase 5 lab-progress isolation)
+- **Auto-generated wrong-answer Anki-deck export** — wire Andy's existing NotebookLM-export pattern
+- **Question import pipeline** — when adding the Google sample form (~25 Qs) or a paid bank (~50 Qs)

@@ -1,0 +1,482 @@
+{
+  "as_of": "2026-04-27",
+  "source_doc": "study_plan.md",
+  "study_start_date": "2026-04-27",
+  "weeks": [
+    {
+      "week": 1,
+      "title": "Orientation + GCP fundamentals",
+      "exam_sections": ["§1.1", "§1.2", "§2.1"],
+      "primary_section": "§1",
+      "hours_target": 5.0,
+      "labs": [
+        {
+          "id": 1,
+          "name": "Introduction to AI and Machine Learning on Google Cloud",
+          "platform": "Google Skills",
+          "url": "https://www.skills.google/course_templates/593"
+        }
+      ],
+      "research_files": [
+        "research/labs/skills-boost-path.md",
+        "research/anecdotes/recent-passers.md",
+        "research/question-banks/audit.md"
+      ],
+      "decision_trees": [],
+      "rebrand_alerts": ["Cloud Skills Boost", "AI Platform"],
+      "resources": [
+        {
+          "title": "PMLE v3.1 Exam Guide (PDF, read cover-to-cover)",
+          "url": "https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf",
+          "kind": "official"
+        },
+        {
+          "title": "PMLE certification overview",
+          "url": "https://cloud.google.com/learn/certification/machine-learning-engineer",
+          "kind": "official"
+        },
+        {
+          "title": "Google free sample form (take cold for baseline)",
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLSeYmkCANE81qSBqLW0g2X7RoskBX9yGYQu-m1TtsjMvHabGqg/viewform",
+          "kind": "official"
+        },
+        {
+          "title": "Google Skills Learning Path 17",
+          "url": "https://www.skills.google/paths/17",
+          "kind": "official"
+        }
+      ],
+      "milestone": null
+    },
+    {
+      "week": 2,
+      "title": "§1 BigQuery ML",
+      "exam_sections": ["§1.1"],
+      "primary_section": "§1",
+      "hours_target": 3.0,
+      "labs": [
+        {
+          "id": 4,
+          "name": "Create ML Models with BigQuery ML",
+          "platform": "Google Skills",
+          "url": "https://www.skills.google/course_templates/626"
+        },
+        {
+          "id": 5,
+          "name": "Engineer Data for Predictive Modeling with BigQuery ML",
+          "platform": "Google Skills",
+          "url": "https://www.skills.google/course_templates/627"
+        }
+      ],
+      "research_files": [
+        "research/decision-trees/tabular-modeling.md"
+      ],
+      "decision_trees": [
+        "research/decision-trees/tabular-modeling.md"
+      ],
+      "rebrand_alerts": ["AI Platform"],
+      "resources": [
+        {
+          "title": "PMLE v3.1 Exam Guide (PDF)",
+          "url": "https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf",
+          "kind": "official"
+        }
+      ],
+      "milestone": null
+    },
+    {
+      "week": 3,
+      "title": "§1.2 ML APIs + §2.2 notebooks",
+      "exam_sections": ["§1.2", "§2.2"],
+      "primary_section": "§1",
+      "hours_target": 5.25,
+      "labs": [
+        {
+          "id": 2,
+          "name": "Prepare Data for ML APIs on Google Cloud",
+          "platform": "Google Skills",
+          "url": "https://www.skills.google/course_templates/631"
+        },
+        {
+          "id": 3,
+          "name": "Working with Notebooks in Vertex AI",
+          "platform": "Google Skills",
+          "url": "https://www.skills.google/course_templates/923"
+        }
+      ],
+      "research_files": [],
+      "decision_trees": [],
+      "rebrand_alerts": ["Cloud Skills Boost", "Dialogflow CX", "AI Platform"],
+      "resources": [
+        {
+          "title": "PMLE v3.1 Exam Guide (PDF)",
+          "url": "https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf",
+          "kind": "official"
+        }
+      ],
+      "milestone": null
+    },
+    {
+      "week": 4,
+      "title": "§2 Feature engineering + Feature Store",
+      "exam_sections": ["§2.1", "§4.2"],
+      "primary_section": "§2",
+      "hours_target": 7.25,
+      "labs": [
+        {
+          "id": 6,
+          "name": "Feature Engineering",
+          "platform": "Google Skills",
+          "url": "https://www.skills.google/course_templates/11"
+        }
+      ],
+      "research_files": [
+        "research/concepts/feature-store.md"
+      ],
+      "decision_trees": [],
+      "rebrand_alerts": [],
+      "resources": [
+        {
+          "title": "PMLE v3.1 Exam Guide (PDF)",
+          "url": "https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf",
+          "kind": "official"
+        }
+      ],
+      "milestone": "Pro $29/mo trial starts Day 1"
+    },
+    {
+      "week": 5,
+      "title": "§3 Custom training (Keras), part 1",
+      "exam_sections": ["§3.1", "§3.2"],
+      "primary_section": "§3",
+      "hours_target": 5.5,
+      "labs": [
+        {
+          "id": 7,
+          "name": "Build, Train and Deploy ML Models with Keras on Google Cloud (first half)",
+          "platform": "Google Skills",
+          "url": "https://www.skills.google/course_templates/12"
+        }
+      ],
+      "research_files": [
+        "research/concepts/hyperparameter-tuning.md"
+      ],
+      "decision_trees": [],
+      "rebrand_alerts": ["AI Platform"],
+      "resources": [
+        {
+          "title": "PMLE v3.1 Exam Guide (PDF)",
+          "url": "https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf",
+          "kind": "official"
+        }
+      ],
+      "milestone": null
+    },
+    {
+      "week": 6,
+      "title": "§3 finish + §4 hardware",
+      "exam_sections": ["§3.3", "§4.1"],
+      "primary_section": "§3",
+      "hours_target": 7.0,
+      "labs": [
+        {
+          "id": 7,
+          "name": "Build, Train and Deploy ML Models with Keras on Google Cloud (finish)",
+          "platform": "Google Skills",
+          "url": "https://www.skills.google/course_templates/12"
+        },
+        {
+          "id": 10,
+          "name": "MLOps with Vertex AI: Manage Features",
+          "platform": "Google Skills",
+          "url": "https://www.skills.google/course_templates/584"
+        }
+      ],
+      "research_files": [
+        "research/decision-trees/compute-selection.md"
+      ],
+      "decision_trees": [
+        "research/decision-trees/compute-selection.md"
+      ],
+      "rebrand_alerts": [],
+      "resources": [
+        {
+          "title": "PMLE v3.1 Exam Guide (PDF)",
+          "url": "https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf",
+          "kind": "official"
+        }
+      ],
+      "milestone": null
+    },
+    {
+      "week": 7,
+      "title": "§3 + §4 + §5 production systems",
+      "exam_sections": ["§4.1", "§4.2", "§4.3"],
+      "primary_section": "§4",
+      "hours_target": 11.0,
+      "labs": [
+        {
+          "id": 8,
+          "name": "Production Machine Learning Systems",
+          "platform": "Google Skills",
+          "url": "https://www.skills.google/course_templates/17"
+        }
+      ],
+      "research_files": [
+        "research/concepts/serving-deep-dive.md",
+        "research/concepts/iam-for-ml.md"
+      ],
+      "decision_trees": [],
+      "rebrand_alerts": [],
+      "resources": [
+        {
+          "title": "PMLE v3.1 Exam Guide (PDF)",
+          "url": "https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf",
+          "kind": "official"
+        }
+      ],
+      "milestone": null
+    },
+    {
+      "week": 8,
+      "title": "§5 Pipelines (highest weight)",
+      "exam_sections": ["§5.1", "§5.2", "§5.3"],
+      "primary_section": "§5",
+      "hours_target": 3.0,
+      "labs": [
+        {
+          "id": 15,
+          "name": "ML Pipelines on Google Cloud",
+          "platform": "Google Skills",
+          "url": "https://www.skills.google/course_templates/191"
+        },
+        {
+          "id": 9,
+          "name": "Machine Learning Operations (MLOps): Getting Started",
+          "platform": "Google Skills",
+          "url": "https://www.skills.google/course_templates/158"
+        }
+      ],
+      "research_files": [
+        "research/decision-trees/pipelines-comparison.md",
+        "research/concepts/metadata-lineage.md"
+      ],
+      "decision_trees": [
+        "research/decision-trees/pipelines-comparison.md"
+      ],
+      "rebrand_alerts": [],
+      "resources": [
+        {
+          "title": "PMLE v3.1 Exam Guide (PDF)",
+          "url": "https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf",
+          "kind": "official"
+        }
+      ],
+      "milestone": null
+    },
+    {
+      "week": 9,
+      "title": "§3+§4 capstone + §6 monitoring",
+      "exam_sections": ["§6.1", "§6.2"],
+      "primary_section": "§6",
+      "hours_target": 10.25,
+      "labs": [
+        {
+          "id": 16,
+          "name": "Build and Deploy Machine Learning Solutions on Vertex AI",
+          "platform": "Google Skills",
+          "url": "https://www.skills.google/course_templates/684"
+        }
+      ],
+      "research_files": [
+        "research/concepts/skew-vs-drift.md",
+        "research/concepts/responsible-ai-security.md"
+      ],
+      "decision_trees": [],
+      "rebrand_alerts": [],
+      "resources": [
+        {
+          "title": "PMLE v3.1 Exam Guide (PDF)",
+          "url": "https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf",
+          "kind": "official"
+        }
+      ],
+      "milestone": null
+    },
+    {
+      "week": 10,
+      "title": "GenAI sweep (Model Garden, Agent Builder, RAG, fine-tuning)",
+      "exam_sections": ["§1.2", "§2.3", "§3.2"],
+      "primary_section": "§1",
+      "hours_target": 4.25,
+      "labs": [
+        {
+          "id": 11,
+          "name": "Introduction to Generative AI",
+          "platform": "Google Skills",
+          "url": "https://www.skills.google/course_templates/536"
+        },
+        {
+          "id": 12,
+          "name": "Introduction to Large Language Models",
+          "platform": "Google Skills",
+          "url": "https://www.skills.google/course_templates/539"
+        },
+        {
+          "id": 13,
+          "name": "Machine Learning Operations (MLOps) for Generative AI",
+          "platform": "Google Skills",
+          "url": "https://www.skills.google/course_templates/927"
+        },
+        {
+          "id": 14,
+          "name": "MLOps with Vertex AI: Model Evaluation",
+          "platform": "Google Skills",
+          "url": "https://www.skills.google/course_templates/1080"
+        }
+      ],
+      "research_files": [
+        "research/genai/vertex-ai-overview.md"
+      ],
+      "decision_trees": [],
+      "rebrand_alerts": [
+        "Vertex AI Agent Builder",
+        "AI Applications",
+        "Vertex AI Search",
+        "Vertex AI Studio",
+        "Reasoning Engine",
+        "LangChain on Vertex AI",
+        "Dialogflow CX",
+        "Matching Engine",
+        "Discovery Engine",
+        "Gen App Builder",
+        "Generative AI Studio",
+        "Cloud Skills Boost"
+      ],
+      "resources": [
+        {
+          "title": "PMLE v3.1 Exam Guide (PDF)",
+          "url": "https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf",
+          "kind": "official"
+        }
+      ],
+      "milestone": null
+    },
+    {
+      "week": 11,
+      "title": "RAG capstone + Mock #1",
+      "exam_sections": [
+        "§1.1", "§1.2",
+        "§2.1", "§2.2", "§2.3",
+        "§3.1", "§3.2", "§3.3",
+        "§4.1", "§4.2", "§4.3",
+        "§5.1", "§5.2", "§5.3",
+        "§6.1", "§6.2"
+      ],
+      "primary_section": "§5",
+      "hours_target": 6.75,
+      "labs": [
+        {
+          "id": 17,
+          "name": "Create Generative AI Apps on Google Cloud",
+          "platform": "Google Skills",
+          "url": "https://www.skills.google/course_templates/1120"
+        }
+      ],
+      "research_files": [
+        "research/decision-trees/tabular-modeling.md",
+        "research/decision-trees/compute-selection.md",
+        "research/decision-trees/pipelines-comparison.md",
+        "research/genai/vertex-ai-overview.md"
+      ],
+      "decision_trees": [
+        "research/decision-trees/tabular-modeling.md",
+        "research/decision-trees/compute-selection.md",
+        "research/decision-trees/pipelines-comparison.md"
+      ],
+      "rebrand_alerts": [
+        "Vertex AI Agent Builder",
+        "Vertex AI Search",
+        "Vertex AI Studio",
+        "Matching Engine"
+      ],
+      "resources": [
+        {
+          "title": "PMLE v3.1 Exam Guide (PDF)",
+          "url": "https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf",
+          "kind": "official"
+        },
+        {
+          "title": "Recent passer anecdotes (mock-exam strategy)",
+          "url": "research/anecdotes/recent-passers.md",
+          "kind": "community"
+        }
+      ],
+      "milestone": "Mock #1 (Sat) — 50 Qs from mock1-pool, full 2-hour timed"
+    },
+    {
+      "week": 12,
+      "title": "Final review + Mock #2 + REAL EXAM",
+      "exam_sections": [
+        "§1.1", "§1.2",
+        "§2.1", "§2.2", "§2.3",
+        "§3.1", "§3.2", "§3.3",
+        "§4.1", "§4.2", "§4.3",
+        "§5.1", "§5.2", "§5.3",
+        "§6.1", "§6.2"
+      ],
+      "primary_section": "§5",
+      "hours_target": 6.0,
+      "labs": [
+        {
+          "id": 18,
+          "name": "Responsible AI for Developers: Fairness and Bias",
+          "platform": "Google Skills",
+          "url": "https://www.skills.google/course_templates/985"
+        },
+        {
+          "id": 19,
+          "name": "Responsible AI for Developers: Interpretability and Transparency",
+          "platform": "Google Skills",
+          "url": "https://www.skills.google/course_templates/989"
+        }
+      ],
+      "research_files": [
+        "research/decision-trees/tabular-modeling.md",
+        "research/decision-trees/compute-selection.md",
+        "research/decision-trees/pipelines-comparison.md",
+        "research/concepts/skew-vs-drift.md",
+        "research/concepts/responsible-ai-security.md",
+        "research/anecdotes/recent-passers.md"
+      ],
+      "decision_trees": [
+        "research/decision-trees/tabular-modeling.md",
+        "research/decision-trees/compute-selection.md",
+        "research/decision-trees/pipelines-comparison.md"
+      ],
+      "rebrand_alerts": [
+        "Vertex AI Agent Builder",
+        "AI Applications",
+        "Cloud Skills Boost"
+      ],
+      "resources": [
+        {
+          "title": "PMLE v3.1 Exam Guide (PDF)",
+          "url": "https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf",
+          "kind": "official"
+        },
+        {
+          "title": "Recent passer anecdotes + day-of-exam surprises",
+          "url": "research/anecdotes/recent-passers.md",
+          "kind": "community"
+        },
+        {
+          "title": "PMLE certification page (book exam on Pearson VUE)",
+          "url": "https://cloud.google.com/learn/certification/machine-learning-engineer",
+          "kind": "official"
+        }
+      ],
+      "milestone": "Mock #2 (Wed) + REAL EXAM (Sat)"
+    }
+  ]
+}

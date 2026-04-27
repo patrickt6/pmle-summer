@@ -1,0 +1,284 @@
+{
+  "as_of": "2026-04-26",
+  "match_semantics": "Each rule's patterns are case-insensitive substring-matched against any value in (gcp_topics + ml_topics + gcp_products), joined into one search corpus per record. First rule that matches wins. Order is most-specific → most-generic so a question tagged with both 'Vertex AI Pipelines' (§5.1) and 'Model monitoring' (§6.2) routes to §6.2. §1 (low-code) sits BELOW §4 (serving) so a BQML+endpoint question becomes a §4 deployment question rather than a §1 BQML question — this matches v3.1 weights.",
+  "rules": [
+    {
+      "section": "§6.2",
+      "patterns": [
+        "training-serving skew",
+        "training serving skew",
+        "feature drift",
+        "data drift",
+        "drift detection",
+        "skew detection",
+        "model monitoring",
+        "vertex ai model monitoring",
+        "feature skew",
+        "prediction drift"
+      ]
+    },
+    {
+      "section": "§6.1",
+      "patterns": [
+        "responsible ai",
+        "fairness",
+        "bias",
+        "explainable ai",
+        "feature attribution",
+        "model interpretability",
+        "model explainability",
+        "model explanation",
+        "vertex explainable ai",
+        "ai explanations",
+        "data privacy",
+        "data loss prevention",
+        "dlp",
+        "model security",
+        "prompt injection",
+        "compliance",
+        "shapley",
+        "integrated gradients",
+        "xrai"
+      ]
+    },
+    {
+      "section": "§5.3",
+      "patterns": [
+        "vertex ai experiments",
+        "vertex ml metadata",
+        "vertex ai metadata",
+        "ml metadata",
+        "vertex ai tensorboard",
+        "experiment tracking",
+        "metadata management",
+        "lineage tracking",
+        "artifact tracking"
+      ]
+    },
+    {
+      "section": "§5.2",
+      "patterns": [
+        "ci/cd",
+        "cloud build",
+        "jenkins",
+        "model retraining",
+        "retraining",
+        "pipeline automation",
+        "cloud source repositories",
+        "artifact registry"
+      ]
+    },
+    {
+      "section": "§5.1",
+      "patterns": [
+        "vertex ai pipelines",
+        "vertex ai pipeline",
+        "kubeflow pipelines",
+        "kubeflow pipelines sdk",
+        "kubeflow",
+        "cloud composer",
+        "tfx",
+        "tensorflow extended",
+        "mlflow",
+        "ml pipelines",
+        "ml pipeline",
+        "pipeline orchestration",
+        "pipeline components",
+        "workflow orchestration",
+        "mlops"
+      ]
+    },
+    {
+      "section": "§4.3",
+      "patterns": [
+        "throughput",
+        "private endpoint",
+        "private service connect",
+        "psc",
+        "autoscaling",
+        "preemptible",
+        "vpc service controls",
+        "scalability"
+      ]
+    },
+    {
+      "section": "§4.2",
+      "patterns": [
+        "vertex ai model registry",
+        "model registry",
+        "model registration",
+        "vertex feature store",
+        "vertex ai feature store",
+        "feature store",
+        "a/b testing",
+        "traffic splitting",
+        "model versioning",
+        "vertex ai endpoint",
+        "vertex ai endpoints",
+        "endpoint"
+      ]
+    },
+    {
+      "section": "§4.1",
+      "patterns": [
+        "batch prediction",
+        "online prediction",
+        "real-time inference",
+        "vertex ai prediction",
+        "model serving",
+        "model deployment",
+        "inference",
+        "online inference",
+        "batch processing"
+      ]
+    },
+    {
+      "section": "§1.2",
+      "patterns": [
+        "model garden",
+        "ml apis",
+        "document ai",
+        "retail api",
+        "agent builder",
+        "agent platform",
+        "rag",
+        "vertex ai search",
+        "vector search",
+        "matching engine",
+        "natural language api",
+        "vision api",
+        "translation api",
+        "speech-to-text",
+        "speech to text",
+        "dialogflow",
+        "conversational agents",
+        "recommendations ai",
+        "recommendation systems",
+        "recommendation engine",
+        "gemini"
+      ]
+    },
+    {
+      "section": "§1.1",
+      "patterns": [
+        "bigquery ml",
+        "bqml",
+        "automl tables",
+        "automl vision",
+        "automl natural language",
+        "automl"
+      ]
+    },
+    {
+      "section": "§2.3",
+      "patterns": [
+        "model evaluation",
+        "evaluation metrics",
+        "genai eval",
+        "autosxs",
+        "evaluation"
+      ]
+    },
+    {
+      "section": "§3.3",
+      "patterns": [
+        "tpu",
+        "cloud tpu",
+        "gpu",
+        "reduction server",
+        "horovod",
+        "compute selection",
+        "hardware acceleration",
+        "edge"
+      ]
+    },
+    {
+      "section": "§3.2",
+      "patterns": [
+        "hyperparameter tuning",
+        "vizier",
+        "fine-tuning",
+        "fine tuning",
+        "lora",
+        "peft"
+      ]
+    },
+    {
+      "section": "§3.1",
+      "patterns": [
+        "custom training",
+        "kubeflow on gke",
+        "automl training",
+        "distributed training",
+        "vertex ai training",
+        "model training",
+        "model development",
+        "problem framing",
+        "problem formulation",
+        "problem definition",
+        "ml problem framing",
+        "model selection",
+        "forecasting",
+        "demand forecasting",
+        "time series forecasting",
+        "regression",
+        "linear regression",
+        "logistic regression",
+        "classification",
+        "binary classification",
+        "image classification",
+        "clustering",
+        "deep learning",
+        "neural network",
+        "neural networks",
+        "transfer learning",
+        "anomaly detection",
+        "regularization"
+      ]
+    },
+    {
+      "section": "§2.2",
+      "patterns": [
+        "vertex ai workbench",
+        "colab enterprise",
+        "dataproc",
+        "notebook",
+        "notebooks",
+        "vertex ai notebooks"
+      ]
+    },
+    {
+      "section": "§2.1",
+      "patterns": [
+        "cloud storage",
+        "spanner",
+        "cloud sql",
+        "spark",
+        "hadoop",
+        "bigquery",
+        "data storage",
+        "data ingestion",
+        "data preprocessing",
+        "data preparation",
+        "data transformation",
+        "data labeling",
+        "data validation",
+        "data cleaning",
+        "data visualization",
+        "data quality",
+        "data collection",
+        "data integration",
+        "etl",
+        "feature engineering",
+        "feature selection",
+        "data pipeline",
+        "data pipelines",
+        "dataflow",
+        "pub/sub",
+        "data processing",
+        "data analysis",
+        "exploratory data analysis"
+      ]
+    }
+  ]
+}

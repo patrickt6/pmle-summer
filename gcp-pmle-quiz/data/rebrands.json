@@ -1,0 +1,89 @@
+{
+  "as_of": "2026-04-26",
+  "rebrands": [
+    {
+      "old": "Vertex AI Agent Builder",
+      "new": "Gemini Enterprise Agent Platform",
+      "rebranded_at": "2026-04-22",
+      "context": "Announced at Cloud Next 2026 keynote. The PMLE v3.1 exam guide and Skills Boost courseware still use the 2025 name 'Vertex AI Agent Builder'. Function-first translate when answer choices use either name."
+    },
+    {
+      "old": "AI Applications",
+      "new": "Gemini Enterprise Agent Platform",
+      "rebranded_at": "2026-04-22",
+      "context": "Was already a re-rebrand from 'Vertex AI Agent Builder' (Apr 2025). Now renamed again at Next 2026."
+    },
+    {
+      "old": "Vertex AI Search",
+      "new": "Agent Search",
+      "rebranded_at": "2026-04-22",
+      "context": "Renamed at Next 2026. Endpoints and IDs unchanged; only the surface brand changed."
+    },
+    {
+      "old": "Vertex AI Studio",
+      "new": "Agent Platform Studio",
+      "rebranded_at": "2026-04-22",
+      "context": "Renamed at Next 2026. Pipelines, Training, Model Registry, ML Metadata, Experiments names are intact."
+    },
+    {
+      "old": "Cloud Skills Boost",
+      "new": "Google Skills",
+      "rebranded_at": "2025-10-15",
+      "context": "Domain cloudskillsboost.google → skills.google (308 redirects). Path /paths/17 unchanged."
+    },
+    {
+      "old": "Reasoning Engine",
+      "new": "Vertex AI Agent Engine",
+      "rebranded_at": "2025-03-01",
+      "context": "Was 'LangChain on Vertex AI' before that. Managed runtime for deployed agents."
+    },
+    {
+      "old": "LangChain on Vertex AI",
+      "new": "Vertex AI Agent Engine",
+      "rebranded_at": "2025-03-01",
+      "context": "Renamed via 'Reasoning Engine' to current name."
+    },
+    {
+      "old": "Dialogflow CX",
+      "new": "Conversational Agents",
+      "rebranded_at": "2024-11-01",
+      "context": "Late-2024 rename. Includes related Conversational Messenger / Conversational Phone Gateway sub-renames."
+    },
+    {
+      "old": "Matching Engine",
+      "new": "Vector Search",
+      "rebranded_at": "2023-08-29",
+      "context": "ScaNN-based ANN store on Vertex AI. PMLE v3.1 will only see the new name; pre-2024 guides still say 'Matching Engine'."
+    },
+    {
+      "old": "AI Platform",
+      "new": "Vertex AI",
+      "rebranded_at": "2022-05-15",
+      "context": "Pre-2024 study material may still use 'AI Platform' — treat as outdated."
+    },
+    {
+      "old": "Discovery Engine",
+      "new": "Vertex AI Agent Builder",
+      "rebranded_at": "2024-04-01",
+      "context": "Subsequently rebranded twice — current name (Apr 2026) is 'Gemini Enterprise Agent Platform'."
+    },
+    {
+      "old": "Gen App Builder",
+      "new": "Vertex AI Agent Builder",
+      "rebranded_at": "2024-04-01",
+      "context": "Subsequently rebranded twice — current name (Apr 2026) is 'Gemini Enterprise Agent Platform'."
+    },
+    {
+      "old": "Vertex AI Search and Conversation",
+      "new": "Vertex AI Agent Builder",
+      "rebranded_at": "2024-04-01",
+      "context": "Intermediate name during the 2024 consolidation."
+    },
+    {
+      "old": "Generative AI Studio",
+      "new": "Vertex AI Studio",
+      "rebranded_at": "2023-09-01",
+      "context": "Original name on launch (June 2023). Renamed during Gemini-era branding."
+    }
+  ]
+}

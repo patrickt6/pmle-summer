@@ -1,0 +1,40 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+
+# Streamlit / diskcache
+gcp-pmle-quiz/cache/
+.streamlit/secrets.toml
+
+# User-specific state (not shared between learners)
+gcp-pmle-quiz/data/progress.json
+
+# Playwright screenshots and traces
+.playwright-mcp/
+home_smaller.png
+home_with_meme.png
+useful_videos.png
+w11_rebrand_tab.png
+page_mock_idle.png
+page_mock_running.png
+page_mock_score.png
+page_mock_submitted.png
+page_resources.png
+page_study_guide.png
+
+# Personal / unrelated files (per CLAUDE.md "out of scope")
+Gmail - An Offer of Admission from Waterloo.pdf
+Copy Google Machine Learning Exam Experience.gdoc
+literacy.java
+
+# IDE
+.idea/
+.vscode/

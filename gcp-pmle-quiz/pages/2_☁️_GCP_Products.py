@@ -1,4 +1,5 @@
 # app.py
+import json
 import re
 
 import networkx as nx
@@ -12,8 +13,18 @@ from utils import DATA_DIR
 
 
 def load_data():
-    df = pd.read_json(DATA_DIR / "gcp_products.jsonl", lines=True)
-    return df.to_dict(orient="records")
+    """Stdlib-json loader (avoids the pandas/ujson Py3.14 crash on JSONL)."""
+    records = []
+    with (DATA_DIR / "gcp_products.jsonl").open("r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                records.append(json.loads(line))
+            except json.JSONDecodeError:
+                continue
+    return records
 
 
 DATA = load_data()

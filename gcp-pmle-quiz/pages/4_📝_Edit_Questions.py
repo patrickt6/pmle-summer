@@ -1,10 +1,11 @@
+import json
 import logging
 from pathlib import Path
 
 import pandas as pd
 import streamlit as st
 
-from utils import set_css_style
+from utils import QUIZ_FILE, set_css_style
 from utils.session import load_session
 
 load_session()
@@ -13,7 +14,23 @@ load_session()
 st.session_state.setdefault("pos", 0)
 st.session_state.setdefault("is_editing", False)
 
-quizzies = pd.read_json("data/quizzes.jsonl", lines=True, orient="records")
+
+def _read_quizzes() -> pd.DataFrame:
+    """Stdlib-json loader (avoids the pandas/ujson Py3.14 crash)."""
+    records = []
+    with QUIZ_FILE.open("r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                records.append(json.loads(line))
+            except json.JSONDecodeError:
+                continue
+    return pd.DataFrame.from_records(records)
+
+
+quizzies = _read_quizzes()
 
 logger = logging.getLogger(__name__)
 
@@ -103,7 +120,7 @@ def main():
             new_answer = [i for i, val in enumerate(answers) if val]
             quizzies.at[quizzy.name, "answer"] = new_answer if len(new_answer) > 1 else new_answer[0]
             quizzies.at[quizzy.name, "explanation"] = explanation
-            quizzies.to_json("data/quizzes.jsonl", lines=True, orient="records")
+            quizzies.to_json(QUIZ_FILE, lines=True, orient="records")
             st.session_state.is_editing = False
             st.success("Changes saved successfully!")
             st.rerun()

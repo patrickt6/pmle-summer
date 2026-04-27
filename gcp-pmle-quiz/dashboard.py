@@ -1,8 +1,37 @@
+import json
+
 import pandas as pd
 import plotly.express as px
 import streamlit as st
 
 from utils import PROGRESS_FILE, QUIZ_FILE, compute_stats, load_progress, load_quizzes
+
+
+def _read_quizzes_df() -> pd.DataFrame:
+    """Read quizzes.jsonl with stdlib json (bypasses pandas/ujson Py3.14 bug)."""
+    records = []
+    with QUIZ_FILE.open("r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                records.append(json.loads(line))
+            except json.JSONDecodeError:
+                continue
+    return pd.DataFrame.from_records(records)
+
+
+def _read_progress_df() -> pd.DataFrame:
+    """Read progress.json with stdlib json + DataFrame transform."""
+    if not PROGRESS_FILE.exists():
+        return pd.DataFrame(columns=["answer_correct"])
+    with PROGRESS_FILE.open("r", encoding="utf-8") as f:
+        raw = json.load(f) or {}
+    rows = [{"id": int(k), "answer_correct": v} for k, v in raw.items()]
+    if not rows:
+        return pd.DataFrame(columns=["id", "answer_correct"]).set_index("id")
+    return pd.DataFrame(rows).set_index("id")
 
 
 def show_dashboard():
@@ -29,7 +58,7 @@ def show_dashboard():
 
 
 def show_topic_distribution():
-    questions = pd.read_json(QUIZ_FILE, lines=True)
+    questions = _read_quizzes_df()
     df = questions[["id", "gcp_topics"]].explode("gcp_topics").rename(columns={"gcp_topics": "topic"})
     df.dropna(subset=["topic"], inplace=True)
     st.title("📚 Topic Distribution")
@@ -97,8 +126,8 @@ def show_topic_distribution():
 
 
 def show_knowledge_gaps(topic_field: str = "gcp_topics"):
-    questions = pd.read_json(QUIZ_FILE, lines=True)
-    progress = pd.read_json(PROGRESS_FILE, orient="index").rename(columns={0: "answer_correct"})
+    questions = _read_quizzes_df()
+    progress = _read_progress_df()
     questions = questions.merge(progress, left_on="id", right_index=True, how="left")
 
     df = questions[["id", "answer_correct", topic_field]].explode(topic_field).rename(columns={topic_field: "topic"})

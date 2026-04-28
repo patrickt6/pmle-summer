@@ -10,6 +10,8 @@ Does NOT modify utils/__init__.py or models/questions.py.
 from __future__ import annotations
 
 import json
+import random
+from collections import defaultdict
 from datetime import date
 from pathlib import Path
 
@@ -17,6 +19,9 @@ from pydantic import BaseModel, Field
 
 from models.questions import Question
 from utils import DATA_DIR, QUIZ_FILE
+
+# v3.1 weights — also used by Phase 2 mock-pool tagging and Phase 4 quiz sampling
+SECTION_WEIGHTS = {"§1": 13, "§2": 14, "§3": 18, "§4": 20, "§5": 22, "§6": 13}
 
 WEEKS_FILE = DATA_DIR / "weeks.json"
 REBRANDS_FILE = DATA_DIR / "rebrands.json"
@@ -122,6 +127,86 @@ def quizzes_for_week(week: Week, *, exclude_mock: bool = True) -> list[Question]
                 continue
             out.append(q)
     return out
+
+
+def sample_quiz_for_week(
+    week: Week,
+    *,
+    n_questions: int = 20,
+    seed: int,
+    exclude_mock: bool = True,
+) -> list[Question]:
+    """Stratified random sample of `n_questions` from this week's scope.
+
+    Distribution. For weeks that span multiple sub-sections, the count is
+    distributed proportionally to the v3.1 parent-section weights for
+    sub-sections that actually appear in the week's scope. Inside a parent
+    section, sub-sections share the parent's allocation proportional to
+    available-question count. If a sub-section runs out, the shortfall spills
+    to whichever sub-section still has the most headroom — small weeks
+    naturally end up with overlap (Week 3 has only 24 questions in scope).
+
+    Reproducibility. Fixed `random.Random(seed)`; same seed = same questions
+    in the same order.
+    """
+    pool = quizzes_for_week(week, exclude_mock=exclude_mock)
+    if not pool:
+        return []
+
+    rng = random.Random(seed)
+
+    by_sub: dict[str, list[Question]] = defaultdict(list)
+    for q in pool:
+        if q.exam_section:
+            by_sub[q.exam_section].append(q)
+
+    available = sum(len(v) for v in by_sub.values())
+    if available == 0:
+        return []
+
+    take_total = min(n_questions, available)
+
+    # Sum the v3.1 weights only over parent sections actually represented.
+    sub_to_parent = {sub: sub.split(".")[0] for sub in by_sub}
+    parents_present = set(sub_to_parent.values())
+    parent_weight_sum = sum(SECTION_WEIGHTS.get(p, 0) for p in parents_present) or 1
+
+    raw_targets: dict[str, float] = {}
+    for sub, parent in sub_to_parent.items():
+        parent_share = SECTION_WEIGHTS.get(parent, 0) / parent_weight_sum
+        # Within a parent, split by available question count (so §3.1 with 132
+        # questions gets more than §3.2 with 17).
+        parent_subs = [s for s, p in sub_to_parent.items() if p == parent]
+        parent_avail = sum(len(by_sub[s]) for s in parent_subs)
+        sub_share = (len(by_sub[sub]) / parent_avail) if parent_avail else 0
+        raw_targets[sub] = take_total * parent_share * sub_share
+
+    # Floor + remainder distribution (largest fractional first)
+    floors: dict[str, int] = {sub: int(raw_targets[sub]) for sub in by_sub}
+    remainder = take_total - sum(floors.values())
+    fractional = sorted(
+        ((raw_targets[sub] - floors[sub], sub) for sub in by_sub),
+        key=lambda x: (-x[0], x[1]),
+    )
+    for _, sub in fractional[:remainder]:
+        floors[sub] += 1
+
+    selected: list[Question] = []
+    leftover: list[Question] = []
+    for sub, want in floors.items():
+        avail = list(by_sub[sub])
+        rng.shuffle(avail)
+        take = min(want, len(avail))
+        selected.extend(avail[:take])
+        leftover.extend(avail[take:])
+
+    if len(selected) < take_total and leftover:
+        rng.shuffle(leftover)
+        need = take_total - len(selected)
+        selected.extend(leftover[:need])
+
+    rng.shuffle(selected)
+    return selected[:take_total]
 
 
 def progress_for_week(week: Week, progress: dict[int, bool]) -> dict[str, list[int]]:

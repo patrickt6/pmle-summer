@@ -4,6 +4,7 @@ import streamlit as st
 
 from dashboard import show_dashboard
 from utils import reset_progress, save_progress, set_css_style
+from utils.labs import lab_completion_summary
 
 st.set_page_config(
     page_title="GCP PMLE — Patrick & Matty Boy",
@@ -58,6 +59,20 @@ def main():
     st.divider()
     render_study_audio()
     st.divider()
+
+    # Lab completion banner — Phase 5 cross-link
+    try:
+        labs_summary = lab_completion_summary()
+        st.markdown(
+            f"<p style='text-align:center;margin-top:0;'>"
+            f"🧪 Labs done: <b>{labs_summary['completed_must']} / {labs_summary['must_labs']} must-rated</b> · "
+            f"{labs_summary['completed_total']} / {labs_summary['total_labs']} total · "
+            f"{labs_summary['hours_logged']:g}h logged"
+            f"</p>",
+            unsafe_allow_html=True,
+        )
+    except Exception:
+        pass
 
     st.subheader("📊 Progress dashboard")
     stats = show_dashboard()

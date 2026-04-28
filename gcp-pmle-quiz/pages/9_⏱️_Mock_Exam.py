@@ -18,6 +18,7 @@ import streamlit as st
 
 from models.questions import Question
 from utils import QUIZ_FILE, set_css_style
+from utils.labs import LabProgress, load_lab_progress, load_labs
 from utils.weekly import quizzes_for_week  # not used directly; keeps lazy-loaded modules warm
 
 MOCK_DURATION_SECONDS = 2 * 60 * 60  # 2 hours
@@ -383,6 +384,25 @@ def _render_submitted() -> None:
             + ", ".join(f"`{s}` ({result['by_section_correct'].get(s,0)}/{t})" for s, t in weakest)
             + ". Use these as your wrong-answer-drill targets in Weekly Overview / Quiz Mode."
         )
+
+        # Phase 5 cross-link: suggest incomplete labs covering the weak sections
+        weak_sections = {s for s, _ in weakest}
+        all_labs = load_labs()
+        lab_prog = load_lab_progress()
+        suggested = []
+        for lab in all_labs:
+            prog = lab_prog.get(lab.id) or LabProgress()
+            if prog.status == "completed":
+                continue
+            if any(s in weak_sections for s in lab.exam_sections):
+                suggested.append(lab)
+        if suggested:
+            st.info(
+                "💡 **Suggested labs for your weak sections** (incomplete + covering ≥1 weak §): "
+                + ", ".join(f"#{l.id} {l.name}" for l in suggested[:5])
+                + ". Open the Labs page to track them.",
+                icon="🧪",
+            )
 
     # ---- Wrong answers ----
     st.divider()

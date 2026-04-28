@@ -17,6 +17,7 @@ gcp-pmle-quiz/cache/
 
 # User-specific state (not shared between learners)
 gcp-pmle-quiz/data/progress.json
+gcp-pmle-quiz/data/lab_progress.json
 
 # Playwright screenshots and traces
 .playwright-mcp/

@@ -11,6 +11,7 @@ from pathlib import Path
 import streamlit as st
 
 from utils import load_progress, set_css_style
+from utils.labs import LabProgress, load_lab_progress, load_labs
 from utils.session import cache_session
 from utils.weekly import (
     Rebrand,
@@ -41,11 +42,32 @@ def _section_question_counts(week: Week) -> tuple[int, int]:
 def _render_plan_tab(week: Week) -> None:
     st.subheader("Skills Boost / Google Skills items")
     if week.labs:
+        # Phase 5 cross-link: surface Labs page status alongside each lab
+        all_labs = {l.id: l for l in load_labs()}
+        lab_progress = load_lab_progress()
+        status_emoji = {
+            "not_started": "🟢",
+            "in_progress": "🟡",
+            "completed": "🔵",
+            "skipped": "⚪",
+        }
+        rows = []
         for lab in week.labs:
-            line = f"**#{lab.id}** · {lab.name} · _{lab.platform}_"
-            if lab.url:
-                line = f"**[#{lab.id}]({lab.url})** · {lab.name} · _{lab.platform}_"
-            st.markdown(f"- {line}")
+            tracked = all_labs.get(lab.id)
+            prog = lab_progress.get(lab.id) or LabProgress()
+            status = status_emoji.get(prog.status, "🟢")
+            rating = tracked.rating if tracked else "?"
+            link = f"[#{lab.id}]({lab.url})" if lab.url else f"#{lab.id}"
+            rows.append({
+                "Status": status,
+                "Lab": link,
+                "Name": lab.name,
+                "Rating": rating,
+                "Hours": f"{tracked.duration_hours:g}" if tracked else "?",
+            })
+        st.dataframe(rows, hide_index=True, use_container_width=True)
+        if st.button("🧪 Open Labs page", key="open_labs_from_plan"):
+            st.switch_page("pages/13_🧪_Labs.py")
     else:
         st.info("No Skills Boost items scheduled this week.")
 

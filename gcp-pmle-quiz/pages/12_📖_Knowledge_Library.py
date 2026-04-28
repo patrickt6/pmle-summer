@@ -14,8 +14,11 @@ from utils import set_css_style
 from utils.knowledge import (
     KnowledgeCard,
     all_cards,
+    count_questions_for_card,
+    extract_toc,
     filter_by_section,
     load_knowledge,
+    related_cards,
     search_cards,
 )
 
@@ -26,7 +29,7 @@ def _resolve_research(rel_path: str) -> Path:
     return REPO_ROOT / rel_path
 
 
-def _render_card(card: KnowledgeCard) -> None:
+def _render_card(card: KnowledgeCard, payload) -> None:
     title_prefix = "🏆 " if card.high_yield else ""
     with st.container(border=True):
         st.markdown(f"### {title_prefix}{card.title}")
@@ -34,23 +37,46 @@ def _render_card(card: KnowledgeCard) -> None:
         if card.tags:
             tag_chips = " ".join(f"`{t}`" for t in card.tags)
             st.caption(tag_chips)
+
+        # Phase 6a.5: question count + related cards back-references
+        meta_cols = st.columns([2, 2, 6])
+        n_questions = count_questions_for_card(card)
+        with meta_cols[0]:
+            st.caption(f"🤔 {n_questions} questions in bank")
+        related = related_cards(card, payload)
+        with meta_cols[1]:
+            st.caption(f"🔗 {len(related)} related cards")
+
+        if related:
+            with st.expander("🔗 Related cards"):
+                for rc in related[:8]:
+                    rc_prefix = "🏆 " if rc.high_yield else ""
+                    st.markdown(f"- {rc_prefix}**{rc.title}** — {rc.blurb}")
+
         if card.research_file:
             with st.expander("📖 Read full research"):
                 fpath = _resolve_research(card.research_file)
                 if fpath.exists():
-                    st.markdown(fpath.read_text(encoding="utf-8"), unsafe_allow_html=True)
+                    md_text = fpath.read_text(encoding="utf-8")
+                    toc = extract_toc(md_text)
+                    if toc:
+                        toc_md = "\n".join(
+                            f"{'  ' * (e.level - 1)}- {e.text}" for e in toc[:25]
+                        )
+                        st.markdown(f"**Contents**\n\n{toc_md}\n\n---\n")
+                    st.markdown(md_text, unsafe_allow_html=True)
                 else:
                     st.warning(f"Missing file: {card.research_file}")
 
 
-def _render_card_list(cards: list[KnowledgeCard]) -> None:
+def _render_card_list(cards: list[KnowledgeCard], payload) -> None:
     if not cards:
         st.info("No cards match.")
         return
     # High-yield first
     cards = sorted(cards, key=lambda c: (not c.high_yield, c.title))
     for c in cards:
-        _render_card(c)
+        _render_card(c, payload)
 
 
 def main() -> None:
@@ -104,13 +130,13 @@ def main() -> None:
     ])
 
     with tabs[0]:
-        _render_card_list([c for c in base if c.id in concept_ids])
+        _render_card_list([c for c in base if c.id in concept_ids], payload)
     with tabs[1]:
-        _render_card_list([c for c in base if c.id in product_ids])
+        _render_card_list([c for c in base if c.id in product_ids], payload)
     with tabs[2]:
-        _render_card_list([c for c in base if c.id in dtree_ids])
+        _render_card_list([c for c in base if c.id in dtree_ids], payload)
     with tabs[3]:
-        _render_card_list(high_yield_only)
+        _render_card_list(high_yield_only, payload)
 
 
 if __name__ == "__main__":

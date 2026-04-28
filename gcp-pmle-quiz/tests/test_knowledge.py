@@ -8,9 +8,13 @@ import pytest
 
 from utils.knowledge import (
     all_cards,
+    count_questions_for_card,
+    extract_toc,
     filter_by_section,
     load_knowledge,
+    related_cards,
     search_cards,
+    slug,
 )
 
 
@@ -73,3 +77,89 @@ def test_card_tags_have_section_format():
     p = load_knowledge()
     for c in all_cards(p):
         assert c.tags, f"Card {c.id} has no tags"
+
+
+# ---------- Phase 6a.5: TOC + related cards + question counts ----------
+
+
+def test_slug_basic():
+    assert slug("Reduction Server") == "reduction-server"
+    assert slug("§3.3 — Hardware") == "3-3-hardware"
+    assert slug("Already-slug-friendly") == "already-slug-friendly"
+
+
+def test_extract_toc_finds_headings():
+    md = "# Title\n\n## Section A\n\nbody\n\n### Subsection\n\n## Section B\n"
+    toc = extract_toc(md)
+    assert [t.text for t in toc] == ["Title", "Section A", "Subsection", "Section B"]
+    assert [t.level for t in toc] == [1, 2, 3, 2]
+
+
+def test_extract_toc_anchors_match_slug():
+    md = "## Reduction Server\n"
+    toc = extract_toc(md)
+    assert toc[0].anchor == "reduction-server"
+
+
+def test_extract_toc_handles_empty():
+    assert extract_toc("plain prose with no headings") == []
+
+
+def test_extract_toc_real_research_files_have_headings():
+    """Every research/*.md referenced by a card should have ≥ 1 heading."""
+    repo_root = Path(__file__).resolve().parents[2]
+    p = load_knowledge()
+    for c in all_cards(p):
+        if not c.research_file:
+            continue
+        path = repo_root / c.research_file
+        if not path.exists():
+            continue
+        toc = extract_toc(path.read_text(encoding="utf-8"))
+        assert toc, f"No headings extracted from {c.research_file}"
+
+
+def test_related_cards_excludes_self():
+    p = load_knowledge()
+    for c in all_cards(p):
+        related = related_cards(c, p)
+        assert all(r.id != c.id for r in related)
+
+
+def test_related_cards_min_shared_tags():
+    p = load_knowledge()
+    cards = all_cards(p)
+    if len(cards) < 2:
+        return
+    for c in cards:
+        for r in related_cards(c, p, min_shared_tags=2):
+            shared = set(c.tags) & set(r.tags)
+            assert len(shared) >= 2
+
+
+def test_related_cards_no_tags_returns_empty():
+    p = load_knowledge()
+    sample = all_cards(p)[0]
+    # Construct a card with no tags via model_copy
+    bare = sample.model_copy(update={"tags": []})
+    assert related_cards(bare, p) == []
+
+
+def test_count_questions_for_card_returns_nonzero_for_real_data():
+    """High-yield cards should resolve to ≥ 1 question (no orphans)."""
+    p = load_knowledge()
+    high_yield = [c for c in all_cards(p) if c.high_yield]
+    if not high_yield:
+        return
+    matched = sum(1 for c in high_yield if count_questions_for_card(c) > 0)
+    # Allow up to 1 orphan; we want the vast majority to resolve.
+    assert matched >= len(high_yield) - 1, (
+        f"Only {matched}/{len(high_yield)} high-yield cards have questions in bank"
+    )
+
+
+def test_count_questions_for_card_handles_empty_tags():
+    p = load_knowledge()
+    sample = all_cards(p)[0]
+    bare = sample.model_copy(update={"tags": []})
+    assert count_questions_for_card(bare) == 0

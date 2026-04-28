@@ -102,7 +102,7 @@ Establish a baseline. By Sunday you should be able to: (a) recite the six v3.1 s
 - Real exam = 60 Qs / 2h / pass ≥ 70%. Near-zero multi-select on the real thing (per [recent passers](research/anecdotes/recent-passers.md)).
 
 ### 📅 Daily breakdown
-- **Mon (60 min).** Read CLAUDE.md + this file. Open the Streamlit app: `cd gcp-pmle-quiz && uv run streamlit run 🏠_Dashboard.py`.
+- **Mon (60 min).** Read CLAUDE.md + this file. Open the Streamlit app: `cd gcp-pmle-quiz && uv run streamlit run 🏠_Dashboard.py` and switch to **📍 Today** in the sidebar.
 - **Tue (60 min).** Read v3.1 exam guide PDF §1–§3 (skim).
 - **Wed (60 min).** Read v3.1 exam guide PDF §4–§6 (skim). Skim [`research/anecdotes/recent-passers.md`](research/anecdotes/recent-passers.md).
 - **Thu (60 min).** Take the free sample form *cold*. Record score. Note 5 most-confused questions.

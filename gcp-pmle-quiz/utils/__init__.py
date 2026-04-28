@@ -1,5 +1,6 @@
 import json
 import logging
+import os
 from pathlib import Path
 
 import streamlit as st
@@ -9,9 +10,30 @@ from models.questions import Question
 _APP_DIR = Path(__file__).resolve().parent.parent  # gcp-pmle-quiz/
 DATA_DIR = _APP_DIR / "data"
 QUIZ_FILE = DATA_DIR / "quizzes.jsonl"
-PROGRESS_FILE = DATA_DIR / "progress.json"
+
+# Legacy per-clone progress file. Phase 6a routes progress through the
+# active profile (data/profiles/<name>/progress.json) instead — see
+# `utils.profiles`. The legacy path stays as a fallback for code paths
+# that run before profiles have been initialized (fresh tests, first
+# launch on a clone where the migration hasn't been run yet).
+LEGACY_PROGRESS_FILE = DATA_DIR / "progress.json"
 
 logger = logging.getLogger(__name__)
+
+
+def _current_progress_file() -> Path:
+    """Resolve the active profile's progress.json.
+
+    Lazily imports `utils.profiles` to avoid a circular import at module
+    load time. Falls back to the legacy data/progress.json if no
+    profiles have been materialized yet (so the app keeps working on
+    pre-migration clones).
+    """
+    from utils.profiles import list_profiles, profile_path
+
+    if list_profiles():
+        return profile_path("progress.json")
+    return LEGACY_PROGRESS_FILE
 
 
 def load_quizzes(progress: dict[int, bool]) -> tuple[list[Question], list[Question], list[Question]]:
@@ -41,20 +63,26 @@ def load_quizzes(progress: dict[int, bool]) -> tuple[list[Question], list[Questi
 
 
 def load_progress() -> dict[int, bool]:
-    if not PROGRESS_FILE.exists():
+    pfile = _current_progress_file()
+    if not pfile.exists():
         return {}
     try:
-        with PROGRESS_FILE.open("r", encoding="utf-8") as f:
+        with pfile.open("r", encoding="utf-8") as f:
             progress = json.load(f)
-        return {int(k): v for k, v in progress.items()}
+        return {int(k): v for k, v in (progress or {}).items()}
     except Exception:
         return {}
 
 
-def save_progress(progress):
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
-    with PROGRESS_FILE.open("w", encoding="utf-8") as f:
-        json.dump(progress, f, ensure_ascii=False, indent=2)
+def save_progress(progress: dict[int, bool]) -> None:
+    pfile = _current_progress_file()
+    pfile.parent.mkdir(parents=True, exist_ok=True)
+    tmp = pfile.with_suffix(pfile.suffix + ".tmp")
+    tmp.write_text(
+        json.dumps(progress, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    os.replace(tmp, pfile)
 
 
 def compute_stats(round_progress):
@@ -65,9 +93,11 @@ def compute_stats(round_progress):
     return asked, correct, wrong, pct
 
 
-def reset_progress():
-    if PROGRESS_FILE.exists():
-        PROGRESS_FILE.unlink()
+def reset_progress() -> None:
+    pfile = _current_progress_file()
+    if pfile.exists():
+        # Keep the file at the per-profile path; clear contents.
+        pfile.write_text("{}", encoding="utf-8")
 
 
 def set_css_style(css_path: Path | None = None):

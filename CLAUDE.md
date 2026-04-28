@@ -65,8 +65,9 @@ Recent passers report **zero or near-zero multi-select questions** on the real e
 ├── Gmail - An Offer of Admission from Waterloo.pdf   # Unrelated personal doc — ignore
 ├── research/                                         # (To be created) Deep-research outputs by topic + tool
 └── gcp-pmle-quiz/                                    # Cloned: AndyTheFactory/gcp-pmle-quiz (Streamlit, ~841 Qs)
-    ├── 🏠_Dashboard.py
-    ├── pages/                                        # Quiz Mode, GCP Products map, Edit Questions, Export-for-LM
+    ├── 🏠_Dashboard.py                               # Home — hero + audio + lab banner + progress dashboard
+    ├── pages/0_📍_Today.py                           # Phase 6a — Today wayfinding (top of sidebar)
+    ├── pages/                                        # Quiz Mode, Plan, Library, Labs, Mock, Week Quizzes, …
     ├── data/
     │   ├── quizzes.jsonl                             # 841 questions
     │   ├── gcp_products.jsonl                        # 104 GCP product entries (graph nodes)

@@ -18,6 +18,13 @@ gcp-pmle-quiz/cache/
 # User-specific state (not shared between learners)
 gcp-pmle-quiz/data/progress.json
 gcp-pmle-quiz/data/lab_progress.json
+gcp-pmle-quiz/data/progress.pre-phase6.json
+gcp-pmle-quiz/data/app_settings.json
+# Phase 6 — per-profile personal study state (profile.json metadata stays tracked)
+gcp-pmle-quiz/data/profiles/*/progress.json
+gcp-pmle-quiz/data/profiles/*/journal.json
+gcp-pmle-quiz/data/profiles/*/srs.json
+gcp-pmle-quiz/data/profiles/*/cursor.json
 
 # Playwright screenshots and traces
 .playwright-mcp/

@@ -4,7 +4,7 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-from utils import PROGRESS_FILE, QUIZ_FILE, compute_stats, load_progress, load_quizzes
+from utils import QUIZ_FILE, compute_stats, load_progress, load_quizzes
 
 
 def _read_quizzes_df() -> pd.DataFrame:
@@ -23,14 +23,11 @@ def _read_quizzes_df() -> pd.DataFrame:
 
 
 def _read_progress_df() -> pd.DataFrame:
-    """Read progress.json with stdlib json + DataFrame transform."""
-    if not PROGRESS_FILE.exists():
-        return pd.DataFrame(columns=["answer_correct"])
-    with PROGRESS_FILE.open("r", encoding="utf-8") as f:
-        raw = json.load(f) or {}
-    rows = [{"id": int(k), "answer_correct": v} for k, v in raw.items()]
-    if not rows:
+    """Build a progress DataFrame from the active profile's progress.json."""
+    raw = load_progress()
+    if not raw:
         return pd.DataFrame(columns=["id", "answer_correct"]).set_index("id")
+    rows = [{"id": int(k), "answer_correct": v} for k, v in raw.items()]
     return pd.DataFrame(rows).set_index("id")
 
 
@@ -47,7 +44,7 @@ def show_dashboard():
     col3.metric("Correct", correct)
     col4.metric("Wrong", wrong)
     show_topic_distribution()
-    if PROGRESS_FILE.exists() and len(PROGRESS_FILE.read_text().strip()) > 0:
+    if progress:
         show_knowledge_gaps(topic_field="gcp_topics")
         show_knowledge_gaps(topic_field="gcp_products")
         show_knowledge_gaps(topic_field="ml_topics")

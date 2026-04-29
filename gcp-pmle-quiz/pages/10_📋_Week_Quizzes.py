@@ -19,6 +19,7 @@ from pathlib import Path
 import streamlit as st
 
 from utils import set_css_style
+from utils.profile_ui import render_sidebar
 from utils.quiz_runtime import (
     init_state,
     render_running,
@@ -239,6 +240,7 @@ def _resume_or_start_caption(week_num_in_state: int | None, selected_week_num: i
 def main() -> None:
     st.set_page_config(page_title="Week Quizzes", page_icon="📋", layout="wide")
     set_css_style(Path("style.css"))
+    render_sidebar()
     init_state(STATE_PREFIX)
 
     st.title("📋 Per-week timed quizzes")

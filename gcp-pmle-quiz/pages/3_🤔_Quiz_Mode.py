@@ -5,6 +5,7 @@ from pathlib import Path
 import streamlit as st
 
 from utils import compute_stats, load_progress, load_quizzes, save_progress, set_css_style
+from utils.profile_ui import render_sidebar
 from utils.session import cache_session, clear_session_cache, load_session
 
 load_session()
@@ -12,6 +13,7 @@ load_session()
 logger = logging.getLogger(__name__)
 
 set_css_style(Path("style.css"))
+render_sidebar()
 
 
 def save_progress_click(progress):

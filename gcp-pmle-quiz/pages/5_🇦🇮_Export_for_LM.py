@@ -3,9 +3,11 @@ from pathlib import Path
 import streamlit as st
 
 from utils import load_progress, load_quizzes
+from utils.profile_ui import render_sidebar
 
 MD_PATH = Path("export_for_lm.md")
 
+render_sidebar()
 
 # Read and display markdown content
 if MD_PATH.exists():

@@ -11,6 +11,7 @@ from pathlib import Path
 import streamlit as st
 
 from utils import load_progress, set_css_style
+from utils.profile_ui import render_sidebar
 from utils.labs import LabProgress, load_lab_progress, load_labs
 from utils.research_links import label_for
 from utils.session import cache_session
@@ -226,6 +227,7 @@ def _render_resources_tab(week: Week) -> None:
 def main() -> None:
     st.set_page_config(page_title="Weekly Overview", layout="wide")
     set_css_style(Path("style.css"))
+    render_sidebar()
     st.title("📅 Weekly Overview")
 
     weeks = load_weeks()

@@ -11,11 +11,13 @@ from pathlib import Path
 import streamlit as st
 
 from utils import set_css_style
+from utils.profile_ui import render_sidebar
 
 
 def main():
     st.set_page_config(page_title="Study Guide", page_icon="📝", layout="wide")
     set_css_style(Path("style.css"))
+    render_sidebar()
 
     # ---- Substack-style header ----
     st.markdown(

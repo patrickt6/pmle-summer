@@ -9,6 +9,7 @@ from pathlib import Path
 import streamlit as st
 
 from utils import set_css_style
+from utils.profile_ui import render_sidebar
 
 VIDEOS: list[dict[str, str | None]] = [
     {
@@ -23,6 +24,7 @@ VIDEOS: list[dict[str, str | None]] = [
 def main():
     st.set_page_config(page_title="Useful Videos", page_icon="📺", layout="wide")
     set_css_style(Path("style.css"))
+    render_sidebar()
 
     st.title("📺 Useful Videos")
     st.caption(

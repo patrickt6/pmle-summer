@@ -16,6 +16,7 @@ from pathlib import Path
 import streamlit as st
 
 from utils import set_css_style
+from utils.profile_ui import render_sidebar
 from utils.labs import (
     Lab,
     LabProgress,
@@ -285,6 +286,7 @@ def _render_idle() -> None:
 def main() -> None:
     st.set_page_config(page_title="Labs", page_icon="🧪", layout="wide")
     set_css_style(Path("style.css"))
+    render_sidebar()
     init_state(STATE_PREFIX)
 
     st.title("🧪 Labs")

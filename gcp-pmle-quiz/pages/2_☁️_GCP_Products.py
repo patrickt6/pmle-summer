@@ -10,6 +10,7 @@ import streamlit as st
 from pyvis.network import Network
 
 from utils import DATA_DIR
+from utils.profile_ui import render_sidebar
 
 
 def load_data():
@@ -155,6 +156,7 @@ def capability_matrix(rows):
 # Streamlit UI
 # -----------------------------
 st.set_page_config(page_title="GCP Product Learning Map", layout="wide")
+render_sidebar()
 
 st.title("GCP Product Learning Map")
 st.caption("Comparison views to learn products and understand their connections.")

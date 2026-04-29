@@ -18,6 +18,7 @@ import streamlit as st
 
 from models.questions import Question
 from utils import QUIZ_FILE, set_css_style
+from utils.profile_ui import render_sidebar
 from utils.labs import LabProgress, load_lab_progress, load_labs
 from utils.weekly import quizzes_for_week  # not used directly; keeps lazy-loaded modules warm
 
@@ -451,6 +452,7 @@ def _render_submitted() -> None:
 def main() -> None:
     st.set_page_config(page_title="Mock Exam", page_icon="⏱️", layout="wide")
     set_css_style(Path("style.css"))
+    render_sidebar()
     _init_state()
 
     st.title("⏱️ Mock Exam")

@@ -19,6 +19,7 @@ import streamlit as st
 from pyvis.network import Network
 
 from utils import DATA_DIR, set_css_style
+from utils.profile_ui import render_sidebar
 from utils.knowledge import load_knowledge
 from utils.labs import load_labs
 from utils.weekly import load_rebrands, load_weeks
@@ -182,6 +183,7 @@ def _cached_graph_html() -> str:
 def main() -> None:
     st.set_page_config(page_title="Knowledge Graph", page_icon="🕸", layout="wide")
     set_css_style(Path("style.css"))
+    render_sidebar()
 
     st.title("🕸 Knowledge Graph")
     st.caption(

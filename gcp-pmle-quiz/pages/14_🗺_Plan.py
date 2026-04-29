@@ -14,6 +14,7 @@ from pathlib import Path
 import streamlit as st
 
 from utils import set_css_style
+from utils.profile_ui import render_sidebar
 from utils.profiles import current_profile, ensure_default_profiles
 from utils.study_plan import Day, Week, load_study_plan
 from utils.today import (
@@ -23,6 +24,7 @@ from utils.today import (
     load_cursor,
     set_manual_override,
 )
+from utils.week_tree import render_week_tree
 
 st.set_page_config(
     page_title="GCP PMLE — Plan",
@@ -149,6 +151,25 @@ def render_week_view(plan, cursor, expected_w: int, expected_d: int) -> None:
             for a in week.concept_anchors:
                 st.markdown(f"- {a}")
 
+    # Interactive tree view of the picked week.
+    st.divider()
+    st.markdown(f"#### 🌳 Week {week.num} tree")
+    st.caption(
+        "Hover for full text · click a node to open the linked source. The "
+        "expander beneath has a flat clickable list as a fallback."
+    )
+    render_week_tree(week)
+
+    # Mini-trees for the next 1–2 weeks so the user sees what's coming.
+    upcoming = [w for w in plan.weeks if w.num in (week.num + 1, week.num + 2)]
+    if upcoming:
+        st.markdown("#### 🔭 Coming up")
+        cols = st.columns(len(upcoming))
+        for col, w in zip(cols, upcoming, strict=False):
+            with col:
+                st.markdown(f"**Week {w.num} — {w.theme}**")
+                render_week_tree(w, mini=True)
+
     st.divider()
     for day_index in range(7):
         with st.container(border=True):
@@ -255,6 +276,7 @@ def render_list(plan, cursor, expected_w: int, expected_d: int) -> None:
 
 def main() -> None:
     set_css_style(Path("style.css"))
+    render_sidebar()
     ensure_default_profiles()
 
     st.title("🗺 12-Week Plan")

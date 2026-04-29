@@ -25,6 +25,7 @@ from utils.today import (
     mark_day_skipped,
     set_manual_override,
 )
+from utils.week_tree import render_week_tree
 
 st.set_page_config(
     page_title="GCP PMLE — Today",
@@ -234,6 +235,19 @@ def render_lab_banner() -> None:
     )
 
 
+def render_week_tree_section(ctx) -> None:
+    week = ctx.target_week
+    if not week:
+        return
+    st.divider()
+    st.subheader(f"🌳 Week {week.num} at a glance")
+    st.caption(
+        "Hover any task for the full label · click to open the linked "
+        "source · use the expander below if a node isn't clickable."
+    )
+    render_week_tree(week)
+
+
 def main() -> None:
     set_css_style(Path("style.css"))
     render_sidebar()
@@ -244,6 +258,7 @@ def main() -> None:
     render_header(ctx, profile)
     render_tasks(ctx)
     render_week_summary(ctx)
+    render_week_tree_section(ctx)
     st.divider()
     render_jump()
     st.divider()

@@ -15,14 +15,14 @@
       "deliverables": [
         {
           "type": "read",
-          "label": "Read [PMLE v3.1 exam guide PDF](professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf) **cover-to-cover** (60 min).",
-          "description": "Read [PMLE v3.1 exam guide PDF](professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf) **cover-to-cover** (60 min).",
+          "label": "Read [PMLE v3.1 exam guide PDF](https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf) **cover-to-cover** (60 min).",
+          "description": "Read [PMLE v3.1 exam guide PDF](https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf) **cover-to-cover** (60 min).",
           "estimated_min": null,
-          "ref": "professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf",
+          "ref": "https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf",
           "links": [
             {
               "label": "PMLE v3.1 exam guide PDF",
-              "url": "professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf"
+              "url": "https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf"
             }
           ]
         },
@@ -67,19 +67,29 @@
         },
         {
           "type": "lab",
-          "label": "Mark lab #1 complete in `pages/13_🧪_Labs.py`; capture one \"ohhh\" insight per partner.",
-          "description": "Mark lab #1 complete in `pages/13_🧪_Labs.py`; capture one \"ohhh\" insight per partner.",
+          "label": "Mark lab #1 complete in [Labs](Labs); capture one \"ohhh\" insight per partner.",
+          "description": "Mark lab #1 complete in [Labs](Labs); capture one \"ohhh\" insight per partner.",
           "estimated_min": null,
-          "ref": null,
-          "links": []
+          "ref": "Labs",
+          "links": [
+            {
+              "label": "Labs",
+              "url": "Labs"
+            }
+          ]
         },
         {
           "type": "other",
-          "label": "Open `pages/1_📅_Weekly_Overview.py` and select Week 1 — verify all 5 tabs render.",
-          "description": "Open `pages/1_📅_Weekly_Overview.py` and select Week 1 — verify all 5 tabs render.",
+          "label": "Open [Weekly Overview](Weekly_Overview) and select Week 1 — verify all 5 tabs render.",
+          "description": "Open [Weekly Overview](Weekly_Overview) and select Week 1 — verify all 5 tabs render.",
           "estimated_min": null,
-          "ref": null,
-          "links": []
+          "ref": "Weekly_Overview",
+          "links": [
+            {
+              "label": "Weekly Overview",
+              "url": "Weekly_Overview"
+            }
+          ]
         }
       ],
       "concept_anchors": [
@@ -93,15 +103,20 @@
           "day_label": "Mon",
           "day_index": 0,
           "estimated_min": 60,
-          "description": "Read this plan end-to-end. Open the Streamlit app: `cd gcp-pmle-quiz && uv run streamlit run 🏠_Dashboard.py` and switch to **📍 Today** in the sidebar.",
+          "description": "Read this plan end-to-end. Open the Streamlit app: `cd gcp-pmle-quiz && uv run streamlit run 🏠_Dashboard.py` and switch to **[📍 Today](Today)** in the sidebar.",
           "tasks": [
             {
               "type": "read",
-              "label": "Read this plan end-to-end. Open the Streamlit app: `cd gcp-pmle-quiz && uv run streamlit run 🏠_Dashboard.py` and switch to **📍 Today** in the sidebar.",
-              "description": "Read this plan end-to-end. Open the Streamlit app: `cd gcp-pmle-quiz && uv run streamlit run 🏠_Dashboard.py` and switch to **📍 Today** in the sidebar.",
+              "label": "Read this plan end-to-end. Open the Streamlit app: `cd gcp-pmle-quiz && uv run streamlit run 🏠_Dashboard.py` and switch to **[📍 Today](Today)** in the sidebar.",
+              "description": "Read this plan end-to-end. Open the Streamlit app: `cd gcp-pmle-quiz && uv run streamlit run 🏠_Dashboard.py` and switch to **[📍 Today](Today)** in the sidebar.",
               "estimated_min": 60,
-              "ref": null,
-              "links": []
+              "ref": "Today",
+              "links": [
+                {
+                  "label": "📍 Today",
+                  "url": "Today"
+                }
+              ]
             }
           ]
         },
@@ -109,15 +124,20 @@
           "day_label": "Tue",
           "day_index": 1,
           "estimated_min": 60,
-          "description": "Read v3.1 exam guide PDF §1–§3 (skim).",
+          "description": "Read [v3.1 exam guide PDF](https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf) §1–§3 (skim).",
           "tasks": [
             {
               "type": "read",
-              "label": "Read v3.1 exam guide PDF §1–§3 (skim).",
-              "description": "Read v3.1 exam guide PDF §1–§3 (skim).",
+              "label": "Read [v3.1 exam guide PDF](https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf) §1–§3 (skim).",
+              "description": "Read [v3.1 exam guide PDF](https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf) §1–§3 (skim).",
               "estimated_min": 60,
-              "ref": null,
-              "links": []
+              "ref": "https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf",
+              "links": [
+                {
+                  "label": "v3.1 exam guide PDF",
+                  "url": "https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf"
+                }
+              ]
             }
           ]
         },
@@ -125,15 +145,19 @@
           "day_label": "Wed",
           "day_index": 2,
           "estimated_min": 60,
-          "description": "Read v3.1 exam guide PDF §4–§6 (skim). Skim [Andrei Paraschiv's PMLE pass writeup (Feb 2026)](https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4).",
+          "description": "Read [v3.1 exam guide PDF](https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf) §4–§6 (skim). Skim [Andrei Paraschiv's PMLE pass writeup (Feb 2026)](https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4).",
           "tasks": [
             {
               "type": "read",
-              "label": "Read v3.1 exam guide PDF §4–§6 (skim). Skim [Andrei Paraschiv's PMLE pass writeup (Feb 2026)](https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4).",
-              "description": "Read v3.1 exam guide PDF §4–§6 (skim). Skim [Andrei Paraschiv's PMLE pass writeup (Feb 2026)](https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4).",
+              "label": "Read [v3.1 exam guide PDF](https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf) §4–§6 (skim). Skim [Andrei Paraschiv's PMLE pass writeup (Feb 2026)](https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4).",
+              "description": "Read [v3.1 exam guide PDF](https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf) §4–§6 (skim). Skim [Andrei Paraschiv's PMLE pass writeup (Feb 2026)](https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4).",
               "estimated_min": 60,
-              "ref": "https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4",
+              "ref": "https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf",
               "links": [
+                {
+                  "label": "v3.1 exam guide PDF",
+                  "url": "https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf"
+                },
                 {
                   "label": "Andrei Paraschiv's PMLE pass writeup (Feb 2026)",
                   "url": "https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4"
@@ -146,15 +170,20 @@
           "day_label": "Thu",
           "day_index": 3,
           "estimated_min": 60,
-          "description": "Take the free sample form *cold*. Record score. Note 5 most-confused questions.",
+          "description": "Take the [free sample form](https://docs.google.com/forms/d/e/1FAIpQLSeYmkCANE81qSBqLW0g2X7RoskBX9yGYQu-m1TtsjMvHabGqg/viewform) *cold*. Record score. Note 5 most-confused questions.",
           "tasks": [
             {
-              "type": "other",
-              "label": "Take the free sample form *cold*. Record score. Note 5 most-confused questions.",
-              "description": "Take the free sample form *cold*. Record score. Note 5 most-confused questions.",
+              "type": "external",
+              "label": "Take the [free sample form](https://docs.google.com/forms/d/e/1FAIpQLSeYmkCANE81qSBqLW0g2X7RoskBX9yGYQu-m1TtsjMvHabGqg/viewform) *cold*. Record score. Note 5 most-confused questions.",
+              "description": "Take the [free sample form](https://docs.google.com/forms/d/e/1FAIpQLSeYmkCANE81qSBqLW0g2X7RoskBX9yGYQu-m1TtsjMvHabGqg/viewform) *cold*. Record score. Note 5 most-confused questions.",
               "estimated_min": 60,
-              "ref": null,
-              "links": []
+              "ref": "https://docs.google.com/forms/d/e/1FAIpQLSeYmkCANE81qSBqLW0g2X7RoskBX9yGYQu-m1TtsjMvHabGqg/viewform",
+              "links": [
+                {
+                  "label": "free sample form",
+                  "url": "https://docs.google.com/forms/d/e/1FAIpQLSeYmkCANE81qSBqLW0g2X7RoskBX9yGYQu-m1TtsjMvHabGqg/viewform"
+                }
+              ]
             }
           ]
         },
@@ -205,15 +234,24 @@
         "day_label": "Sun",
         "day_index": 6,
         "estimated_min": null,
-        "description": "- Run **Week 1 Quiz A** (20 Qs from §1.1+§1.2+§2.1) on `pages/10_📋_Week_Quizzes.py`. Target: **≥ 35 %** (this is *baseline week* — low bar).",
+        "description": "- Run **[Week 1 Quiz A](Week_Quizzes)** (20 Qs from §1.1+§1.2+§2.1) on [Week Quizzes](Week_Quizzes). Target: **≥ 35 %** (this is *baseline week* — low bar).",
         "tasks": [
           {
             "type": "drill",
-            "label": "Run **Week 1 Quiz A** (20 Qs from §1.1+§1.2+§2.1) on `pages/10_📋_Week_Quizzes.py`. Target: **≥ 35 %** (this is *baseline week* — low bar).",
-            "description": "Run **Week 1 Quiz A** (20 Qs from §1.1+§1.2+§2.1) on `pages/10_📋_Week_Quizzes.py`. Target: **≥ 35 %** (this is *baseline week* — low bar).",
+            "label": "Run **[Week 1 Quiz A](Week_Quizzes)** (20 Qs from §1.1+§1.2+§2.1) on [Week Quizzes](Week_Quizzes). Target: **≥ 35 %** (this is *baseline week* — low bar).",
+            "description": "Run **[Week 1 Quiz A](Week_Quizzes)** (20 Qs from §1.1+§1.2+§2.1) on [Week Quizzes](Week_Quizzes). Target: **≥ 35 %** (this is *baseline week* — low bar).",
             "estimated_min": null,
-            "ref": null,
-            "links": []
+            "ref": "Week_Quizzes",
+            "links": [
+              {
+                "label": "Week 1 Quiz A",
+                "url": "Week_Quizzes"
+              },
+              {
+                "label": "Week Quizzes",
+                "url": "Week_Quizzes"
+              }
+            ]
           },
           {
             "type": "read",
@@ -225,11 +263,16 @@
           },
           {
             "type": "drill",
-            "label": "Drill the 5 most-confused sample-form questions until you can explain WHY each answer wins.",
-            "description": "Drill the 5 most-confused sample-form questions until you can explain WHY each answer wins.",
+            "label": "Drill the 5 most-confused [sample-form](https://docs.google.com/forms/d/e/1FAIpQLSeYmkCANE81qSBqLW0g2X7RoskBX9yGYQu-m1TtsjMvHabGqg/viewform) questions until you can explain WHY each answer wins.",
+            "description": "Drill the 5 most-confused [sample-form](https://docs.google.com/forms/d/e/1FAIpQLSeYmkCANE81qSBqLW0g2X7RoskBX9yGYQu-m1TtsjMvHabGqg/viewform) questions until you can explain WHY each answer wins.",
             "estimated_min": null,
-            "ref": null,
-            "links": []
+            "ref": "https://docs.google.com/forms/d/e/1FAIpQLSeYmkCANE81qSBqLW0g2X7RoskBX9yGYQu-m1TtsjMvHabGqg/viewform",
+            "links": [
+              {
+                "label": "sample-form",
+                "url": "https://docs.google.com/forms/d/e/1FAIpQLSeYmkCANE81qSBqLW0g2X7RoskBX9yGYQu-m1TtsjMvHabGqg/viewform"
+              }
+            ]
           }
         ]
       },
@@ -322,19 +365,29 @@
         },
         {
           "type": "lab",
-          "label": "Mark labs #4 and #5 complete in `pages/13_🧪_Labs.py`.",
-          "description": "Mark labs #4 and #5 complete in `pages/13_🧪_Labs.py`.",
+          "label": "Mark labs #4 and #5 complete in [Labs](Labs).",
+          "description": "Mark labs #4 and #5 complete in [Labs](Labs).",
           "estimated_min": null,
-          "ref": null,
-          "links": []
+          "ref": "Labs",
+          "links": [
+            {
+              "label": "Labs",
+              "url": "Labs"
+            }
+          ]
         },
         {
           "type": "other",
-          "label": "Sunday: 20-Q quiz §1.1 ≥ 70 % via `pages/10_📋_Week_Quizzes.py` Week 2A.",
-          "description": "Sunday: 20-Q quiz §1.1 ≥ 70 % via `pages/10_📋_Week_Quizzes.py` Week 2A.",
+          "label": "Sunday: 20-Q quiz §1.1 ≥ 70 % via [Week Quizzes](Week_Quizzes) Week 2A.",
+          "description": "Sunday: 20-Q quiz §1.1 ≥ 70 % via [Week Quizzes](Week_Quizzes) Week 2A.",
           "estimated_min": null,
-          "ref": null,
-          "links": []
+          "ref": "Week_Quizzes",
+          "links": [
+            {
+              "label": "Week Quizzes",
+              "url": "Week_Quizzes"
+            }
+          ]
         }
       ],
       "concept_anchors": [
@@ -433,15 +486,20 @@
           "day_label": "Fri",
           "day_index": 4,
           "estimated_min": 30,
-          "description": "Drill 10 §1.1 questions via Quiz Mode filtered to `BigQuery ML` / `BQML` topic tags.",
+          "description": "Drill 10 §1.1 questions via [Quiz Mode](Quiz_Mode) filtered to `BigQuery ML` / `BQML` topic tags.",
           "tasks": [
             {
               "type": "drill",
-              "label": "Drill 10 §1.1 questions via Quiz Mode filtered to `BigQuery ML` / `BQML` topic tags.",
-              "description": "Drill 10 §1.1 questions via Quiz Mode filtered to `BigQuery ML` / `BQML` topic tags.",
+              "label": "Drill 10 §1.1 questions via [Quiz Mode](Quiz_Mode) filtered to `BigQuery ML` / `BQML` topic tags.",
+              "description": "Drill 10 §1.1 questions via [Quiz Mode](Quiz_Mode) filtered to `BigQuery ML` / `BQML` topic tags.",
               "estimated_min": 30,
-              "ref": null,
-              "links": []
+              "ref": "Quiz_Mode",
+              "links": [
+                {
+                  "label": "Quiz Mode",
+                  "url": "Quiz_Mode"
+                }
+              ]
             }
           ]
         }
@@ -471,31 +529,46 @@
         "day_label": "Sun",
         "day_index": 6,
         "estimated_min": null,
-        "description": "- **Week 2 Quiz A** (20 Qs §1.1) ≥ 70 %.",
+        "description": "- **[Week 2 Quiz A](Week_Quizzes)** (20 Qs §1.1) ≥ 70 %.",
         "tasks": [
           {
             "type": "drill",
-            "label": "**Week 2 Quiz A** (20 Qs §1.1) ≥ 70 %.",
-            "description": "**Week 2 Quiz A** (20 Qs §1.1) ≥ 70 %.",
+            "label": "**[Week 2 Quiz A](Week_Quizzes)** (20 Qs §1.1) ≥ 70 %.",
+            "description": "**[Week 2 Quiz A](Week_Quizzes)** (20 Qs §1.1) ≥ 70 %.",
             "estimated_min": null,
-            "ref": null,
-            "links": []
+            "ref": "Week_Quizzes",
+            "links": [
+              {
+                "label": "Week 2 Quiz A",
+                "url": "Week_Quizzes"
+              }
+            ]
           },
           {
             "type": "lab",
-            "label": "If < 70 %: re-watch SB #4 modules 2–3 + redo the lab. Run **Quiz 2B** Monday before bed.",
-            "description": "If < 70 %: re-watch SB #4 modules 2–3 + redo the lab. Run **Quiz 2B** Monday before bed.",
+            "label": "If < 70 %: re-watch SB #4 modules 2–3 + redo the lab. Run **[Quiz 2B](Week_Quizzes)** Monday before bed.",
+            "description": "If < 70 %: re-watch SB #4 modules 2–3 + redo the lab. Run **[Quiz 2B](Week_Quizzes)** Monday before bed.",
             "estimated_min": null,
-            "ref": null,
-            "links": []
+            "ref": "Week_Quizzes",
+            "links": [
+              {
+                "label": "Quiz 2B",
+                "url": "Week_Quizzes"
+              }
+            ]
           },
           {
             "type": "drill",
-            "label": "Wrong-answer drill on `pages/1_📅_Weekly_Overview.py` Drill tab.",
-            "description": "Wrong-answer drill on `pages/1_📅_Weekly_Overview.py` Drill tab.",
+            "label": "Wrong-answer drill on [Weekly Overview](Weekly_Overview) Drill tab.",
+            "description": "Wrong-answer drill on [Weekly Overview](Weekly_Overview) Drill tab.",
             "estimated_min": null,
-            "ref": null,
-            "links": []
+            "ref": "Weekly_Overview",
+            "links": [
+              {
+                "label": "Weekly Overview",
+                "url": "Weekly_Overview"
+              }
+            ]
           }
         ]
       },
@@ -692,15 +765,20 @@
           "day_label": "Fri",
           "day_index": 4,
           "estimated_min": 30,
-          "description": "Quiz Mode filtered to `ML APIs` / `Vertex AI Workbench` / `Colab Enterprise` topic tags — 10 Qs.",
+          "description": "[Quiz Mode](Quiz_Mode) filtered to `ML APIs` / `Vertex AI Workbench` / `Colab Enterprise` topic tags — 10 Qs.",
           "tasks": [
             {
               "type": "drill",
-              "label": "Quiz Mode filtered to `ML APIs` / `Vertex AI Workbench` / `Colab Enterprise` topic tags — 10 Qs.",
-              "description": "Quiz Mode filtered to `ML APIs` / `Vertex AI Workbench` / `Colab Enterprise` topic tags — 10 Qs.",
+              "label": "[Quiz Mode](Quiz_Mode) filtered to `ML APIs` / `Vertex AI Workbench` / `Colab Enterprise` topic tags — 10 Qs.",
+              "description": "[Quiz Mode](Quiz_Mode) filtered to `ML APIs` / `Vertex AI Workbench` / `Colab Enterprise` topic tags — 10 Qs.",
               "estimated_min": 30,
-              "ref": null,
-              "links": []
+              "ref": "Quiz_Mode",
+              "links": [
+                {
+                  "label": "Quiz Mode",
+                  "url": "Quiz_Mode"
+                }
+              ]
             }
           ]
         }
@@ -730,15 +808,20 @@
         "day_label": "Sun",
         "day_index": 6,
         "estimated_min": null,
-        "description": "- **Week 3 Quiz A** (20 Qs §1.2+§2.2) ≥ 65 %.",
+        "description": "- **[Week 3 Quiz A](Week_Quizzes)** (20 Qs §1.2+§2.2) ≥ 65 %.",
         "tasks": [
           {
             "type": "drill",
-            "label": "**Week 3 Quiz A** (20 Qs §1.2+§2.2) ≥ 65 %.",
-            "description": "**Week 3 Quiz A** (20 Qs §1.2+§2.2) ≥ 65 %.",
+            "label": "**[Week 3 Quiz A](Week_Quizzes)** (20 Qs §1.2+§2.2) ≥ 65 %.",
+            "description": "**[Week 3 Quiz A](Week_Quizzes)** (20 Qs §1.2+§2.2) ≥ 65 %.",
             "estimated_min": null,
-            "ref": null,
-            "links": []
+            "ref": "Week_Quizzes",
+            "links": [
+              {
+                "label": "Week 3 Quiz A",
+                "url": "Week_Quizzes"
+              }
+            ]
           },
           {
             "type": "drill",
@@ -750,11 +833,16 @@
           },
           {
             "type": "drill",
-            "label": "Wrong-answer drill via Weekly Overview.",
-            "description": "Wrong-answer drill via Weekly Overview.",
+            "label": "Wrong-answer drill via [Weekly Overview](Weekly_Overview).",
+            "description": "Wrong-answer drill via [Weekly Overview](Weekly_Overview).",
             "estimated_min": null,
-            "ref": null,
-            "links": []
+            "ref": "Weekly_Overview",
+            "links": [
+              {
+                "label": "Weekly Overview",
+                "url": "Weekly_Overview"
+              }
+            ]
           }
         ]
       },
@@ -782,11 +870,16 @@
         },
         {
           "type": "drill",
-          "label": "⭐ Quiz Mode on the **`Document AI`** tag — high-yield distractor in §1.2.",
-          "description": "⭐ Quiz Mode on the **`Document AI`** tag — high-yield distractor in §1.2.",
+          "label": "⭐ [Quiz Mode](Quiz_Mode) on the **`Document AI`** tag — high-yield distractor in §1.2.",
+          "description": "⭐ [Quiz Mode](Quiz_Mode) on the **`Document AI`** tag — high-yield distractor in §1.2.",
           "estimated_min": null,
-          "ref": null,
-          "links": []
+          "ref": "Quiz_Mode",
+          "links": [
+            {
+              "label": "Quiz Mode",
+              "url": "Quiz_Mode"
+            }
+          ]
         }
       ],
       "sunday_quiz_target": 0.65
@@ -950,15 +1043,20 @@
           "day_label": "Fri",
           "day_index": 4,
           "estimated_min": 30,
-          "description": "Quiz Mode filtered to `Feature Store` / `Dataflow` / `feature engineering` — 10 Qs.",
+          "description": "[Quiz Mode](Quiz_Mode) filtered to `Feature Store` / `Dataflow` / `feature engineering` — 10 Qs.",
           "tasks": [
             {
               "type": "drill",
-              "label": "Quiz Mode filtered to `Feature Store` / `Dataflow` / `feature engineering` — 10 Qs.",
-              "description": "Quiz Mode filtered to `Feature Store` / `Dataflow` / `feature engineering` — 10 Qs.",
+              "label": "[Quiz Mode](Quiz_Mode) filtered to `Feature Store` / `Dataflow` / `feature engineering` — 10 Qs.",
+              "description": "[Quiz Mode](Quiz_Mode) filtered to `Feature Store` / `Dataflow` / `feature engineering` — 10 Qs.",
               "estimated_min": 30,
-              "ref": null,
-              "links": []
+              "ref": "Quiz_Mode",
+              "links": [
+                {
+                  "label": "Quiz Mode",
+                  "url": "Quiz_Mode"
+                }
+              ]
             }
           ]
         }
@@ -988,23 +1086,33 @@
         "day_label": "Sun",
         "day_index": 6,
         "estimated_min": null,
-        "description": "- **Week 4 Quiz A** (20 Qs §2) ≥ 70 %.",
+        "description": "- **[Week 4 Quiz A](Week_Quizzes)** (20 Qs §2) ≥ 70 %.",
         "tasks": [
           {
             "type": "drill",
-            "label": "**Week 4 Quiz A** (20 Qs §2) ≥ 70 %.",
-            "description": "**Week 4 Quiz A** (20 Qs §2) ≥ 70 %.",
+            "label": "**[Week 4 Quiz A](Week_Quizzes)** (20 Qs §2) ≥ 70 %.",
+            "description": "**[Week 4 Quiz A](Week_Quizzes)** (20 Qs §2) ≥ 70 %.",
             "estimated_min": null,
-            "ref": null,
-            "links": []
+            "ref": "Week_Quizzes",
+            "links": [
+              {
+                "label": "Week 4 Quiz A",
+                "url": "Week_Quizzes"
+              }
+            ]
           },
           {
             "type": "drill",
-            "label": "Wrong-answer drill on Weekly Overview Week 4.",
-            "description": "Wrong-answer drill on Weekly Overview Week 4.",
+            "label": "Wrong-answer drill on [Weekly Overview](Weekly_Overview) Week 4.",
+            "description": "Wrong-answer drill on [Weekly Overview](Weekly_Overview) Week 4.",
             "estimated_min": null,
-            "ref": null,
-            "links": []
+            "ref": "Weekly_Overview",
+            "links": [
+              {
+                "label": "Weekly Overview",
+                "url": "Weekly_Overview"
+              }
+            ]
           },
           {
             "type": "drill",
@@ -1045,11 +1153,16 @@
         },
         {
           "type": "drill",
-          "label": "⭐ Quiz Mode on **`Dataflow`** + **`pub/sub`** tags — §2.1 ETL is heavily tested.",
-          "description": "⭐ Quiz Mode on **`Dataflow`** + **`pub/sub`** tags — §2.1 ETL is heavily tested.",
+          "label": "⭐ [Quiz Mode](Quiz_Mode) on **`Dataflow`** + **`pub/sub`** tags — §2.1 ETL is heavily tested.",
+          "description": "⭐ [Quiz Mode](Quiz_Mode) on **`Dataflow`** + **`pub/sub`** tags — §2.1 ETL is heavily tested.",
           "estimated_min": null,
-          "ref": null,
-          "links": []
+          "ref": "Quiz_Mode",
+          "links": [
+            {
+              "label": "Quiz Mode",
+              "url": "Quiz_Mode"
+            }
+          ]
         }
       ],
       "sunday_quiz_target": 0.7
@@ -1101,11 +1214,16 @@
         },
         {
           "type": "lab",
-          "label": "Mark lab #7 (in_progress) in `pages/13_🧪_Labs.py`.",
-          "description": "Mark lab #7 (in_progress) in `pages/13_🧪_Labs.py`.",
+          "label": "Mark lab #7 (in_progress) in [Labs](Labs).",
+          "description": "Mark lab #7 (in_progress) in [Labs](Labs).",
           "estimated_min": null,
-          "ref": null,
-          "links": []
+          "ref": "Labs",
+          "links": [
+            {
+              "label": "Labs",
+              "url": "Labs"
+            }
+          ]
         }
       ],
       "concept_anchors": [
@@ -1203,15 +1321,20 @@
           "day_label": "Fri",
           "day_index": 4,
           "estimated_min": 30,
-          "description": "Quiz Mode filtered to `custom training` / `hyperparameter tuning` / `vizier` — 10 Qs.",
+          "description": "[Quiz Mode](Quiz_Mode) filtered to `custom training` / `hyperparameter tuning` / `vizier` — 10 Qs.",
           "tasks": [
             {
               "type": "drill",
-              "label": "Quiz Mode filtered to `custom training` / `hyperparameter tuning` / `vizier` — 10 Qs.",
-              "description": "Quiz Mode filtered to `custom training` / `hyperparameter tuning` / `vizier` — 10 Qs.",
+              "label": "[Quiz Mode](Quiz_Mode) filtered to `custom training` / `hyperparameter tuning` / `vizier` — 10 Qs.",
+              "description": "[Quiz Mode](Quiz_Mode) filtered to `custom training` / `hyperparameter tuning` / `vizier` — 10 Qs.",
               "estimated_min": 30,
-              "ref": null,
-              "links": []
+              "ref": "Quiz_Mode",
+              "links": [
+                {
+                  "label": "Quiz Mode",
+                  "url": "Quiz_Mode"
+                }
+              ]
             }
           ]
         }
@@ -1241,15 +1364,20 @@
         "day_label": "Sun",
         "day_index": 6,
         "estimated_min": null,
-        "description": "- **Week 5 Quiz A** (15 Qs §3.1+§3.2) ≥ 65 %.",
+        "description": "- **[Week 5 Quiz A](Week_Quizzes)** (15 Qs §3.1+§3.2) ≥ 65 %.",
         "tasks": [
           {
             "type": "drill",
-            "label": "**Week 5 Quiz A** (15 Qs §3.1+§3.2) ≥ 65 %.",
-            "description": "**Week 5 Quiz A** (15 Qs §3.1+§3.2) ≥ 65 %.",
+            "label": "**[Week 5 Quiz A](Week_Quizzes)** (15 Qs §3.1+§3.2) ≥ 65 %.",
+            "description": "**[Week 5 Quiz A](Week_Quizzes)** (15 Qs §3.1+§3.2) ≥ 65 %.",
             "estimated_min": null,
-            "ref": null,
-            "links": []
+            "ref": "Week_Quizzes",
+            "links": [
+              {
+                "label": "Week 5 Quiz A",
+                "url": "Week_Quizzes"
+              }
+            ]
           },
           {
             "type": "drill",
@@ -1261,11 +1389,16 @@
           },
           {
             "type": "drill",
-            "label": "Wrong-answer drill on Weekly Overview.",
-            "description": "Wrong-answer drill on Weekly Overview.",
+            "label": "Wrong-answer drill on [Weekly Overview](Weekly_Overview).",
+            "description": "Wrong-answer drill on [Weekly Overview](Weekly_Overview).",
             "estimated_min": null,
-            "ref": null,
-            "links": []
+            "ref": "Weekly_Overview",
+            "links": [
+              {
+                "label": "Weekly Overview",
+                "url": "Weekly_Overview"
+              }
+            ]
           }
         ]
       },
@@ -1462,15 +1595,20 @@
           "day_label": "Fri",
           "day_index": 4,
           "estimated_min": 30,
-          "description": "Quiz Mode filtered to `GPU` / `TPU` / `Reduction Server` / `distributed training` / `endpoint` — 10 Qs.",
+          "description": "[Quiz Mode](Quiz_Mode) filtered to `GPU` / `TPU` / `Reduction Server` / `distributed training` / `endpoint` — 10 Qs.",
           "tasks": [
             {
               "type": "drill",
-              "label": "Quiz Mode filtered to `GPU` / `TPU` / `Reduction Server` / `distributed training` / `endpoint` — 10 Qs.",
-              "description": "Quiz Mode filtered to `GPU` / `TPU` / `Reduction Server` / `distributed training` / `endpoint` — 10 Qs.",
+              "label": "[Quiz Mode](Quiz_Mode) filtered to `GPU` / `TPU` / `Reduction Server` / `distributed training` / `endpoint` — 10 Qs.",
+              "description": "[Quiz Mode](Quiz_Mode) filtered to `GPU` / `TPU` / `Reduction Server` / `distributed training` / `endpoint` — 10 Qs.",
               "estimated_min": 30,
-              "ref": null,
-              "links": []
+              "ref": "Quiz_Mode",
+              "links": [
+                {
+                  "label": "Quiz Mode",
+                  "url": "Quiz_Mode"
+                }
+              ]
             }
           ]
         }
@@ -1500,15 +1638,20 @@
         "day_label": "Sun",
         "day_index": 6,
         "estimated_min": null,
-        "description": "- **Week 6 Quiz A** (20 Qs §3.3+§4.1) ≥ 70 %.",
+        "description": "- **[Week 6 Quiz A](Week_Quizzes)** (20 Qs §3.3+§4.1) ≥ 70 %.",
         "tasks": [
           {
             "type": "drill",
-            "label": "**Week 6 Quiz A** (20 Qs §3.3+§4.1) ≥ 70 %.",
-            "description": "**Week 6 Quiz A** (20 Qs §3.3+§4.1) ≥ 70 %.",
+            "label": "**[Week 6 Quiz A](Week_Quizzes)** (20 Qs §3.3+§4.1) ≥ 70 %.",
+            "description": "**[Week 6 Quiz A](Week_Quizzes)** (20 Qs §3.3+§4.1) ≥ 70 %.",
             "estimated_min": null,
-            "ref": null,
-            "links": []
+            "ref": "Week_Quizzes",
+            "links": [
+              {
+                "label": "Week 6 Quiz A",
+                "url": "Week_Quizzes"
+              }
+            ]
           },
           {
             "type": "drill",
@@ -1520,11 +1663,16 @@
           },
           {
             "type": "drill",
-            "label": "Wrong-answer drill via Weekly Overview.",
-            "description": "Wrong-answer drill via Weekly Overview.",
+            "label": "Wrong-answer drill via [Weekly Overview](Weekly_Overview).",
+            "description": "Wrong-answer drill via [Weekly Overview](Weekly_Overview).",
             "estimated_min": null,
-            "ref": null,
-            "links": []
+            "ref": "Weekly_Overview",
+            "links": [
+              {
+                "label": "Weekly Overview",
+                "url": "Weekly_Overview"
+              }
+            ]
           }
         ]
       },
@@ -1722,15 +1870,20 @@
           "day_label": "Fri",
           "day_index": 4,
           "estimated_min": 60,
-          "description": "Quiz Mode filtered to `endpoint` / `model registry` / `A/B testing` / `private endpoint` — 15 Qs.",
+          "description": "[Quiz Mode](Quiz_Mode) filtered to `endpoint` / `model registry` / `A/B testing` / `private endpoint` — 15 Qs.",
           "tasks": [
             {
               "type": "drill",
-              "label": "Quiz Mode filtered to `endpoint` / `model registry` / `A/B testing` / `private endpoint` — 15 Qs.",
-              "description": "Quiz Mode filtered to `endpoint` / `model registry` / `A/B testing` / `private endpoint` — 15 Qs.",
+              "label": "[Quiz Mode](Quiz_Mode) filtered to `endpoint` / `model registry` / `A/B testing` / `private endpoint` — 15 Qs.",
+              "description": "[Quiz Mode](Quiz_Mode) filtered to `endpoint` / `model registry` / `A/B testing` / `private endpoint` — 15 Qs.",
               "estimated_min": 60,
-              "ref": null,
-              "links": []
+              "ref": "Quiz_Mode",
+              "links": [
+                {
+                  "label": "Quiz Mode",
+                  "url": "Quiz_Mode"
+                }
+              ]
             }
           ]
         }
@@ -1760,15 +1913,20 @@
         "day_label": "Sun",
         "day_index": 6,
         "estimated_min": null,
-        "description": "- **Week 7 Quiz A** (25 Qs §4) ≥ 70 %.",
+        "description": "- **[Week 7 Quiz A](Week_Quizzes)** (25 Qs §4) ≥ 70 %.",
         "tasks": [
           {
             "type": "drill",
-            "label": "**Week 7 Quiz A** (25 Qs §4) ≥ 70 %.",
-            "description": "**Week 7 Quiz A** (25 Qs §4) ≥ 70 %.",
+            "label": "**[Week 7 Quiz A](Week_Quizzes)** (25 Qs §4) ≥ 70 %.",
+            "description": "**[Week 7 Quiz A](Week_Quizzes)** (25 Qs §4) ≥ 70 %.",
             "estimated_min": null,
-            "ref": null,
-            "links": []
+            "ref": "Week_Quizzes",
+            "links": [
+              {
+                "label": "Week 7 Quiz A",
+                "url": "Week_Quizzes"
+              }
+            ]
           },
           {
             "type": "drill",
@@ -1780,11 +1938,16 @@
           },
           {
             "type": "drill",
-            "label": "Wrong-answer drill via Weekly Overview.",
-            "description": "Wrong-answer drill via Weekly Overview.",
+            "label": "Wrong-answer drill via [Weekly Overview](Weekly_Overview).",
+            "description": "Wrong-answer drill via [Weekly Overview](Weekly_Overview).",
             "estimated_min": null,
-            "ref": null,
-            "links": []
+            "ref": "Weekly_Overview",
+            "links": [
+              {
+                "label": "Weekly Overview",
+                "url": "Weekly_Overview"
+              }
+            ]
           }
         ]
       },
@@ -2008,15 +2171,20 @@
           "day_label": "Fri",
           "day_index": 4,
           "estimated_min": 30,
-          "description": "Quiz Mode filtered to `Vertex AI Pipelines` / `Kubeflow Pipelines` / `Cloud Composer` / `TFX` / `Vertex AI Experiments` — 15 Qs.",
+          "description": "[Quiz Mode](Quiz_Mode) filtered to `Vertex AI Pipelines` / `Kubeflow Pipelines` / `Cloud Composer` / `TFX` / `Vertex AI Experiments` — 15 Qs.",
           "tasks": [
             {
               "type": "drill",
-              "label": "Quiz Mode filtered to `Vertex AI Pipelines` / `Kubeflow Pipelines` / `Cloud Composer` / `TFX` / `Vertex AI Experiments` — 15 Qs.",
-              "description": "Quiz Mode filtered to `Vertex AI Pipelines` / `Kubeflow Pipelines` / `Cloud Composer` / `TFX` / `Vertex AI Experiments` — 15 Qs.",
+              "label": "[Quiz Mode](Quiz_Mode) filtered to `Vertex AI Pipelines` / `Kubeflow Pipelines` / `Cloud Composer` / `TFX` / `Vertex AI Experiments` — 15 Qs.",
+              "description": "[Quiz Mode](Quiz_Mode) filtered to `Vertex AI Pipelines` / `Kubeflow Pipelines` / `Cloud Composer` / `TFX` / `Vertex AI Experiments` — 15 Qs.",
               "estimated_min": 30,
-              "ref": null,
-              "links": []
+              "ref": "Quiz_Mode",
+              "links": [
+                {
+                  "label": "Quiz Mode",
+                  "url": "Quiz_Mode"
+                }
+              ]
             }
           ]
         }
@@ -2046,15 +2214,20 @@
         "day_label": "Sun",
         "day_index": 6,
         "estimated_min": null,
-        "description": "- **Week 8 Quiz A** (25 Qs §5) ≥ **75 %** (higher bar — §5 is the biggest weight).",
+        "description": "- **[Week 8 Quiz A](Week_Quizzes)** (25 Qs §5) ≥ **75 %** (higher bar — §5 is the biggest weight).",
         "tasks": [
           {
             "type": "drill",
-            "label": "**Week 8 Quiz A** (25 Qs §5) ≥ **75 %** (higher bar — §5 is the biggest weight).",
-            "description": "**Week 8 Quiz A** (25 Qs §5) ≥ **75 %** (higher bar — §5 is the biggest weight).",
+            "label": "**[Week 8 Quiz A](Week_Quizzes)** (25 Qs §5) ≥ **75 %** (higher bar — §5 is the biggest weight).",
+            "description": "**[Week 8 Quiz A](Week_Quizzes)** (25 Qs §5) ≥ **75 %** (higher bar — §5 is the biggest weight).",
             "estimated_min": null,
-            "ref": null,
-            "links": []
+            "ref": "Week_Quizzes",
+            "links": [
+              {
+                "label": "Week 8 Quiz A",
+                "url": "Week_Quizzes"
+              }
+            ]
           },
           {
             "type": "drill",
@@ -2066,11 +2239,16 @@
           },
           {
             "type": "drill",
-            "label": "Wrong-answer drill via Weekly Overview.",
-            "description": "Wrong-answer drill via Weekly Overview.",
+            "label": "Wrong-answer drill via [Weekly Overview](Weekly_Overview).",
+            "description": "Wrong-answer drill via [Weekly Overview](Weekly_Overview).",
             "estimated_min": null,
-            "ref": null,
-            "links": []
+            "ref": "Weekly_Overview",
+            "links": [
+              {
+                "label": "Weekly Overview",
+                "url": "Weekly_Overview"
+              }
+            ]
           }
         ]
       },
@@ -2288,15 +2466,20 @@
           "day_label": "Fri",
           "day_index": 4,
           "estimated_min": 60,
-          "description": "Quiz Mode filtered to `Model Monitoring` / `drift` / `skew` / `Explainable AI` / `Responsible AI` — 15 Qs.",
+          "description": "[Quiz Mode](Quiz_Mode) filtered to `Model Monitoring` / `drift` / `skew` / `Explainable AI` / `Responsible AI` — 15 Qs.",
           "tasks": [
             {
               "type": "drill",
-              "label": "Quiz Mode filtered to `Model Monitoring` / `drift` / `skew` / `Explainable AI` / `Responsible AI` — 15 Qs.",
-              "description": "Quiz Mode filtered to `Model Monitoring` / `drift` / `skew` / `Explainable AI` / `Responsible AI` — 15 Qs.",
+              "label": "[Quiz Mode](Quiz_Mode) filtered to `Model Monitoring` / `drift` / `skew` / `Explainable AI` / `Responsible AI` — 15 Qs.",
+              "description": "[Quiz Mode](Quiz_Mode) filtered to `Model Monitoring` / `drift` / `skew` / `Explainable AI` / `Responsible AI` — 15 Qs.",
               "estimated_min": 60,
-              "ref": null,
-              "links": []
+              "ref": "Quiz_Mode",
+              "links": [
+                {
+                  "label": "Quiz Mode",
+                  "url": "Quiz_Mode"
+                }
+              ]
             }
           ]
         }
@@ -2326,15 +2509,20 @@
         "day_label": "Sun",
         "day_index": 6,
         "estimated_min": null,
-        "description": "- **Week 9 Quiz A** (20 Qs §6) ≥ 70 %.",
+        "description": "- **[Week 9 Quiz A](Week_Quizzes)** (20 Qs §6) ≥ 70 %.",
         "tasks": [
           {
             "type": "drill",
-            "label": "**Week 9 Quiz A** (20 Qs §6) ≥ 70 %.",
-            "description": "**Week 9 Quiz A** (20 Qs §6) ≥ 70 %.",
+            "label": "**[Week 9 Quiz A](Week_Quizzes)** (20 Qs §6) ≥ 70 %.",
+            "description": "**[Week 9 Quiz A](Week_Quizzes)** (20 Qs §6) ≥ 70 %.",
             "estimated_min": null,
-            "ref": null,
-            "links": []
+            "ref": "Week_Quizzes",
+            "links": [
+              {
+                "label": "Week 9 Quiz A",
+                "url": "Week_Quizzes"
+              }
+            ]
           },
           {
             "type": "drill",
@@ -2346,11 +2534,16 @@
           },
           {
             "type": "drill",
-            "label": "Wrong-answer drill via Weekly Overview.",
-            "description": "Wrong-answer drill via Weekly Overview.",
+            "label": "Wrong-answer drill via [Weekly Overview](Weekly_Overview).",
+            "description": "Wrong-answer drill via [Weekly Overview](Weekly_Overview).",
             "estimated_min": null,
-            "ref": null,
-            "links": []
+            "ref": "Weekly_Overview",
+            "links": [
+              {
+                "label": "Weekly Overview",
+                "url": "Weekly_Overview"
+              }
+            ]
           }
         ]
       },
@@ -2590,15 +2783,20 @@
           "day_label": "Fri",
           "day_index": 4,
           "estimated_min": 45,
-          "description": "Quiz Mode filtered to `Gemini` / `RAG` / `Model Garden` / `Agent Builder` / `fine-tuning` / `LoRA` — 15 Qs.",
+          "description": "[Quiz Mode](Quiz_Mode) filtered to `Gemini` / `RAG` / `Model Garden` / `Agent Builder` / `fine-tuning` / `LoRA` — 15 Qs.",
           "tasks": [
             {
               "type": "drill",
-              "label": "Quiz Mode filtered to `Gemini` / `RAG` / `Model Garden` / `Agent Builder` / `fine-tuning` / `LoRA` — 15 Qs.",
-              "description": "Quiz Mode filtered to `Gemini` / `RAG` / `Model Garden` / `Agent Builder` / `fine-tuning` / `LoRA` — 15 Qs.",
+              "label": "[Quiz Mode](Quiz_Mode) filtered to `Gemini` / `RAG` / `Model Garden` / `Agent Builder` / `fine-tuning` / `LoRA` — 15 Qs.",
+              "description": "[Quiz Mode](Quiz_Mode) filtered to `Gemini` / `RAG` / `Model Garden` / `Agent Builder` / `fine-tuning` / `LoRA` — 15 Qs.",
               "estimated_min": 45,
-              "ref": null,
-              "links": []
+              "ref": "Quiz_Mode",
+              "links": [
+                {
+                  "label": "Quiz Mode",
+                  "url": "Quiz_Mode"
+                }
+              ]
             }
           ]
         }
@@ -2607,18 +2805,22 @@
         "day_label": "Sat",
         "day_index": 5,
         "estimated_min": null,
-        "description": "RAG warm-up using [Vertex AI Studio](https://cloud.google.com/vertex-ai-studio): build a chatbot over a small corpus. Capture rebrand confusion (\"is it Vertex AI Search or Agent Search?\") in the Labs page.",
+        "description": "RAG warm-up using [Vertex AI Studio](https://cloud.google.com/vertex-ai-studio): build a chatbot over a small corpus. Capture rebrand confusion (\"is it Vertex AI Search or Agent Search?\") in the [Labs page](Labs).",
         "tasks": [
           {
             "type": "external",
-            "label": "RAG warm-up using [Vertex AI Studio](https://cloud.google.com/vertex-ai-studio): build a chatbot over a small corpus. Capture rebrand confusion (\"is it Vertex AI Search or Agent Search?\") in the Labs page.",
-            "description": "RAG warm-up using [Vertex AI Studio](https://cloud.google.com/vertex-ai-studio): build a chatbot over a small corpus. Capture rebrand confusion (\"is it Vertex AI Search or Agent Search?\") in the Labs page.",
+            "label": "RAG warm-up using [Vertex AI Studio](https://cloud.google.com/vertex-ai-studio): build a chatbot over a small corpus. Capture rebrand confusion (\"is it Vertex AI Search or Agent Search?\") in the [Labs page](Labs).",
+            "description": "RAG warm-up using [Vertex AI Studio](https://cloud.google.com/vertex-ai-studio): build a chatbot over a small corpus. Capture rebrand confusion (\"is it Vertex AI Search or Agent Search?\") in the [Labs page](Labs).",
             "estimated_min": null,
             "ref": "https://cloud.google.com/vertex-ai-studio",
             "links": [
               {
                 "label": "Vertex AI Studio",
                 "url": "https://cloud.google.com/vertex-ai-studio"
+              },
+              {
+                "label": "Labs page",
+                "url": "Labs"
               }
             ]
           }
@@ -2628,15 +2830,20 @@
         "day_label": "Sun",
         "day_index": 6,
         "estimated_min": null,
-        "description": "- **Week 10 Quiz A** (25 Qs GenAI tags) ≥ 70 %.",
+        "description": "- **[Week 10 Quiz A](Week_Quizzes)** (25 Qs GenAI tags) ≥ 70 %.",
         "tasks": [
           {
             "type": "drill",
-            "label": "**Week 10 Quiz A** (25 Qs GenAI tags) ≥ 70 %.",
-            "description": "**Week 10 Quiz A** (25 Qs GenAI tags) ≥ 70 %.",
+            "label": "**[Week 10 Quiz A](Week_Quizzes)** (25 Qs GenAI tags) ≥ 70 %.",
+            "description": "**[Week 10 Quiz A](Week_Quizzes)** (25 Qs GenAI tags) ≥ 70 %.",
             "estimated_min": null,
-            "ref": null,
-            "links": []
+            "ref": "Week_Quizzes",
+            "links": [
+              {
+                "label": "Week 10 Quiz A",
+                "url": "Week_Quizzes"
+              }
+            ]
           },
           {
             "type": "drill",
@@ -2648,11 +2855,16 @@
           },
           {
             "type": "drill",
-            "label": "Wrong-answer drill via Weekly Overview.",
-            "description": "Wrong-answer drill via Weekly Overview.",
+            "label": "Wrong-answer drill via [Weekly Overview](Weekly_Overview).",
+            "description": "Wrong-answer drill via [Weekly Overview](Weekly_Overview).",
             "estimated_min": null,
-            "ref": null,
-            "links": []
+            "ref": "Weekly_Overview",
+            "links": [
+              {
+                "label": "Weekly Overview",
+                "url": "Weekly_Overview"
+              }
+            ]
           }
         ]
       },
@@ -2685,11 +2897,16 @@
         },
         {
           "type": "drill",
-          "label": "⭐ Drill the **rebrand alerts** in `pages/1_📅_Weekly_Overview.py` Week 10 tab — 12 historical renames.",
-          "description": "⭐ Drill the **rebrand alerts** in `pages/1_📅_Weekly_Overview.py` Week 10 tab — 12 historical renames.",
+          "label": "⭐ Drill the **rebrand alerts** in [Weekly Overview](Weekly_Overview) Week 10 tab — 12 historical renames.",
+          "description": "⭐ Drill the **rebrand alerts** in [Weekly Overview](Weekly_Overview) Week 10 tab — 12 historical renames.",
           "estimated_min": null,
-          "ref": null,
-          "links": []
+          "ref": "Weekly_Overview",
+          "links": [
+            {
+              "label": "Weekly Overview",
+              "url": "Weekly_Overview"
+            }
+          ]
         },
         {
           "type": "lab",
@@ -2709,7 +2926,7 @@
     },
     {
       "num": 11,
-      "theme": "RAG capstone + Mock #1 (all sections)",
+      "theme": "RAG capstone + [Mock #1](Mock_Exam) (all sections)",
       "exam_sections": [
         "All"
       ],
@@ -2753,19 +2970,37 @@
         },
         {
           "type": "other",
-          "label": "**Take Mock #1 on Saturday.** Use `pages/9_⏱️_Mock_Exam.py` → \"Start Mock #1.\" 50 Qs, 2-hour timer, no explanations.",
-          "description": "**Take Mock #1 on Saturday.** Use `pages/9_⏱️_Mock_Exam.py` → \"Start Mock #1.\" 50 Qs, 2-hour timer, no explanations.",
+          "label": "**Take [Mock #1](Mock_Exam) on Saturday.** Use [Mock Exam](Mock_Exam) → \"Start [Mock #1](Mock_Exam).\" 50 Qs, 2-hour timer, no explanations.",
+          "description": "**Take [Mock #1](Mock_Exam) on Saturday.** Use [Mock Exam](Mock_Exam) → \"Start [Mock #1](Mock_Exam).\" 50 Qs, 2-hour timer, no explanations.",
           "estimated_min": null,
-          "ref": null,
-          "links": []
+          "ref": "Mock_Exam",
+          "links": [
+            {
+              "label": "Mock #1",
+              "url": "Mock_Exam"
+            },
+            {
+              "label": "Mock Exam",
+              "url": "Mock_Exam"
+            },
+            {
+              "label": "Mock #1",
+              "url": "Mock_Exam"
+            }
+          ]
         },
         {
           "type": "drill",
-          "label": "Identify weakest 3 sections from Mock #1 result. Plan Week 12 drill.",
-          "description": "Identify weakest 3 sections from Mock #1 result. Plan Week 12 drill.",
+          "label": "Identify weakest 3 sections from [Mock #1](Mock_Exam) result. Plan Week 12 drill.",
+          "description": "Identify weakest 3 sections from [Mock #1](Mock_Exam) result. Plan Week 12 drill.",
           "estimated_min": null,
-          "ref": null,
-          "links": []
+          "ref": "Mock_Exam",
+          "links": [
+            {
+              "label": "Mock #1",
+              "url": "Mock_Exam"
+            }
+          ]
         },
         {
           "type": "lab",
@@ -2777,9 +3012,9 @@
         }
       ],
       "concept_anchors": [
-        "**Mock #1 protocol.** Sit in a quiet room. Phone face-down. No notes. 2-hour timer. No coffee breaks beyond bathroom. Submit only when timer hits zero or you've reviewed all 50.",
-        "**Don't binge content this week** — the scoring signal from Mock #1 is more valuable than any new lab. Treat Wed–Fri as light consolidation.",
-        "**Rebrand alerts** are dense this week — 4 in the app. Review them on `pages/1_📅_Weekly_Overview.py` Week 11 tab."
+        "**[Mock #1](Mock_Exam) protocol.** Sit in a quiet room. Phone face-down. No notes. 2-hour timer. No coffee breaks beyond bathroom. Submit only when timer hits zero or you've reviewed all 50.",
+        "**Don't binge content this week** — the scoring signal from [Mock #1](Mock_Exam) is more valuable than any new lab. Treat Wed–Fri as light consolidation.",
+        "**Rebrand alerts** are dense this week — 4 in the app. Review them on [Weekly Overview](Weekly_Overview) Week 11 tab."
       ],
       "days": [
         {
@@ -2895,15 +3130,24 @@
         "day_label": "Sat",
         "day_index": 5,
         "estimated_min": null,
-        "description": "- Open `pages/9_⏱️_Mock_Exam.py` → click **\"Start Mock #1\"**.\n- 50 questions, 2-hour countdown.\n- After submit: review per-section breakdown. The page surfaces \"Weakest 3 sections\" — write them down.\n- **Pass criterion: ≥ 70 %.** If < 70 %: flag exam reschedule risk; do extra Week 12 drill on weakest sections.\n- Stagger if both partners are testing: A goes Friday, B goes Saturday — first taker debriefs second.",
+        "description": "- Open [Mock Exam](Mock_Exam) → click **\"Start [Mock #1](Mock_Exam)\"**.\n- 50 questions, 2-hour countdown.\n- After submit: review per-section breakdown. The page surfaces \"Weakest 3 sections\" — write them down.\n- **Pass criterion: ≥ 70 %.** If < 70 %: flag exam reschedule risk; do extra Week 12 drill on weakest sections.\n- Stagger if both partners are testing: A goes Friday, B goes Saturday — first taker debriefs second.",
         "tasks": [
           {
             "type": "drill",
-            "label": "- Open `pages/9_⏱️_Mock_Exam.py` → click **\"Start Mock #1\"**.\n- 50 questions, 2-hour countdown.\n- After submit: review per-section breakdown. The page surfaces \"Weakest 3 sections\" — write them down.\n- **Pass criterion: ≥ 70 %.** If < 70 %: flag exam reschedule risk; do extra Week 12 drill on weakest sections.\n- Stagger if both partners are testing: A goes Friday, B goes Saturday — first taker debriefs second.",
-            "description": "- Open `pages/9_⏱️_Mock_Exam.py` → click **\"Start Mock #1\"**.\n- 50 questions, 2-hour countdown.\n- After submit: review per-section breakdown. The page surfaces \"Weakest 3 sections\" — write them down.\n- **Pass criterion: ≥ 70 %.** If < 70 %: flag exam reschedule risk; do extra Week 12 drill on weakest sections.\n- Stagger if both partners are testing: A goes Friday, B goes Saturday — first taker debriefs second.",
+            "label": "- Open [Mock Exam](Mock_Exam) → click **\"Start [Mock #1](Mock_Exam)\"**.\n- 50 questions, 2-hour countdown.\n- After submit: review per-section breakdown. The page surfaces \"Weakest 3 sections\" — write them down.\n- **Pass criterion: ≥ 70 %.** If < 70 %: flag exam reschedule risk; do extra Week 12 drill on weakest sections.\n- Stagger if both partners are testing: A goes Friday, B goes Saturday — first taker debriefs second.",
+            "description": "- Open [Mock Exam](Mock_Exam) → click **\"Start [Mock #1](Mock_Exam)\"**.\n- 50 questions, 2-hour countdown.\n- After submit: review per-section breakdown. The page surfaces \"Weakest 3 sections\" — write them down.\n- **Pass criterion: ≥ 70 %.** If < 70 %: flag exam reschedule risk; do extra Week 12 drill on weakest sections.\n- Stagger if both partners are testing: A goes Friday, B goes Saturday — first taker debriefs second.",
             "estimated_min": null,
-            "ref": null,
-            "links": []
+            "ref": "Mock_Exam",
+            "links": [
+              {
+                "label": "Mock Exam",
+                "url": "Mock_Exam"
+              },
+              {
+                "label": "Mock #1",
+                "url": "Mock_Exam"
+              }
+            ]
           }
         ]
       },
@@ -2911,15 +3155,20 @@
         "day_label": "Sun",
         "day_index": 6,
         "estimated_min": null,
-        "description": "- Mock #1 already done. Reflect together (60 min): for each wrong question, explain WHY the correct answer wins.",
+        "description": "- [Mock #1](Mock_Exam) already done. Reflect together (60 min): for each wrong question, explain WHY the correct answer wins.",
         "tasks": [
           {
             "type": "drill",
-            "label": "Mock #1 already done. Reflect together (60 min): for each wrong question, explain WHY the correct answer wins.",
-            "description": "Mock #1 already done. Reflect together (60 min): for each wrong question, explain WHY the correct answer wins.",
+            "label": "[Mock #1](Mock_Exam) already done. Reflect together (60 min): for each wrong question, explain WHY the correct answer wins.",
+            "description": "[Mock #1](Mock_Exam) already done. Reflect together (60 min): for each wrong question, explain WHY the correct answer wins.",
             "estimated_min": null,
-            "ref": null,
-            "links": []
+            "ref": "Mock_Exam",
+            "links": [
+              {
+                "label": "Mock #1",
+                "url": "Mock_Exam"
+              }
+            ]
           },
           {
             "type": "drill",
@@ -2955,18 +3204,27 @@
         },
         {
           "type": "other",
-          "label": "⭐ Take Mock #1 *again* with the same seed (the mock pool is deterministic) — see if you remember answers (you should). Note: this **doesn't** validate your knowledge for Mock #2 since the pools are disjoint.",
-          "description": "⭐ Take Mock #1 *again* with the same seed (the mock pool is deterministic) — see if you remember answers (you should). Note: this **doesn't** validate your knowledge for Mock #2 since the pools are disjoint.",
+          "label": "⭐ Take [Mock #1](Mock_Exam) *again* with the same seed (the mock pool is deterministic) — see if you remember answers (you should). Note: this **doesn't** validate your knowledge for [Mock #2](Mock_Exam) since the pools are disjoint.",
+          "description": "⭐ Take [Mock #1](Mock_Exam) *again* with the same seed (the mock pool is deterministic) — see if you remember answers (you should). Note: this **doesn't** validate your knowledge for [Mock #2](Mock_Exam) since the pools are disjoint.",
           "estimated_min": null,
-          "ref": null,
-          "links": []
+          "ref": "Mock_Exam",
+          "links": [
+            {
+              "label": "Mock #1",
+              "url": "Mock_Exam"
+            },
+            {
+              "label": "Mock #2",
+              "url": "Mock_Exam"
+            }
+          ]
         }
       ],
       "sunday_quiz_target": null
     },
     {
       "num": 12,
-      "theme": "Final review + Mock #2 + exam day (all sections)",
+      "theme": "Final review + [Mock #2](Mock_Exam) + exam day (all sections)",
       "exam_sections": [
         "All"
       ],
@@ -3015,11 +3273,16 @@
         },
         {
           "type": "other",
-          "label": "**Take Mock #2 on Wednesday.** ≥ 80 % to track on plan.",
-          "description": "**Take Mock #2 on Wednesday.** ≥ 80 % to track on plan.",
+          "label": "**Take [Mock #2](Mock_Exam) on Wednesday.** ≥ 80 % to track on plan.",
+          "description": "**Take [Mock #2](Mock_Exam) on Wednesday.** ≥ 80 % to track on plan.",
           "estimated_min": null,
-          "ref": null,
-          "links": []
+          "ref": "Mock_Exam",
+          "links": [
+            {
+              "label": "Mock #2",
+              "url": "Mock_Exam"
+            }
+          ]
         },
         {
           "type": "drill",
@@ -3120,15 +3383,19 @@
           "day_label": "Thu",
           "day_index": 3,
           "estimated_min": 60,
-          "description": "Wrong-answer drill on Mock #2 wrong questions. Read [Andrei Paraschiv's PMLE pass writeup (Feb 2026)](https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4) one more time.",
+          "description": "Wrong-answer drill on [Mock #2](Mock_Exam) wrong questions. Read [Andrei Paraschiv's PMLE pass writeup (Feb 2026)](https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4) one more time.",
           "tasks": [
             {
               "type": "drill",
-              "label": "Wrong-answer drill on Mock #2 wrong questions. Read [Andrei Paraschiv's PMLE pass writeup (Feb 2026)](https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4) one more time.",
-              "description": "Wrong-answer drill on Mock #2 wrong questions. Read [Andrei Paraschiv's PMLE pass writeup (Feb 2026)](https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4) one more time.",
+              "label": "Wrong-answer drill on [Mock #2](Mock_Exam) wrong questions. Read [Andrei Paraschiv's PMLE pass writeup (Feb 2026)](https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4) one more time.",
+              "description": "Wrong-answer drill on [Mock #2](Mock_Exam) wrong questions. Read [Andrei Paraschiv's PMLE pass writeup (Feb 2026)](https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4) one more time.",
               "estimated_min": 60,
-              "ref": "https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4",
+              "ref": "Mock_Exam",
               "links": [
+                {
+                  "label": "Mock #2",
+                  "url": "Mock_Exam"
+                },
                 {
                   "label": "Andrei Paraschiv's PMLE pass writeup (Feb 2026)",
                   "url": "https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4"

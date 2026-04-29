@@ -12,6 +12,7 @@ from pathlib import Path
 import streamlit as st
 
 from utils import set_css_style
+from utils.profile_ui import render_sidebar
 from utils.knowledge import (
     KnowledgeCard,
     all_cards,
@@ -64,6 +65,7 @@ def _render_card_list(cards: list[KnowledgeCard], payload) -> None:
 def main() -> None:
     st.set_page_config(page_title="Knowledge Library", page_icon="📖", layout="wide")
     set_css_style(Path("style.css"))
+    render_sidebar()
 
     st.title("📖 Knowledge Library")
     st.caption(

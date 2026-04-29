@@ -6,6 +6,7 @@ import pandas as pd
 import streamlit as st
 
 from utils import QUIZ_FILE, set_css_style
+from utils.profile_ui import render_sidebar
 from utils.session import load_session
 
 load_session()
@@ -35,6 +36,7 @@ quizzies = _read_quizzes()
 logger = logging.getLogger(__name__)
 
 set_css_style(Path("style.css"))
+render_sidebar()
 
 
 def main():

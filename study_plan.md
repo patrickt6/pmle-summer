@@ -14,7 +14,7 @@
 - GenAI weight: ~8–12 % of exam (triangulated). Don't over-weight.
 - Vertex AI ↔ Gemini Enterprise Agent Platform: translate function-first when answer-choice names look unfamiliar.
 - Exam fee $200 each. Schedule on [Pearson VUE / OnVUE](https://cloud.google.com/learn/certification/machine-learning-engineer) for **Saturday of Week 12** (book in Phase 0).
-- Track every measurable goal in the Streamlit app (`pages/1_📅_Weekly_Overview.py` Drill tab + `pages/10_📋_Week_Quizzes.py`).
+- Track every measurable goal in the Streamlit app ([Weekly Overview](Weekly_Overview) Drill tab + [Week Quizzes](Week_Quizzes)).
 
 ---
 
@@ -34,10 +34,10 @@
 ### Saturday — paired lab session (90 min)
 - **Pre-lab (5 min)**: Patrick reads lab description aloud; Matty Boy opens fresh GCP console; agree on success criterion.
 - **During lab (90 min)**: switch driver every 30 min; if blocked > 5 min, post in chat and move on.
-- **Post-lab (10 min)**: each names ONE "ohhh" insight, paste into the Labs page (`pages/13_🧪_Labs.py`). Run the post-lab 15-Q drill. Mark lab ✅.
+- **Post-lab (10 min)**: each names ONE "ohhh" insight, paste into the [Labs page](Labs) ([Labs](Labs)). Run the post-lab 15-Q drill. Mark lab ✅.
 
 ### Sunday — retrospective (60 min)
-1. Run **Quiz 5A / 5B / 5C** (or current week's letter) on `pages/10_📋_Week_Quizzes.py` — 20-Q timed, 30 min, target ≥ 70 %.
+1. Run **[Quiz 5A](Week_Quizzes) / 5B / 5C** (or current week's letter) on [Week Quizzes](Week_Quizzes) — 20-Q timed, 30 min, target ≥ 70 %.
 2. Review wrong answers together — explain WHY each correct answer wins.
 3. Each partner names: 1 thing learned, 1 stuck-on, 1 ahead-of-plan.
 4. Set Monday's first 30-min focus.
@@ -60,8 +60,8 @@ Skills Boost item numbers reference [Google Skills ML Engineer learning path](ht
 | **[8](#week-8--pipelines-highest-weight-515253)** | §5 Pipelines (highest weight) | §5.1, §5.2, §5.3 | ~3 | [#15](https://www.skills.google/course_templates/191), [#9](https://www.skills.google/course_templates/158) | [Vertex AI Pipelines introduction](https://docs.cloud.google.com/vertex-ai/docs/pipelines/introduction) ⭐ + [Vertex AI Experiments intro](https://docs.cloud.google.com/vertex-ai/docs/experiments/intro-vertex-ai-experiments) | 25 Qs §5 ≥ 75 % | Vertex AI Pipeline runs end-to-end |
 | **[9](#week-9--monitoring--responsible-ai-6162)** | §3+§4 capstone + §6 monitoring | §6.1, §6.2 | ~10.25 | [#16](https://www.skills.google/course_templates/684) | [Vertex AI Model Monitoring overview](https://docs.cloud.google.com/vertex-ai/docs/model-monitoring/overview) ⭐ + [Google AI Principles](https://ai.google/principles/) ⭐ | 20 Qs §6 ≥ 70 % | Capstone + Model Monitoring config |
 | **[10](#week-10--genai-sweep-12-23-32)** | GenAI sweep | §1.2, §2.3, §3.2 | ~4.25 | [#11](https://www.skills.google/course_templates/536), [#12](https://www.skills.google/course_templates/539), [#13](https://www.skills.google/course_templates/927), [#14](https://www.skills.google/course_templates/1080) | [Gemini Enterprise Agent Platform](https://cloud.google.com/products/agent-builder) ⭐ | 25 Qs GenAI tag ≥ 70 % | RAG built in Vertex AI Studio |
-| **[11](#week-11--rag-capstone--mock-1-all-sections)** | RAG capstone + **Mock #1** | All | ~6.75 | [#17](https://www.skills.google/course_templates/1120) | All decision trees — rapid review | **Mock #1 ≥ 70 %** (Sat) | Mock #1 score recorded |
-| **[12](#week-12--final-review--mock-2--exam-day-all-sections)** | Final review + **Mock #2** + exam day | All | ~6 | [#18](https://www.skills.google/course_templates/985), [#19](https://www.skills.google/course_templates/989) | All decision trees — final review | **Mock #2 ≥ 80 %** (Wed) | **REAL EXAM (Sat)** |
+| **[11](#week-11--rag-capstone--mock-1-all-sections)** | RAG capstone + **[Mock #1](Mock_Exam)** | All | ~6.75 | [#17](https://www.skills.google/course_templates/1120) | All decision trees — rapid review | **[Mock #1](Mock_Exam) ≥ 70 %** (Sat) | [Mock #1](Mock_Exam) score recorded |
+| **[12](#week-12--final-review--mock-2--exam-day-all-sections)** | Final review + **[Mock #2](Mock_Exam)** + exam day | All | ~6 | [#18](https://www.skills.google/course_templates/985), [#19](https://www.skills.google/course_templates/989) | All decision trees — final review | **[Mock #2](Mock_Exam) ≥ 80 %** (Wed) | **REAL EXAM (Sat)** |
 
 ⭐ = high-yield decision-tree refresher (link in the right-hand column). ⚠️ = lab last refreshed 9 mo ago (UI mismatch possible).
 
@@ -85,15 +85,15 @@ Each week section follows a fixed shape so you can scan it at the same speed eve
 **§s.** §1.1, §1.2, §2.1 · **Hours.** ~5 · **Sat lab.** [#1 Intro to AI & ML on GCP](https://www.skills.google/course_templates/593)
 
 ### 🎯 Theme + measurable success
-Establish a baseline. By Sunday you should be able to: (a) recite the six v3.1 sections + weights without looking, (b) name three things Vertex AI does, (c) have a *number* (cold sample-form score) you'll compare against in Week 12.
+Establish a baseline. By Sunday you should be able to: (a) recite the six v3.1 sections + weights without looking, (b) name three things Vertex AI does, (c) have a *number* (cold [sample-form](https://docs.google.com/forms/d/e/1FAIpQLSeYmkCANE81qSBqLW0g2X7RoskBX9yGYQu-m1TtsjMvHabGqg/viewform) score) you'll compare against in Week 12.
 
 ### 📦 Hard deliverables
-- [ ] Read [PMLE v3.1 exam guide PDF](professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf) **cover-to-cover** (60 min).
+- [ ] Read [PMLE v3.1 exam guide PDF](https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf) **cover-to-cover** (60 min).
 - [ ] Take the [Google free sample form](https://docs.google.com/forms/d/e/1FAIpQLSeYmkCANE81qSBqLW0g2X7RoskBX9yGYQu-m1TtsjMvHabGqg/viewform) **cold** (no prep) — record score.
 - [ ] Complete Skills Boost [#1 Intro to AI & ML on GCP](https://www.skills.google/course_templates/593) (~4h).
 - [ ] Sign up for [Google Cloud Innovators](https://cloud.google.com/innovators) — confers extra 35 monthly credits.
-- [ ] Mark lab #1 complete in `pages/13_🧪_Labs.py`; capture one "ohhh" insight per partner.
-- [ ] Open `pages/1_📅_Weekly_Overview.py` and select Week 1 — verify all 5 tabs render.
+- [ ] Mark lab #1 complete in [Labs](Labs); capture one "ohhh" insight per partner.
+- [ ] Open [Weekly Overview](Weekly_Overview) and select Week 1 — verify all 5 tabs render.
 
 ### 🧠 Concept anchors
 - The six v3.1 sections + weights: §1=13%, §2=14%, §3=18%, §4=20%, **§5=22% ⭐**, §6=13%.
@@ -102,19 +102,19 @@ Establish a baseline. By Sunday you should be able to: (a) recite the six v3.1 s
 - Real exam = 60 Qs / 2h / pass ≥ 70%. Near-zero multi-select on the real thing (per [recent passers](https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4)).
 
 ### 📅 Daily breakdown
-- **Mon (60 min).** Read this plan end-to-end. Open the Streamlit app: `cd gcp-pmle-quiz && uv run streamlit run 🏠_Dashboard.py` and switch to **📍 Today** in the sidebar.
-- **Tue (60 min).** Read v3.1 exam guide PDF §1–§3 (skim).
-- **Wed (60 min).** Read v3.1 exam guide PDF §4–§6 (skim). Skim [Andrei Paraschiv's PMLE pass writeup (Feb 2026)](https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4).
-- **Thu (60 min).** Take the free sample form *cold*. Record score. Note 5 most-confused questions.
+- **Mon (60 min).** Read this plan end-to-end. Open the Streamlit app: `cd gcp-pmle-quiz && uv run streamlit run 🏠_Dashboard.py` and switch to **[📍 Today](Today)** in the sidebar.
+- **Tue (60 min).** Read [v3.1 exam guide PDF](https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf) §1–§3 (skim).
+- **Wed (60 min).** Read [v3.1 exam guide PDF](https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf) §4–§6 (skim). Skim [Andrei Paraschiv's PMLE pass writeup (Feb 2026)](https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4).
+- **Thu (60 min).** Take the [free sample form](https://docs.google.com/forms/d/e/1FAIpQLSeYmkCANE81qSBqLW0g2X7RoskBX9yGYQu-m1TtsjMvHabGqg/viewform) *cold*. Record score. Note 5 most-confused questions.
 - **Fri (45 min).** Skills Boost [#1](https://www.skills.google/course_templates/593) modules 1–2 with partner.
 
 ### 🧪 Saturday lab (90 min paired)
 [#1 Intro to AI & ML on GCP](https://www.skills.google/course_templates/593) — finish remaining modules. **Success criterion:** can explain in 2 sentences what each Vertex AI surface does.
 
 ### 📊 Sunday self-assessment
-- Run **Week 1 Quiz A** (20 Qs from §1.1+§1.2+§2.1) on `pages/10_📋_Week_Quizzes.py`. Target: **≥ 35 %** (this is *baseline week* — low bar).
+- Run **[Week 1 Quiz A](Week_Quizzes)** (20 Qs from §1.1+§1.2+§2.1) on [Week Quizzes](Week_Quizzes). Target: **≥ 35 %** (this is *baseline week* — low bar).
 - If < 35 %: re-read v3.1 exam guide §1–§2 in detail before Week 2.
-- Drill the 5 most-confused sample-form questions until you can explain WHY each answer wins.
+- Drill the 5 most-confused [sample-form](https://docs.google.com/forms/d/e/1FAIpQLSeYmkCANE81qSBqLW0g2X7RoskBX9yGYQu-m1TtsjMvHabGqg/viewform) questions until you can explain WHY each answer wins.
 
 ### 🚀 Above-and-beyond
 - 📺 Watch [Google Cloud Tech YouTube — "Decode the Professional ML Engineer Cert"](https://www.youtube.com/results?search_query=google+cloud+professional+machine+learning+engineer+certification) (1h, free, optional).
@@ -133,8 +133,8 @@ Internalize the BQML SQL pattern (`CREATE MODEL → ML.PREDICT → ML.EVALUATE`)
 - [ ] Skills Boost [#4 Create ML Models with BQML](https://www.skills.google/course_templates/626) (skill badge).
 - [ ] Skills Boost [#5 Engineer Data for Predictive Modeling with BQML](https://www.skills.google/course_templates/627) (skill badge).
 - [ ] Read [BigQuery ML introduction](https://docs.cloud.google.com/bigquery/docs/bqml-introduction) ⭐ — focus on the **AutoML scale-to-zero trap** and the BQML vs AutoML decision tree.
-- [ ] Mark labs #4 and #5 complete in `pages/13_🧪_Labs.py`.
-- [ ] Sunday: 20-Q quiz §1.1 ≥ 70 % via `pages/10_📋_Week_Quizzes.py` Week 2A.
+- [ ] Mark labs #4 and #5 complete in [Labs](Labs).
+- [ ] Sunday: 20-Q quiz §1.1 ≥ 70 % via [Week Quizzes](Week_Quizzes) Week 2A.
 
 ### 🧠 Concept anchors
 - BQML model types: `LINEAR_REG`, `LOGISTIC_REG`, `BOOSTED_TREE_*`, `DNN_*`, `KMEANS`, `MATRIX_FACTORIZATION`, `ARIMA_PLUS`, `AUTOML_*`.
@@ -148,15 +148,15 @@ Internalize the BQML SQL pattern (`CREATE MODEL → ML.PREDICT → ML.EVALUATE`)
 - **Tue (60 min).** Finish [#4](https://www.skills.google/course_templates/626) videos + run the challenge lab.
 - **Wed (45 min).** Read [BigQuery ML introduction](https://docs.cloud.google.com/bigquery/docs/bqml-introduction) — first half.
 - **Thu (45 min).** [#5](https://www.skills.google/course_templates/627) entirely.
-- **Fri (30 min, paired).** Drill 10 §1.1 questions via Quiz Mode filtered to `BigQuery ML` / `BQML` topic tags.
+- **Fri (30 min, paired).** Drill 10 §1.1 questions via [Quiz Mode](Quiz_Mode) filtered to `BigQuery ML` / `BQML` topic tags.
 
 ### 🧪 Saturday lab (90 min paired)
 [#4 Create ML Models with BQML](https://www.skills.google/course_templates/626) challenge lab. **Success criterion:** model trained, evaluated, and `ML.PREDICT` returns sane outputs. Capture "ohhh" insight (likely: *the SQL `LABEL` column rename*).
 
 ### 📊 Sunday self-assessment
-- **Week 2 Quiz A** (20 Qs §1.1) ≥ 70 %.
-- If < 70 %: re-watch SB #4 modules 2–3 + redo the lab. Run **Quiz 2B** Monday before bed.
-- Wrong-answer drill on `pages/1_📅_Weekly_Overview.py` Drill tab.
+- **[Week 2 Quiz A](Week_Quizzes)** (20 Qs §1.1) ≥ 70 %.
+- If < 70 %: re-watch SB #4 modules 2–3 + redo the lab. Run **[Quiz 2B](Week_Quizzes)** Monday before bed.
+- Wrong-answer drill on [Weekly Overview](Weekly_Overview) Drill tab.
 
 ### 🚀 Above-and-beyond
 - 🛠 Build a toy Kaggle Titanic BQML model (15 min): `CREATE MODEL` with `LOGISTIC_REG`, examine `ML.EVALUATE` output. Public dataset: `bigquery-public-data.ml_datasets.titanic`.
@@ -189,20 +189,20 @@ Recognize when "use the pre-trained ML API" beats "train your own." Know the Wor
 - **Tue (60 min).** Run the [#2](https://www.skills.google/course_templates/631) challenge lab.
 - **Wed (60 min).** [#3](https://www.skills.google/course_templates/923) modules 1–3.
 - **Thu (60 min).** [#3](https://www.skills.google/course_templates/923) modules 4–end + the lab.
-- **Fri (30 min, paired).** Quiz Mode filtered to `ML APIs` / `Vertex AI Workbench` / `Colab Enterprise` topic tags — 10 Qs.
+- **Fri (30 min, paired).** [Quiz Mode](Quiz_Mode) filtered to `ML APIs` / `Vertex AI Workbench` / `Colab Enterprise` topic tags — 10 Qs.
 
 ### 🧪 Saturday lab (90 min paired)
 [#3 Working with Notebooks in Vertex AI](https://www.skills.google/course_templates/923) — finish if not done by Friday. **Success criterion:** Workbench instance running, can launch a kernel, can connect to BQ from a notebook cell.
 
 ### 📊 Sunday self-assessment
-- **Week 3 Quiz A** (20 Qs §1.2+§2.2) ≥ 65 %.
+- **[Week 3 Quiz A](Week_Quizzes)** (20 Qs §1.2+§2.2) ≥ 65 %.
 - §2.2 has only 7 questions in scope so the sampler will fall back to §1.2; expect mostly ML-API + GenAI tags.
-- Wrong-answer drill via Weekly Overview.
+- Wrong-answer drill via [Weekly Overview](Weekly_Overview).
 
 ### 🚀 Above-and-beyond
 - 🛠 Run a Vision API request from a Colab Enterprise notebook (free quota covers 1k req/mo).
 - 📖 Read the [Vector Search overview](https://cloud.google.com/vertex-ai/docs/vector-search/overview) — the §1.2 GenAI bullet that question banks under-cover.
-- ⭐ Quiz Mode on the **`Document AI`** tag — high-yield distractor in §1.2.
+- ⭐ [Quiz Mode](Quiz_Mode) on the **`Document AI`** tag — high-yield distractor in §1.2.
 
 ---
 
@@ -232,20 +232,20 @@ Understand when Feature Store earns its keep vs plain Cloud Storage / BQ. Memori
 - **Tue (75 min).** [#6](https://www.skills.google/course_templates/11) modules 3–4 (Dataflow + TFT).
 - **Wed (75 min).** [#6](https://www.skills.google/course_templates/11) modules 5–6 (Feature Store).
 - **Thu (75 min).** [#6](https://www.skills.google/course_templates/11) finish + read [Vertex AI Feature Store overview](https://docs.cloud.google.com/vertex-ai/docs/featurestore/latest/overview).
-- **Fri (30 min, paired).** Quiz Mode filtered to `Feature Store` / `Dataflow` / `feature engineering` — 10 Qs.
+- **Fri (30 min, paired).** [Quiz Mode](Quiz_Mode) filtered to `Feature Store` / `Dataflow` / `feature engineering` — 10 Qs.
 
 ### 🧪 Saturday lab (90 min paired)
 [#6 Feature Engineering](https://www.skills.google/course_templates/11) capstone lab. **Success criterion:** feature created, written, served from Feature Store online endpoint.
 
 ### 📊 Sunday self-assessment
-- **Week 4 Quiz A** (20 Qs §2) ≥ 70 %.
-- Wrong-answer drill on Weekly Overview Week 4.
+- **[Week 4 Quiz A](Week_Quizzes)** (20 Qs §2) ≥ 70 %.
+- Wrong-answer drill on [Weekly Overview](Weekly_Overview) Week 4.
 - 5-min recap aloud: "When would I pick Feature Store over BQ?" (Should answer: online + low-latency + point-in-time correctness.)
 
 ### 🚀 Above-and-beyond
 - 🛠 Stand up a streaming feature pipeline: Pub/Sub → Dataflow → Feature Store. The [Feature Store streaming ingestion codelab](https://cloud.google.com/vertex-ai/docs/featurestore/serving-online) is the cheapest hands-on.
 - 📖 Read [Vertex AI Feature Store: streaming ingestion](https://cloud.google.com/vertex-ai/docs/featurestore/setup) — directly tested in §2.1.
-- ⭐ Quiz Mode on **`Dataflow`** + **`pub/sub`** tags — §2.1 ETL is heavily tested.
+- ⭐ [Quiz Mode](Quiz_Mode) on **`Dataflow`** + **`pub/sub`** tags — §2.1 ETL is heavily tested.
 
 ---
 
@@ -259,7 +259,7 @@ Run a Keras custom training job on Vertex AI. Tune one hyperparameter via **Vizi
 - [ ] Skills Boost [#7 Keras](https://www.skills.google/course_templates/12) **first half** (~5.5h).
 - [ ] Read [Vertex AI hyperparameter tuning overview](https://docs.cloud.google.com/vertex-ai/docs/training/hyperparameter-tuning-overview) ⭐ — focus on Vizier algorithms (Bayesian, Random, Grid) + budgeting (parallel vs sequential trials).
 - [ ] Pair-program **one** custom training notebook from #7 — both partners type half each.
-- [ ] Mark lab #7 (in_progress) in `pages/13_🧪_Labs.py`.
+- [ ] Mark lab #7 (in_progress) in [Labs](Labs).
 
 ### 🧠 Concept anchors
 - **`CustomTrainingJob`** vs **`HyperparameterTuningJob`**: latter wraps the former with a Vizier StudySpec.
@@ -273,15 +273,15 @@ Run a Keras custom training job on Vertex AI. Tune one hyperparameter via **Vizi
 - **Tue (60 min).** [#7](https://www.skills.google/course_templates/12) module 3 (Vertex AI Training).
 - **Wed (60 min).** [#7](https://www.skills.google/course_templates/12) module 4 (HyperparameterTuningJob) + read [Vertex AI hyperparameter tuning overview](https://docs.cloud.google.com/vertex-ai/docs/training/hyperparameter-tuning-overview).
 - **Thu (60 min).** Pair-program a custom training notebook — partner A types, partner B reads. Switch at 30 min.
-- **Fri (30 min, paired).** Quiz Mode filtered to `custom training` / `hyperparameter tuning` / `vizier` — 10 Qs.
+- **Fri (30 min, paired).** [Quiz Mode](Quiz_Mode) filtered to `custom training` / `hyperparameter tuning` / `vizier` — 10 Qs.
 
 ### 🧪 Saturday lab (90 min paired)
 [#7 Keras](https://www.skills.google/course_templates/12) — first-half lab. **Success criterion:** custom training job submitted, completes, model artifact in GCS.
 
 ### 📊 Sunday self-assessment
-- **Week 5 Quiz A** (15 Qs §3.1+§3.2) ≥ 65 %.
+- **[Week 5 Quiz A](Week_Quizzes)** (15 Qs §3.1+§3.2) ≥ 65 %.
 - Each partner: explain the Vizier StudySpec aloud in 60 seconds.
-- Wrong-answer drill on Weekly Overview.
+- Wrong-answer drill on [Weekly Overview](Weekly_Overview).
 
 ### 🚀 Above-and-beyond
 - 🛠 Run a tiny `HyperparameterTuningJob` on a synthetic dataset (Iris) with `n_trials=4`, see Vizier in action.
@@ -314,15 +314,15 @@ Pick the right compute (CPU/GPU/TPU/Reduction Server). Deploy a Keras model to a
 - **Tue (60 min).** [#7](https://www.skills.google/course_templates/12) modules 7–end + endpoint deployment.
 - **Wed (60 min).** [#10](https://www.skills.google/course_templates/584) entirely.
 - **Thu (60 min).** Read [Vertex AI training compute config](https://docs.cloud.google.com/vertex-ai/docs/training/configure-compute). Drill the GPU/TPU/RS selection rules.
-- **Fri (30 min, paired).** Quiz Mode filtered to `GPU` / `TPU` / `Reduction Server` / `distributed training` / `endpoint` — 10 Qs.
+- **Fri (30 min, paired).** [Quiz Mode](Quiz_Mode) filtered to `GPU` / `TPU` / `Reduction Server` / `distributed training` / `endpoint` — 10 Qs.
 
 ### 🧪 Saturday lab (90 min paired)
 [#7 Keras](https://www.skills.google/course_templates/12) finish — multi-worker training run. **Success criterion:** training job completes with `MultiWorkerMirroredStrategy`; can read training logs in Cloud Logging.
 
 ### 📊 Sunday self-assessment
-- **Week 6 Quiz A** (20 Qs §3.3+§4.1) ≥ 70 %.
+- **[Week 6 Quiz A](Week_Quizzes)** (20 Qs §3.3+§4.1) ≥ 70 %.
 - Each partner: cold-quiz "When do I pick Reduction Server?" — answer should mention NCCL, GPU-only, no code changes, +75%.
-- Wrong-answer drill via Weekly Overview.
+- Wrong-answer drill via [Weekly Overview](Weekly_Overview).
 
 ### 🚀 Above-and-beyond
 - 🛠 Modify the Saturday training job to add Reduction Server: declare `reducerReplicaCount` + `reducerMachineType` in the [training job spec](https://cloud.google.com/vertex-ai/docs/training/distributed-training#reduction-server). Verify throughput in logs.
@@ -356,15 +356,15 @@ Master batch vs online inference, A/B testing, traffic splitting, public vs priv
 - **Tue (90 min).** [#8](https://www.skills.google/course_templates/17) modules 3–4 (serving).
 - **Wed (90 min).** [#8](https://www.skills.google/course_templates/17) modules 5–6 (batch vs online).
 - **Thu (90 min).** [#8](https://www.skills.google/course_templates/17) modules 7–8 (security + monitoring intro).
-- **Fri (60 min, paired).** Quiz Mode filtered to `endpoint` / `model registry` / `A/B testing` / `private endpoint` — 15 Qs.
+- **Fri (60 min, paired).** [Quiz Mode](Quiz_Mode) filtered to `endpoint` / `model registry` / `A/B testing` / `private endpoint` — 15 Qs.
 
 ### 🧪 Saturday lab (120 min paired — extra 30 min for capstone scope)
 [#8 Production ML Systems](https://www.skills.google/course_templates/17) end-of-course lab. **Success criterion:** model deployed to endpoint with 80/20 traffic split, online prediction succeeds via curl.
 
 ### 📊 Sunday self-assessment
-- **Week 7 Quiz A** (25 Qs §4) ≥ 70 %.
+- **[Week 7 Quiz A](Week_Quizzes)** (25 Qs §4) ≥ 70 %.
 - Each partner: explain *out loud* the difference between Vertex AI Endpoint, Vertex Model Registry, and Cloud Run prediction. Why pick which?
-- Wrong-answer drill via Weekly Overview.
+- Wrong-answer drill via [Weekly Overview](Weekly_Overview).
 
 ### 🚀 Above-and-beyond
 - 🛠 Set up a private endpoint with PSC — extra 30 min on top of the Saturday lab.
@@ -401,15 +401,15 @@ Pick the right orchestrator (Vertex AI Pipelines vs Cloud Composer vs Kubeflow o
 - **Tue (60 min).** [#15](https://www.skills.google/course_templates/191) modules 1–2.
 - **Wed (60 min).** [#15](https://www.skills.google/course_templates/191) modules 3–end + the lab.
 - **Thu (60 min).** Read [Vertex AI Pipelines introduction](https://docs.cloud.google.com/vertex-ai/docs/pipelines/introduction) + [Vertex AI Experiments intro](https://docs.cloud.google.com/vertex-ai/docs/experiments/intro-vertex-ai-experiments).
-- **Fri (30 min, paired).** Quiz Mode filtered to `Vertex AI Pipelines` / `Kubeflow Pipelines` / `Cloud Composer` / `TFX` / `Vertex AI Experiments` — 15 Qs.
+- **Fri (30 min, paired).** [Quiz Mode](Quiz_Mode) filtered to `Vertex AI Pipelines` / `Kubeflow Pipelines` / `Cloud Composer` / `TFX` / `Vertex AI Experiments` — 15 Qs.
 
 ### 🧪 Saturday lab (90 min paired)
 [#15 ML Pipelines on GCP](https://www.skills.google/course_templates/191) end-to-end lab. **Success criterion:** KFP pipeline runs on Vertex AI Pipelines, output artifacts visible in ML Metadata.
 
 ### 📊 Sunday self-assessment
-- **Week 8 Quiz A** (25 Qs §5) ≥ **75 %** (higher bar — §5 is the biggest weight).
+- **[Week 8 Quiz A](Week_Quizzes)** (25 Qs §5) ≥ **75 %** (higher bar — §5 is the biggest weight).
 - Each partner: explain "Vertex AI Pipelines vs Cloud Composer" in 60 seconds, citing the cost numbers.
-- Wrong-answer drill via Weekly Overview.
+- Wrong-answer drill via [Weekly Overview](Weekly_Overview).
 
 ### 🚀 Above-and-beyond
 - 🛠 Add a `KFP @component` for data validation to the Saturday pipeline.
@@ -445,15 +445,15 @@ Memorize the **skew-vs-drift one-liner** verbatim. Configure a Model Monitoring 
 - **Tue (90 min).** [#16](https://www.skills.google/course_templates/684) modules 3–4.
 - **Wed (90 min).** [#16](https://www.skills.google/course_templates/684) modules 5–6 + read [Vertex AI Model Monitoring overview](https://docs.cloud.google.com/vertex-ai/docs/model-monitoring/overview).
 - **Thu (90 min).** Read [Google AI Principles](https://ai.google/principles/). Drill the deprecation timeline.
-- **Fri (60 min, paired).** Quiz Mode filtered to `Model Monitoring` / `drift` / `skew` / `Explainable AI` / `Responsible AI` — 15 Qs.
+- **Fri (60 min, paired).** [Quiz Mode](Quiz_Mode) filtered to `Model Monitoring` / `drift` / `skew` / `Explainable AI` / `Responsible AI` — 15 Qs.
 
 ### 🧪 Saturday lab (120 min paired — capstone is heavy)
 [#16 Build and Deploy ML Solutions on Vertex AI](https://www.skills.google/course_templates/684) capstone challenge lab. **Success criterion:** AutoML or custom-trained model deployed + Model Monitoring v2 job configured against it.
 
 ### 📊 Sunday self-assessment
-- **Week 9 Quiz A** (20 Qs §6) ≥ 70 %.
+- **[Week 9 Quiz A](Week_Quizzes)** (20 Qs §6) ≥ 70 %.
 - Each partner: recite the skew-vs-drift one-liner cold. If either misses, do it 5× before bed.
-- Wrong-answer drill via Weekly Overview.
+- Wrong-answer drill via [Weekly Overview](Weekly_Overview).
 
 ### 🚀 Above-and-beyond
 - 🛠 Configure a Sampled Shapley explanation on the Saturday endpoint, get back attributions for one prediction.
@@ -490,41 +490,41 @@ Cover the v3.1 GenAI surface in one focused week. Know Model Garden, Agent Build
 - **Tue (45 min).** [#13](https://www.skills.google/course_templates/927) entirely.
 - **Wed (60 min).** [#14](https://www.skills.google/course_templates/1080) entirely + read [Gemini Enterprise Agent Platform](https://cloud.google.com/products/agent-builder) rebrand history.
 - **Thu (60 min).** Build a tiny RAG demo in Vertex AI Studio: paste a Wikipedia page → ask 3 questions → see retrieved chunks.
-- **Fri (45 min, paired).** Quiz Mode filtered to `Gemini` / `RAG` / `Model Garden` / `Agent Builder` / `fine-tuning` / `LoRA` — 15 Qs.
+- **Fri (45 min, paired).** [Quiz Mode](Quiz_Mode) filtered to `Gemini` / `RAG` / `Model Garden` / `Agent Builder` / `fine-tuning` / `LoRA` — 15 Qs.
 
 ### 🧪 Saturday lab (60 min paired — light week)
-RAG warm-up using [Vertex AI Studio](https://cloud.google.com/vertex-ai-studio): build a chatbot over a small corpus. Capture rebrand confusion ("is it Vertex AI Search or Agent Search?") in the Labs page.
+RAG warm-up using [Vertex AI Studio](https://cloud.google.com/vertex-ai-studio): build a chatbot over a small corpus. Capture rebrand confusion ("is it Vertex AI Search or Agent Search?") in the [Labs page](Labs).
 
 ### 📊 Sunday self-assessment
-- **Week 10 Quiz A** (25 Qs GenAI tags) ≥ 70 %.
+- **[Week 10 Quiz A](Week_Quizzes)** (25 Qs GenAI tags) ≥ 70 %.
 - Each partner: recite "Gemini SFT is LoRA-based PEFT, adapter sizes 1/2/4/8/16, only 2.5 Pro/Flash/Flash-Lite tunable" cold.
-- Wrong-answer drill via Weekly Overview.
+- Wrong-answer drill via [Weekly Overview](Weekly_Overview).
 
 ### 🚀 Above-and-beyond
 - 🛠 Run a Gemini SFT job against a small dataset via the [Vertex AI Tuning API](https://cloud.google.com/vertex-ai/generative-ai/docs/models/tune-models).
 - 📖 Read the full [Vertex AI generative-AI overview](https://cloud.google.com/vertex-ai/generative-ai/docs/overview).
-- ⭐ Drill the **rebrand alerts** in `pages/1_📅_Weekly_Overview.py` Week 10 tab — 12 historical renames.
+- ⭐ Drill the **rebrand alerts** in [Weekly Overview](Weekly_Overview) Week 10 tab — 12 historical renames.
 - ⭐ Read the [Generative AI for Developers Learning Path /journeys/183](https://www.skills.google/journeys/183) — supplements the v3.1 GenAI bullets.
 
 ---
 
-## Week 11 — RAG capstone + Mock #1 (all sections)
+## Week 11 — RAG capstone + [Mock #1](Mock_Exam) (all sections)
 **§s.** All · **Hours.** ~6.75 · **Sat.** **MOCK #1 (50 Qs, 2h, ≥ 70 %)**
 
 ### 🎯 Theme + measurable success
-Real-exam dress rehearsal. By Sunday: **≥ 70 %** on Mock #1, weakest 3 sections identified, drill plan for Week 12 set.
+Real-exam dress rehearsal. By Sunday: **≥ 70 %** on [Mock #1](Mock_Exam), weakest 3 sections identified, drill plan for Week 12 set.
 
 ### 📦 Hard deliverables
 - [ ] Skills Boost [#17 Create Generative AI Apps on GCP](https://www.skills.google/course_templates/1120) (~4.75h, RAG capstone skill badge).
 - [ ] Rapid-review all decision trees: [tabular-modeling](https://docs.cloud.google.com/bigquery/docs/bqml-introduction), [compute-selection](https://docs.cloud.google.com/vertex-ai/docs/training/configure-compute), [pipelines-comparison](https://docs.cloud.google.com/vertex-ai/docs/pipelines/introduction). 30 min each.
-- [ ] **Take Mock #1 on Saturday.** Use `pages/9_⏱️_Mock_Exam.py` → "Start Mock #1." 50 Qs, 2-hour timer, no explanations.
-- [ ] Identify weakest 3 sections from Mock #1 result. Plan Week 12 drill.
+- [ ] **Take [Mock #1](Mock_Exam) on Saturday.** Use [Mock Exam](Mock_Exam) → "Start [Mock #1](Mock_Exam)." 50 Qs, 2-hour timer, no explanations.
+- [ ] Identify weakest 3 sections from [Mock #1](Mock_Exam) result. Plan Week 12 drill.
 - [ ] Mark lab #17 complete; capture two "ohhh" insights.
 
 ### 🧠 Concept anchors
-- **Mock #1 protocol.** Sit in a quiet room. Phone face-down. No notes. 2-hour timer. No coffee breaks beyond bathroom. Submit only when timer hits zero or you've reviewed all 50.
-- **Don't binge content this week** — the scoring signal from Mock #1 is more valuable than any new lab. Treat Wed–Fri as light consolidation.
-- **Rebrand alerts** are dense this week — 4 in the app. Review them on `pages/1_📅_Weekly_Overview.py` Week 11 tab.
+- **[Mock #1](Mock_Exam) protocol.** Sit in a quiet room. Phone face-down. No notes. 2-hour timer. No coffee breaks beyond bathroom. Submit only when timer hits zero or you've reviewed all 50.
+- **Don't binge content this week** — the scoring signal from [Mock #1](Mock_Exam) is more valuable than any new lab. Treat Wed–Fri as light consolidation.
+- **Rebrand alerts** are dense this week — 4 in the app. Review them on [Weekly Overview](Weekly_Overview) Week 11 tab.
 
 ### 📅 Daily breakdown
 - **Mon (60 min).** [#17](https://www.skills.google/course_templates/1120) modules 1–2.
@@ -534,34 +534,34 @@ Real-exam dress rehearsal. By Sunday: **≥ 70 %** on Mock #1, weakest 3 section
 - **Fri (30 min).** Light review only — no new content. Set up Saturday environment (quiet room, headphones, water).
 
 ### 🧪 Saturday — MOCK #1 (120 min)
-- Open `pages/9_⏱️_Mock_Exam.py` → click **"Start Mock #1"**.
+- Open [Mock Exam](Mock_Exam) → click **"Start [Mock #1](Mock_Exam)"**.
 - 50 questions, 2-hour countdown.
 - After submit: review per-section breakdown. The page surfaces "Weakest 3 sections" — write them down.
 - **Pass criterion: ≥ 70 %.** If < 70 %: flag exam reschedule risk; do extra Week 12 drill on weakest sections.
 - Stagger if both partners are testing: A goes Friday, B goes Saturday — first taker debriefs second.
 
 ### 📊 Sunday self-assessment
-- Mock #1 already done. Reflect together (60 min): for each wrong question, explain WHY the correct answer wins.
+- [Mock #1](Mock_Exam) already done. Reflect together (60 min): for each wrong question, explain WHY the correct answer wins.
 - Lock Week 12 plan: which 3 sections get the bulk of the wrong-answer drill?
 
-### 🚀 Above-and-beyond (only if Mock #1 ≥ 80%)
+### 🚀 Above-and-beyond (only if [Mock #1](Mock_Exam) ≥ 80%)
 - 🛠 Build a slightly more complex RAG: chunking strategy comparison (sentence vs paragraph), measure retrieval quality.
 - 📖 Skim [Cloud Next 2026 keynote announcements](https://cloud.google.com/blog/topics/google-cloud-next/2026) for any post-rebrand context.
-- ⭐ Take Mock #1 *again* with the same seed (the mock pool is deterministic) — see if you remember answers (you should). Note: this **doesn't** validate your knowledge for Mock #2 since the pools are disjoint.
+- ⭐ Take [Mock #1](Mock_Exam) *again* with the same seed (the mock pool is deterministic) — see if you remember answers (you should). Note: this **doesn't** validate your knowledge for [Mock #2](Mock_Exam) since the pools are disjoint.
 
 ---
 
-## Week 12 — Final review + Mock #2 + exam day (all sections)
+## Week 12 — Final review + [Mock #2](Mock_Exam) + exam day (all sections)
 **§s.** All · **Hours.** ~6 · **Wed.** **MOCK #2 (50 Qs, 2h, ≥ 80 %)** · **Sat.** **REAL EXAM**
 
 ### 🎯 Theme + measurable success
-Final calibration + real exam. **Mock #2 ≥ 80 %** is the go/no-go for Saturday. By Saturday night: PMLE certified.
+Final calibration + real exam. **[Mock #2](Mock_Exam) ≥ 80 %** is the go/no-go for Saturday. By Saturday night: PMLE certified.
 
 ### 📦 Hard deliverables
 - [ ] Skills Boost [#18 Fairness & Bias](https://www.skills.google/course_templates/985) (~2.25h).
 - [ ] Skills Boost [#19 Interpretability](https://www.skills.google/course_templates/989) (~2h).
 - [ ] **Drop [#20 Privacy & Safety](https://www.skills.google/course_templates/1036)** — too long, too low question-yield for the time available.
-- [ ] **Take Mock #2 on Wednesday.** ≥ 80 % to track on plan.
+- [ ] **Take [Mock #2](Mock_Exam) on Wednesday.** ≥ 80 % to track on plan.
 - [ ] Heavy wrong-answer drill on weakest 3 sections from Mocks #1 + #2.
 - [ ] Confirm exam booking on [Pearson VUE / OnVUE](https://cloud.google.com/learn/certification/machine-learning-engineer). Test webcam Friday.
 - [ ] **Saturday: REAL EXAM.**
@@ -576,13 +576,13 @@ Final calibration + real exam. **Mock #2 ≥ 80 %** is the go/no-go for Saturday
 - **Mon (60 min).** [#18](https://www.skills.google/course_templates/985) entirely.
 - **Tue (60 min).** [#19](https://www.skills.google/course_templates/989) entirely.
 - **Wed (120 min).** **MOCK #2.** Review breakdown immediately.
-- **Thu (60 min).** Wrong-answer drill on Mock #2 wrong questions. Read [Andrei Paraschiv's PMLE pass writeup (Feb 2026)](https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4) one more time.
+- **Thu (60 min).** Wrong-answer drill on [Mock #2](Mock_Exam) wrong questions. Read [Andrei Paraschiv's PMLE pass writeup (Feb 2026)](https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4) one more time.
 - **Fri (45 min).** Light review only — top 5 high-yield items: skew-vs-drift one-liner, Reduction Server one-liner, Pipelines vs Composer cost numbers, AutoML scale-to-zero trap, Gemini SFT = LoRA. **Do not learn new content Friday.** Test webcam + ID + room.
 - **Sat: REAL EXAM.** Sleep 8h. Hydrate. Eat protein. Log in 30 min early. **Pass.**
 
 ### 🧪 Wednesday — MOCK #2 (120 min)
-- Open `pages/9_⏱️_Mock_Exam.py` → click **"Start Mock #2"**.
-- 50 questions from `mock2-pool` (disjoint from Mock #1).
+- Open [Mock Exam](Mock_Exam) → click **"Start [Mock #2](Mock_Exam)"**.
+- 50 questions from `mock2-pool` (disjoint from [Mock #1](Mock_Exam)).
 - **Pass criterion: ≥ 80 %.** If < 80 %: **strongly consider pushing the exam by 1 week.** Buffer matters.
 - Per-section breakdown → drives Thursday drill.
 

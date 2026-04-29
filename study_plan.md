@@ -1,10 +1,10 @@
 # PMLE 12-Week Study Plan
 
-**Source.** Synthesized from `research/` (14 reports), the official [v3.1 exam guide](https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf), the closest-match recent passer (V. Narvaez, Feb 2026), and the [Google Skills Professional ML Engineer learning path](https://www.skills.google/paths/17).
+**Source.** Synthesized from the official [v3.1 exam guide](https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf), the closest-match recent passer (V. Narvaez, Feb 2026), and the [Google Skills Professional ML Engineer learning path](https://www.skills.google/paths/17).
 **Audience.** Two beginners, math-strong, no prior GCP/ML, studying together.
 **Target exam.** PMLE v3.1.
 **Total budget.** 60–75 hours per learner (≈58 hr Skills Boost + ~10 hr practice questions + ~5 hr docs/review).
-**Time split.** 25 % learning path / 25 % official docs / 50 % practice questions — per V. Narvaez Feb 2026 (`research/anecdotes/recent-passers.md`).
+**Time split.** 25 % learning path / 25 % official docs / 50 % practice questions — per V. Narvaez Feb 2026 ([Andrei Paraschiv's PMLE pass writeup (Feb 2026)](https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4)).
 
 ---
 
@@ -46,24 +46,24 @@
 
 ## Week-by-week summary table
 
-Skills Boost item numbers reference [`research/labs/skills-boost-path.md`](research/labs/skills-boost-path.md). Andy bank topic tags use the existing `gcp_topics` / `ml_topics` / `gcp_products` fields in `gcp-pmle-quiz/data/quizzes.jsonl`. Detailed week sections follow the table.
+Skills Boost item numbers reference [Google Skills ML Engineer learning path](https://www.skills.google/paths/17). Andy bank topic tags use the existing `gcp_topics` / `ml_topics` / `gcp_products` fields in `gcp-pmle-quiz/data/quizzes.jsonl`. Detailed week sections follow the table.
 
 | Week | Theme | §s | Hours | Skills Boost | Decision-tree refresher | Sunday quiz target | Milestone |
 |------|-------|-----|-------|--------------|-------------------------|---------------------|-----------|
 | **[1](#week-1--orientation--gcp-fundamentals)** | Orientation + GCP fundamentals | §1.1, §1.2, §2.1 | ~5 | [#1](https://www.skills.google/course_templates/593) | — | Sample form ≥ 35 % cold | Baseline captured |
-| **[2](#week-2--bigquery-ml-11)** | §1 BQML | §1.1 | ~3 | [#4](https://www.skills.google/course_templates/626), [#5](https://www.skills.google/course_templates/627) | [tabular-modeling.md](research/decision-trees/tabular-modeling.md) ⭐ | 20 Qs §1.1 ≥ 70 % | First skill badge |
+| **[2](#week-2--bigquery-ml-11)** | §1 BQML | §1.1 | ~3 | [#4](https://www.skills.google/course_templates/626), [#5](https://www.skills.google/course_templates/627) | [BigQuery ML introduction](https://docs.cloud.google.com/bigquery/docs/bqml-introduction) ⭐ | 20 Qs §1.1 ≥ 70 % | First skill badge |
 | **[3](#week-3--ml-apis--notebooks-1222)** | §1.2 ML APIs + §2.2 notebooks | §1.2, §2.2 | ~5.25 | [#2](https://www.skills.google/course_templates/631), [#3](https://www.skills.google/course_templates/923) | — | 20 Qs §1.2+§2.2 ≥ 65 % | Workbench notebook published |
-| **[4](#week-4--feature-engineering--feature-store-2142)** | §2 Feature engineering + Feature Store | §2.1, §4.2 | ~7.25 | [#6](https://www.skills.google/course_templates/11) ⚠️ | [feature-store.md](research/concepts/feature-store.md) ⭐ | 20 Qs §2 ≥ 70 % | Pro $29/mo trial begins Day 1 |
-| **[5](#week-5--keras-custom-training-3132)** | §3 Custom training (Keras) part 1 | §3.1, §3.2 | ~5.5 | [#7 first half](https://www.skills.google/course_templates/12) | [hyperparameter-tuning.md](research/concepts/hyperparameter-tuning.md) ⭐ | 15 Qs §3.1+§3.2 ≥ 65 % | Pair-programmed Keras training notebook |
-| **[6](#week-6--keras-finish--hardware-3341)** | §3 finish + §4 hardware | §3.3, §4.1 | ~7 | [#7 finish](https://www.skills.google/course_templates/12), [#10](https://www.skills.google/course_templates/584) | [compute-selection.md](research/decision-trees/compute-selection.md) ⭐ | 20 Qs §3.3+§4.1 ≥ 70 % | Multi-worker training run captured |
-| **[7](#week-7--production-ml-systems-414243)** | §3 + §4 + §5 production systems | §4.1, §4.2, §4.3 | ~11 | [#8](https://www.skills.google/course_templates/17) | [serving-deep-dive.md](research/concepts/serving-deep-dive.md) ⭐ + [iam-for-ml.md](research/concepts/iam-for-ml.md) | 25 Qs §4 ≥ 70 % | Endpoint deployed + traffic split |
-| **[8](#week-8--pipelines-highest-weight-515253)** | §5 Pipelines (highest weight) | §5.1, §5.2, §5.3 | ~3 | [#15](https://www.skills.google/course_templates/191), [#9](https://www.skills.google/course_templates/158) | [pipelines-comparison.md](research/decision-trees/pipelines-comparison.md) ⭐ + [metadata-lineage.md](research/concepts/metadata-lineage.md) | 25 Qs §5 ≥ 75 % | Vertex AI Pipeline runs end-to-end |
-| **[9](#week-9--monitoring--responsible-ai-6162)** | §3+§4 capstone + §6 monitoring | §6.1, §6.2 | ~10.25 | [#16](https://www.skills.google/course_templates/684) | [skew-vs-drift.md](research/concepts/skew-vs-drift.md) ⭐ + [responsible-ai-security.md](research/concepts/responsible-ai-security.md) ⭐ | 20 Qs §6 ≥ 70 % | Capstone + Model Monitoring config |
-| **[10](#week-10--genai-sweep-12-23-32)** | GenAI sweep | §1.2, §2.3, §3.2 | ~4.25 | [#11](https://www.skills.google/course_templates/536), [#12](https://www.skills.google/course_templates/539), [#13](https://www.skills.google/course_templates/927), [#14](https://www.skills.google/course_templates/1080) | [vertex-ai-overview.md](research/genai/vertex-ai-overview.md) ⭐ | 25 Qs GenAI tag ≥ 70 % | RAG built in Vertex AI Studio |
+| **[4](#week-4--feature-engineering--feature-store-2142)** | §2 Feature engineering + Feature Store | §2.1, §4.2 | ~7.25 | [#6](https://www.skills.google/course_templates/11) ⚠️ | [Vertex AI Feature Store overview](https://docs.cloud.google.com/vertex-ai/docs/featurestore/latest/overview) ⭐ | 20 Qs §2 ≥ 70 % | Pro $29/mo trial begins Day 1 |
+| **[5](#week-5--keras-custom-training-3132)** | §3 Custom training (Keras) part 1 | §3.1, §3.2 | ~5.5 | [#7 first half](https://www.skills.google/course_templates/12) | [Vertex AI hyperparameter tuning overview](https://docs.cloud.google.com/vertex-ai/docs/training/hyperparameter-tuning-overview) ⭐ | 15 Qs §3.1+§3.2 ≥ 65 % | Pair-programmed Keras training notebook |
+| **[6](#week-6--keras-finish--hardware-3341)** | §3 finish + §4 hardware | §3.3, §4.1 | ~7 | [#7 finish](https://www.skills.google/course_templates/12), [#10](https://www.skills.google/course_templates/584) | [Vertex AI training compute config](https://docs.cloud.google.com/vertex-ai/docs/training/configure-compute) ⭐ | 20 Qs §3.3+§4.1 ≥ 70 % | Multi-worker training run captured |
+| **[7](#week-7--production-ml-systems-414243)** | §3 + §4 + §5 production systems | §4.1, §4.2, §4.3 | ~11 | [#8](https://www.skills.google/course_templates/17) | [Vertex AI predictions overview](https://docs.cloud.google.com/vertex-ai/docs/predictions/overview) ⭐ + [IAM overview](https://docs.cloud.google.com/iam/docs/overview) | 25 Qs §4 ≥ 70 % | Endpoint deployed + traffic split |
+| **[8](#week-8--pipelines-highest-weight-515253)** | §5 Pipelines (highest weight) | §5.1, §5.2, §5.3 | ~3 | [#15](https://www.skills.google/course_templates/191), [#9](https://www.skills.google/course_templates/158) | [Vertex AI Pipelines introduction](https://docs.cloud.google.com/vertex-ai/docs/pipelines/introduction) ⭐ + [Vertex AI Experiments intro](https://docs.cloud.google.com/vertex-ai/docs/experiments/intro-vertex-ai-experiments) | 25 Qs §5 ≥ 75 % | Vertex AI Pipeline runs end-to-end |
+| **[9](#week-9--monitoring--responsible-ai-6162)** | §3+§4 capstone + §6 monitoring | §6.1, §6.2 | ~10.25 | [#16](https://www.skills.google/course_templates/684) | [Vertex AI Model Monitoring overview](https://docs.cloud.google.com/vertex-ai/docs/model-monitoring/overview) ⭐ + [Google AI Principles](https://ai.google/principles/) ⭐ | 20 Qs §6 ≥ 70 % | Capstone + Model Monitoring config |
+| **[10](#week-10--genai-sweep-12-23-32)** | GenAI sweep | §1.2, §2.3, §3.2 | ~4.25 | [#11](https://www.skills.google/course_templates/536), [#12](https://www.skills.google/course_templates/539), [#13](https://www.skills.google/course_templates/927), [#14](https://www.skills.google/course_templates/1080) | [Gemini Enterprise Agent Platform](https://cloud.google.com/products/agent-builder) ⭐ | 25 Qs GenAI tag ≥ 70 % | RAG built in Vertex AI Studio |
 | **[11](#week-11--rag-capstone--mock-1-all-sections)** | RAG capstone + **Mock #1** | All | ~6.75 | [#17](https://www.skills.google/course_templates/1120) | All decision trees — rapid review | **Mock #1 ≥ 70 %** (Sat) | Mock #1 score recorded |
 | **[12](#week-12--final-review--mock-2--exam-day-all-sections)** | Final review + **Mock #2** + exam day | All | ~6 | [#18](https://www.skills.google/course_templates/985), [#19](https://www.skills.google/course_templates/989) | All decision trees — final review | **Mock #2 ≥ 80 %** (Wed) | **REAL EXAM (Sat)** |
 
-⭐ = decision-tree refresher in `research/`. ⚠️ = lab last refreshed 9 mo ago (UI mismatch possible).
+⭐ = high-yield decision-tree refresher (link in the right-hand column). ⚠️ = lab last refreshed 9 mo ago (UI mismatch possible).
 
 ---
 
@@ -97,14 +97,14 @@ Establish a baseline. By Sunday you should be able to: (a) recite the six v3.1 s
 
 ### 🧠 Concept anchors
 - The six v3.1 sections + weights: §1=13%, §2=14%, §3=18%, §4=20%, **§5=22% ⭐**, §6=13%.
-- Vertex AI = umbrella for **Pipelines + Training + Model Registry + Endpoints + Feature Store + Experiments + Model Monitoring**. (Pipelines/Training/Registry/Metadata/Experiments names are intact post-rebrand; Agent Builder/Studio/Search were renamed Apr 2026 — see [vertex-ai-overview.md](research/genai/vertex-ai-overview.md).)
+- Vertex AI = umbrella for **Pipelines + Training + Model Registry + Endpoints + Feature Store + Experiments + Model Monitoring**. (Pipelines/Training/Registry/Metadata/Experiments names are intact post-rebrand; Agent Builder/Studio/Search were renamed Apr 2026 — see [Gemini Enterprise Agent Platform](https://cloud.google.com/products/agent-builder).)
 - AutoML vs BQML vs Custom Training: AutoML = no code, BQML = SQL, Custom Training = your TF/PyTorch code.
-- Real exam = 60 Qs / 2h / pass ≥ 70%. Near-zero multi-select on the real thing (per [recent passers](research/anecdotes/recent-passers.md)).
+- Real exam = 60 Qs / 2h / pass ≥ 70%. Near-zero multi-select on the real thing (per [recent passers](https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4)).
 
 ### 📅 Daily breakdown
-- **Mon (60 min).** Read CLAUDE.md + this file. Open the Streamlit app: `cd gcp-pmle-quiz && uv run streamlit run 🏠_Dashboard.py` and switch to **📍 Today** in the sidebar.
+- **Mon (60 min).** Read this plan end-to-end. Open the Streamlit app: `cd gcp-pmle-quiz && uv run streamlit run 🏠_Dashboard.py` and switch to **📍 Today** in the sidebar.
 - **Tue (60 min).** Read v3.1 exam guide PDF §1–§3 (skim).
-- **Wed (60 min).** Read v3.1 exam guide PDF §4–§6 (skim). Skim [`research/anecdotes/recent-passers.md`](research/anecdotes/recent-passers.md).
+- **Wed (60 min).** Read v3.1 exam guide PDF §4–§6 (skim). Skim [Andrei Paraschiv's PMLE pass writeup (Feb 2026)](https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4).
 - **Thu (60 min).** Take the free sample form *cold*. Record score. Note 5 most-confused questions.
 - **Fri (45 min).** Skills Boost [#1](https://www.skills.google/course_templates/593) modules 1–2 with partner.
 
@@ -118,7 +118,7 @@ Establish a baseline. By Sunday you should be able to: (a) recite the six v3.1 s
 
 ### 🚀 Above-and-beyond
 - 📺 Watch [Google Cloud Tech YouTube — "Decode the Professional ML Engineer Cert"](https://www.youtube.com/results?search_query=google+cloud+professional+machine+learning+engineer+certification) (1h, free, optional).
-- 📖 Skim [`research/question-banks/audit.md`](research/question-banks/audit.md) — understand the 3-bank stack you'll use.
+- 📖 Skim [AndyTheFactory gcp-pmle-quiz repo](https://github.com/AndyTheFactory/gcp-pmle-quiz) — understand the 3-bank stack you'll use.
 - 🛠 Free-tier lab: create a Cloud Storage bucket + IAM role binding via console (5–10 min, burns 0 credits, builds GCP muscle memory).
 
 ---
@@ -132,7 +132,7 @@ Internalize the BQML SQL pattern (`CREATE MODEL → ML.PREDICT → ML.EVALUATE`)
 ### 📦 Hard deliverables
 - [ ] Skills Boost [#4 Create ML Models with BQML](https://www.skills.google/course_templates/626) (skill badge).
 - [ ] Skills Boost [#5 Engineer Data for Predictive Modeling with BQML](https://www.skills.google/course_templates/627) (skill badge).
-- [ ] Read [`research/decision-trees/tabular-modeling.md`](research/decision-trees/tabular-modeling.md) ⭐ — focus on the **AutoML scale-to-zero trap** and the BQML vs AutoML decision tree.
+- [ ] Read [BigQuery ML introduction](https://docs.cloud.google.com/bigquery/docs/bqml-introduction) ⭐ — focus on the **AutoML scale-to-zero trap** and the BQML vs AutoML decision tree.
 - [ ] Mark labs #4 and #5 complete in `pages/13_🧪_Labs.py`.
 - [ ] Sunday: 20-Q quiz §1.1 ≥ 70 % via `pages/10_📋_Week_Quizzes.py` Week 2A.
 
@@ -146,7 +146,7 @@ Internalize the BQML SQL pattern (`CREATE MODEL → ML.PREDICT → ML.EVALUATE`)
 ### 📅 Daily breakdown
 - **Mon (45 min).** Skim BQML docs: [Introduction to BigQuery ML](https://cloud.google.com/bigquery/docs/bqml-introduction). Watch first SB #4 module.
 - **Tue (60 min).** Finish [#4](https://www.skills.google/course_templates/626) videos + run the challenge lab.
-- **Wed (45 min).** Read [`research/decision-trees/tabular-modeling.md`](research/decision-trees/tabular-modeling.md) — first half.
+- **Wed (45 min).** Read [BigQuery ML introduction](https://docs.cloud.google.com/bigquery/docs/bqml-introduction) — first half.
 - **Thu (45 min).** [#5](https://www.skills.google/course_templates/627) entirely.
 - **Fri (30 min, paired).** Drill 10 §1.1 questions via Quiz Mode filtered to `BigQuery ML` / `BQML` topic tags.
 
@@ -161,7 +161,7 @@ Internalize the BQML SQL pattern (`CREATE MODEL → ML.PREDICT → ML.EVALUATE`)
 ### 🚀 Above-and-beyond
 - 🛠 Build a toy Kaggle Titanic BQML model (15 min): `CREATE MODEL` with `LOGISTIC_REG`, examine `ML.EVALUATE` output. Public dataset: `bigquery-public-data.ml_datasets.titanic`.
 - 📖 Read the [BQML feature engineering best practices](https://cloud.google.com/bigquery/docs/preprocess-overview) doc — preview of Week 4.
-- ⭐ **High-yield bonus:** drill the [`tabular-modeling.md`](research/decision-trees/tabular-modeling.md) decision tree until you can recite the AutoML / BQML / Vertex Custom Training selection rules in under 60 seconds.
+- ⭐ **High-yield bonus:** drill the [BigQuery ML introduction](https://docs.cloud.google.com/bigquery/docs/bqml-introduction) decision tree until you can recite the AutoML / BQML / Vertex Custom Training selection rules in under 60 seconds.
 
 ---
 
@@ -174,7 +174,7 @@ Recognize when "use the pre-trained ML API" beats "train your own." Know the Wor
 ### 📦 Hard deliverables
 - [ ] Skills Boost [#2 Prepare Data for ML APIs](https://www.skills.google/course_templates/631) (skill badge, ~45 min).
 - [ ] Skills Boost [#3 Working with Notebooks in Vertex AI](https://www.skills.google/course_templates/923) (~4.5h).
-- [ ] Skim [`research/genai/vertex-ai-overview.md`](research/genai/vertex-ai-overview.md) — focus on the **Apr 22 2026 rebrand** (Vertex AI Search → Agent Search; Vertex AI Studio → Agent Platform Studio; Vertex AI Agent Builder → Gemini Enterprise Agent Platform).
+- [ ] Skim [Gemini Enterprise Agent Platform](https://cloud.google.com/products/agent-builder) — focus on the **Apr 22 2026 rebrand** (Vertex AI Search → Agent Search; Vertex AI Studio → Agent Platform Studio; Vertex AI Agent Builder → Gemini Enterprise Agent Platform).
 - [ ] Mark labs #2 and #3 complete; capture one "ohhh" insight each.
 
 ### 🧠 Concept anchors
@@ -216,7 +216,7 @@ Understand when Feature Store earns its keep vs plain Cloud Storage / BQ. Memori
 
 ### 📦 Hard deliverables
 - [ ] Skills Boost [#6 Feature Engineering](https://www.skills.google/course_templates/11) (~7.25h). UI may show legacy Vertex names — concepts are still correct.
-- [ ] Read [`research/concepts/feature-store.md`](research/concepts/feature-store.md) ⭐ end-to-end — note the **Feb 17 2027** sunset and **Bigtable online serving** as the safe exam answer.
+- [ ] Read [Vertex AI Feature Store overview](https://docs.cloud.google.com/vertex-ai/docs/featurestore/latest/overview) ⭐ end-to-end — note the **Feb 17 2027** sunset and **Bigtable online serving** as the safe exam answer.
 - [ ] Start Pro subscription at [skills.google/payments/new](https://www.skills.google/payments/new). Set Day 6 calendar reminder.
 - [ ] Mark lab #6 complete; capture one "ohhh" insight.
 
@@ -231,7 +231,7 @@ Understand when Feature Store earns its keep vs plain Cloud Storage / BQ. Memori
 - **Mon (60 min).** [#6](https://www.skills.google/course_templates/11) modules 1–2 (BigQuery feature ops).
 - **Tue (75 min).** [#6](https://www.skills.google/course_templates/11) modules 3–4 (Dataflow + TFT).
 - **Wed (75 min).** [#6](https://www.skills.google/course_templates/11) modules 5–6 (Feature Store).
-- **Thu (75 min).** [#6](https://www.skills.google/course_templates/11) finish + read [`feature-store.md`](research/concepts/feature-store.md).
+- **Thu (75 min).** [#6](https://www.skills.google/course_templates/11) finish + read [Vertex AI Feature Store overview](https://docs.cloud.google.com/vertex-ai/docs/featurestore/latest/overview).
 - **Fri (30 min, paired).** Quiz Mode filtered to `Feature Store` / `Dataflow` / `feature engineering` — 10 Qs.
 
 ### 🧪 Saturday lab (90 min paired)
@@ -257,7 +257,7 @@ Run a Keras custom training job on Vertex AI. Tune one hyperparameter via **Vizi
 
 ### 📦 Hard deliverables
 - [ ] Skills Boost [#7 Keras](https://www.skills.google/course_templates/12) **first half** (~5.5h).
-- [ ] Read [`research/concepts/hyperparameter-tuning.md`](research/concepts/hyperparameter-tuning.md) ⭐ — focus on Vizier algorithms (Bayesian, Random, Grid) + budgeting (parallel vs sequential trials).
+- [ ] Read [Vertex AI hyperparameter tuning overview](https://docs.cloud.google.com/vertex-ai/docs/training/hyperparameter-tuning-overview) ⭐ — focus on Vizier algorithms (Bayesian, Random, Grid) + budgeting (parallel vs sequential trials).
 - [ ] Pair-program **one** custom training notebook from #7 — both partners type half each.
 - [ ] Mark lab #7 (in_progress) in `pages/13_🧪_Labs.py`.
 
@@ -271,7 +271,7 @@ Run a Keras custom training job on Vertex AI. Tune one hyperparameter via **Vizi
 ### 📅 Daily breakdown
 - **Mon (60 min).** [#7](https://www.skills.google/course_templates/12) modules 1–2 (TF/Keras refresh).
 - **Tue (60 min).** [#7](https://www.skills.google/course_templates/12) module 3 (Vertex AI Training).
-- **Wed (60 min).** [#7](https://www.skills.google/course_templates/12) module 4 (HyperparameterTuningJob) + read [`hyperparameter-tuning.md`](research/concepts/hyperparameter-tuning.md).
+- **Wed (60 min).** [#7](https://www.skills.google/course_templates/12) module 4 (HyperparameterTuningJob) + read [Vertex AI hyperparameter tuning overview](https://docs.cloud.google.com/vertex-ai/docs/training/hyperparameter-tuning-overview).
 - **Thu (60 min).** Pair-program a custom training notebook — partner A types, partner B reads. Switch at 30 min.
 - **Fri (30 min, paired).** Quiz Mode filtered to `custom training` / `hyperparameter tuning` / `vizier` — 10 Qs.
 
@@ -286,7 +286,7 @@ Run a Keras custom training job on Vertex AI. Tune one hyperparameter via **Vizi
 ### 🚀 Above-and-beyond
 - 🛠 Run a tiny `HyperparameterTuningJob` on a synthetic dataset (Iris) with `n_trials=4`, see Vizier in action.
 - 📖 Read [Vertex AI Vizier overview](https://cloud.google.com/vertex-ai/docs/vizier/overview).
-- ⭐ Skim [`compute-selection.md`](research/decision-trees/compute-selection.md) Week 6 prep — **Reduction Server** is the highest-yield distinguishing topic on the entire exam.
+- ⭐ Skim [Vertex AI training compute config](https://docs.cloud.google.com/vertex-ai/docs/training/configure-compute) Week 6 prep — **Reduction Server** is the highest-yield distinguishing topic on the entire exam.
 
 ---
 
@@ -299,7 +299,7 @@ Pick the right compute (CPU/GPU/TPU/Reduction Server). Deploy a Keras model to a
 ### 📦 Hard deliverables
 - [ ] Finish Skills Boost [#7 Keras](https://www.skills.google/course_templates/12).
 - [ ] Skills Boost [#10 MLOps Manage Features](https://www.skills.google/course_templates/584) (~1.75h).
-- [ ] Read [`research/decision-trees/compute-selection.md`](research/decision-trees/compute-selection.md) ⭐ end-to-end. **The Reduction Server one-liner = the single highest-yield exam fact.**
+- [ ] Read [Vertex AI training compute config](https://docs.cloud.google.com/vertex-ai/docs/training/configure-compute) ⭐ end-to-end. **The Reduction Server one-liner = the single highest-yield exam fact.**
 - [ ] Mark labs #7 and #10 complete; capture two "ohhh" insights.
 
 ### 🧠 Concept anchors
@@ -313,7 +313,7 @@ Pick the right compute (CPU/GPU/TPU/Reduction Server). Deploy a Keras model to a
 - **Mon (60 min).** [#7](https://www.skills.google/course_templates/12) modules 5–6 (distributed training).
 - **Tue (60 min).** [#7](https://www.skills.google/course_templates/12) modules 7–end + endpoint deployment.
 - **Wed (60 min).** [#10](https://www.skills.google/course_templates/584) entirely.
-- **Thu (60 min).** Read [`compute-selection.md`](research/decision-trees/compute-selection.md). Drill the GPU/TPU/RS selection rules.
+- **Thu (60 min).** Read [Vertex AI training compute config](https://docs.cloud.google.com/vertex-ai/docs/training/configure-compute). Drill the GPU/TPU/RS selection rules.
 - **Fri (30 min, paired).** Quiz Mode filtered to `GPU` / `TPU` / `Reduction Server` / `distributed training` / `endpoint` — 10 Qs.
 
 ### 🧪 Saturday lab (90 min paired)
@@ -339,7 +339,7 @@ Master batch vs online inference, A/B testing, traffic splitting, public vs priv
 
 ### 📦 Hard deliverables
 - [ ] Skills Boost [#8 Production ML Systems](https://www.skills.google/course_templates/17) (~11h, the longest course of the path).
-- [ ] Read [`research/concepts/serving-deep-dive.md`](research/concepts/serving-deep-dive.md) ⭐ + [`research/concepts/iam-for-ml.md`](research/concepts/iam-for-ml.md).
+- [ ] Read [Vertex AI predictions overview](https://docs.cloud.google.com/vertex-ai/docs/predictions/overview) ⭐ + [IAM overview](https://docs.cloud.google.com/iam/docs/overview).
 - [ ] Deploy a model to a Vertex Endpoint with **traffic split** (e.g., 80/20) — paired session.
 - [ ] Mark lab #8 complete; capture two "ohhh" insights.
 
@@ -382,8 +382,8 @@ Pick the right orchestrator (Vertex AI Pipelines vs Cloud Composer vs Kubeflow o
 ### 📦 Hard deliverables
 - [ ] Skills Boost [#15 ML Pipelines on GCP](https://www.skills.google/course_templates/191) (~2.25h).
 - [ ] Skills Boost [#9 MLOps Getting Started](https://www.skills.google/course_templates/158) (~45 min).
-- [ ] Read [`research/decision-trees/pipelines-comparison.md`](research/decision-trees/pipelines-comparison.md) ⭐ — **the orchestrator cost lever** (Vertex Pipelines $0.03/run vs Composer $400/mo floor) is the single biggest §5 question driver.
-- [ ] Read [`research/concepts/metadata-lineage.md`](research/concepts/metadata-lineage.md) — Experiments + ML Metadata are the §5.3 anchors.
+- [ ] Read [Vertex AI Pipelines introduction](https://docs.cloud.google.com/vertex-ai/docs/pipelines/introduction) ⭐ — **the orchestrator cost lever** (Vertex Pipelines $0.03/run vs Composer $400/mo floor) is the single biggest §5 question driver.
+- [ ] Read [Vertex AI Experiments intro](https://docs.cloud.google.com/vertex-ai/docs/experiments/intro-vertex-ai-experiments) — Experiments + ML Metadata are the §5.3 anchors.
 - [ ] Run **one** end-to-end Vertex AI Pipeline (the SB lab covers it).
 - [ ] Mark labs #9 and #15 complete; capture two "ohhh" insights.
 
@@ -400,7 +400,7 @@ Pick the right orchestrator (Vertex AI Pipelines vs Cloud Composer vs Kubeflow o
 - **Mon (45 min).** [#9](https://www.skills.google/course_templates/158) entirely (45 min).
 - **Tue (60 min).** [#15](https://www.skills.google/course_templates/191) modules 1–2.
 - **Wed (60 min).** [#15](https://www.skills.google/course_templates/191) modules 3–end + the lab.
-- **Thu (60 min).** Read [`pipelines-comparison.md`](research/decision-trees/pipelines-comparison.md) + [`metadata-lineage.md`](research/concepts/metadata-lineage.md).
+- **Thu (60 min).** Read [Vertex AI Pipelines introduction](https://docs.cloud.google.com/vertex-ai/docs/pipelines/introduction) + [Vertex AI Experiments intro](https://docs.cloud.google.com/vertex-ai/docs/experiments/intro-vertex-ai-experiments).
 - **Fri (30 min, paired).** Quiz Mode filtered to `Vertex AI Pipelines` / `Kubeflow Pipelines` / `Cloud Composer` / `TFX` / `Vertex AI Experiments` — 15 Qs.
 
 ### 🧪 Saturday lab (90 min paired)
@@ -414,7 +414,7 @@ Pick the right orchestrator (Vertex AI Pipelines vs Cloud Composer vs Kubeflow o
 ### 🚀 Above-and-beyond
 - 🛠 Add a `KFP @component` for data validation to the Saturday pipeline.
 - 📖 Read [KFP v2 SDK reference](https://www.kubeflow.org/docs/components/pipelines/) — the v2 syntax shows up in `kfp.v2.dsl.component` answer choices.
-- ⭐ **High-yield bonus:** drill the [`pipelines-comparison.md`](research/decision-trees/pipelines-comparison.md) cost numbers until you can recite them. Single biggest input to §5 question answers.
+- ⭐ **High-yield bonus:** drill the [Vertex AI Pipelines introduction](https://docs.cloud.google.com/vertex-ai/docs/pipelines/introduction) cost numbers until you can recite them. Single biggest input to §5 question answers.
 - ⭐ Add experiment runs in Vertex AI Experiments → compare metrics in the UI.
 
 ---
@@ -427,8 +427,8 @@ Memorize the **skew-vs-drift one-liner** verbatim. Configure a Model Monitoring 
 
 ### 📦 Hard deliverables
 - [ ] Skills Boost [#16 Build and Deploy ML Solutions on Vertex AI](https://www.skills.google/course_templates/684) (~8.25h, capstone).
-- [ ] Read [`research/concepts/skew-vs-drift.md`](research/concepts/skew-vs-drift.md) ⭐ — memorize the one-liner: **"Skew is training vs production. Drift is production vs production-yesterday."**
-- [ ] Read [`research/concepts/responsible-ai-security.md`](research/concepts/responsible-ai-security.md) ⭐ — note Vertex Explainable AI **deprecated Mar 16 2026**, shutdown Mar 16 2027. Still tested in v3.1.
+- [ ] Read [Vertex AI Model Monitoring overview](https://docs.cloud.google.com/vertex-ai/docs/model-monitoring/overview) ⭐ — memorize the one-liner: **"Skew is training vs production. Drift is production vs production-yesterday."**
+- [ ] Read [Google AI Principles](https://ai.google/principles/) ⭐ — note Vertex Explainable AI **deprecated Mar 16 2026**, shutdown Mar 16 2027. Still tested in v3.1.
 - [ ] Configure one Vertex AI Model Monitoring v2 job (in the SB lab).
 - [ ] Mark lab #16 complete; capture two "ohhh" insights.
 
@@ -443,8 +443,8 @@ Memorize the **skew-vs-drift one-liner** verbatim. Configure a Model Monitoring 
 ### 📅 Daily breakdown
 - **Mon (90 min).** [#16](https://www.skills.google/course_templates/684) modules 1–2.
 - **Tue (90 min).** [#16](https://www.skills.google/course_templates/684) modules 3–4.
-- **Wed (90 min).** [#16](https://www.skills.google/course_templates/684) modules 5–6 + read [`skew-vs-drift.md`](research/concepts/skew-vs-drift.md).
-- **Thu (90 min).** Read [`responsible-ai-security.md`](research/concepts/responsible-ai-security.md). Drill the deprecation timeline.
+- **Wed (90 min).** [#16](https://www.skills.google/course_templates/684) modules 5–6 + read [Vertex AI Model Monitoring overview](https://docs.cloud.google.com/vertex-ai/docs/model-monitoring/overview).
+- **Thu (90 min).** Read [Google AI Principles](https://ai.google/principles/). Drill the deprecation timeline.
 - **Fri (60 min, paired).** Quiz Mode filtered to `Model Monitoring` / `drift` / `skew` / `Explainable AI` / `Responsible AI` — 15 Qs.
 
 ### 🧪 Saturday lab (120 min paired — capstone is heavy)
@@ -474,7 +474,7 @@ Cover the v3.1 GenAI surface in one focused week. Know Model Garden, Agent Build
 - [ ] Skills Boost [#12 Intro to LLMs](https://www.skills.google/course_templates/539) (~10 min).
 - [ ] Skills Boost [#13 MLOps for GenAI](https://www.skills.google/course_templates/927) (~30 min).
 - [ ] Skills Boost [#14 Model Evaluation](https://www.skills.google/course_templates/1080) (~1h).
-- [ ] Read [`research/genai/vertex-ai-overview.md`](research/genai/vertex-ai-overview.md) ⭐ — full rebrand history + GenAI surface map.
+- [ ] Read [Gemini Enterprise Agent Platform](https://cloud.google.com/products/agent-builder) ⭐ — full rebrand history + GenAI surface map.
 - [ ] Build **one** RAG demo in [Vertex AI Studio](https://cloud.google.com/vertex-ai-studio) (now Agent Platform Studio post-Apr 2026).
 
 ### 🧠 Concept anchors
@@ -486,9 +486,9 @@ Cover the v3.1 GenAI surface in one focused week. Know Model Garden, Agent Build
 - **Eval.** AutoSxS = side-by-side judge model comparison. Pointwise / pairwise eval. Generative AI eval via Vertex AI Model Evaluation.
 
 ### 📅 Daily breakdown
-- **Mon (45 min).** [#11](https://www.skills.google/course_templates/536) + [#12](https://www.skills.google/course_templates/539). Read [`vertex-ai-overview.md`](research/genai/vertex-ai-overview.md) §1–2.
+- **Mon (45 min).** [#11](https://www.skills.google/course_templates/536) + [#12](https://www.skills.google/course_templates/539). Read [Gemini Enterprise Agent Platform](https://cloud.google.com/products/agent-builder) §1–2.
 - **Tue (45 min).** [#13](https://www.skills.google/course_templates/927) entirely.
-- **Wed (60 min).** [#14](https://www.skills.google/course_templates/1080) entirely + read [`vertex-ai-overview.md`](research/genai/vertex-ai-overview.md) rebrand history.
+- **Wed (60 min).** [#14](https://www.skills.google/course_templates/1080) entirely + read [Gemini Enterprise Agent Platform](https://cloud.google.com/products/agent-builder) rebrand history.
 - **Thu (60 min).** Build a tiny RAG demo in Vertex AI Studio: paste a Wikipedia page → ask 3 questions → see retrieved chunks.
 - **Fri (45 min, paired).** Quiz Mode filtered to `Gemini` / `RAG` / `Model Garden` / `Agent Builder` / `fine-tuning` / `LoRA` — 15 Qs.
 
@@ -516,7 +516,7 @@ Real-exam dress rehearsal. By Sunday: **≥ 70 %** on Mock #1, weakest 3 section
 
 ### 📦 Hard deliverables
 - [ ] Skills Boost [#17 Create Generative AI Apps on GCP](https://www.skills.google/course_templates/1120) (~4.75h, RAG capstone skill badge).
-- [ ] Rapid-review all decision trees: [tabular-modeling](research/decision-trees/tabular-modeling.md), [compute-selection](research/decision-trees/compute-selection.md), [pipelines-comparison](research/decision-trees/pipelines-comparison.md). 30 min each.
+- [ ] Rapid-review all decision trees: [tabular-modeling](https://docs.cloud.google.com/bigquery/docs/bqml-introduction), [compute-selection](https://docs.cloud.google.com/vertex-ai/docs/training/configure-compute), [pipelines-comparison](https://docs.cloud.google.com/vertex-ai/docs/pipelines/introduction). 30 min each.
 - [ ] **Take Mock #1 on Saturday.** Use `pages/9_⏱️_Mock_Exam.py` → "Start Mock #1." 50 Qs, 2-hour timer, no explanations.
 - [ ] Identify weakest 3 sections from Mock #1 result. Plan Week 12 drill.
 - [ ] Mark lab #17 complete; capture two "ohhh" insights.
@@ -529,8 +529,8 @@ Real-exam dress rehearsal. By Sunday: **≥ 70 %** on Mock #1, weakest 3 section
 ### 📅 Daily breakdown
 - **Mon (60 min).** [#17](https://www.skills.google/course_templates/1120) modules 1–2.
 - **Tue (60 min).** [#17](https://www.skills.google/course_templates/1120) modules 3–end.
-- **Wed (60 min).** Decision-tree review: [tabular-modeling](research/decision-trees/tabular-modeling.md) + [compute-selection](research/decision-trees/compute-selection.md).
-- **Thu (60 min).** Decision-tree review: [pipelines-comparison](research/decision-trees/pipelines-comparison.md). Read [`recent-passers.md`](research/anecdotes/recent-passers.md) day-of-exam tips.
+- **Wed (60 min).** Decision-tree review: [tabular-modeling](https://docs.cloud.google.com/bigquery/docs/bqml-introduction) + [compute-selection](https://docs.cloud.google.com/vertex-ai/docs/training/configure-compute).
+- **Thu (60 min).** Decision-tree review: [pipelines-comparison](https://docs.cloud.google.com/vertex-ai/docs/pipelines/introduction). Read [Andrei Paraschiv's PMLE pass writeup (Feb 2026)](https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4) day-of-exam tips.
 - **Fri (30 min).** Light review only — no new content. Set up Saturday environment (quiet room, headphones, water).
 
 ### 🧪 Saturday — MOCK #1 (120 min)
@@ -576,7 +576,7 @@ Final calibration + real exam. **Mock #2 ≥ 80 %** is the go/no-go for Saturday
 - **Mon (60 min).** [#18](https://www.skills.google/course_templates/985) entirely.
 - **Tue (60 min).** [#19](https://www.skills.google/course_templates/989) entirely.
 - **Wed (120 min).** **MOCK #2.** Review breakdown immediately.
-- **Thu (60 min).** Wrong-answer drill on Mock #2 wrong questions. Read [`recent-passers.md`](research/anecdotes/recent-passers.md) one more time.
+- **Thu (60 min).** Wrong-answer drill on Mock #2 wrong questions. Read [Andrei Paraschiv's PMLE pass writeup (Feb 2026)](https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4) one more time.
 - **Fri (45 min).** Light review only — top 5 high-yield items: skew-vs-drift one-liner, Reduction Server one-liner, Pipelines vs Composer cost numbers, AutoML scale-to-zero trap, Gemini SFT = LoRA. **Do not learn new content Friday.** Test webcam + ID + room.
 - **Sat: REAL EXAM.** Sleep 8h. Hydrate. Eat protein. Log in 30 min early. **Pass.**
 
@@ -595,7 +595,7 @@ Final calibration + real exam. **Mock #2 ≥ 80 %** is the go/no-go for Saturday
   5. "Gemini SFT = LoRA-based PEFT, adapters 1/2/4/8/16. Only 2.5 Pro/Flash/Flash-Lite tunable."
 
 ### 🚀 Above-and-beyond
-- 📖 Re-read all 14 [`research/`](research/) reports' **first paragraph only** (10 min total).
+- 📖 Re-skim the canonical references in the [Resources index](#resources-index) — first paragraph only (10 min total).
 - ⭐ Don't take a 3rd full mock — diminishing returns. Sleep instead.
 - 🎉 Celebrate Saturday with steak.
 
@@ -644,26 +644,24 @@ Stagger if possible: partner A goes Friday, partner B goes Saturday — first ta
 
 ## Resources index
 
-### Internal
-- [`CLAUDE.md`](CLAUDE.md) — project briefing + rebrand alerts (read first)
-- [`PROMPTS.md`](PROMPTS.md) — research prompts to re-run every 6 weeks
-- [`professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf`](professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf) — official exam guide (READ Week 1)
+### Official PDFs
+- [PMLE v3.1 exam guide](https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf) — read Week 1 cover-to-cover
 
 ### Research reports (all 14)
-- [`research/labs/skills-boost-path.md`](research/labs/skills-boost-path.md) — full Skills Boost inventory + sequencing rationale
-- [`research/anecdotes/recent-passers.md`](research/anecdotes/recent-passers.md) — passer themes + Narvaez template + day-of-exam surprises
-- [`research/question-banks/audit.md`](research/question-banks/audit.md) — 3-bank stack + ethical guidance
-- [`research/concepts/skew-vs-drift.md`](research/concepts/skew-vs-drift.md) — §6 critical concept (memorize the one-liner)
-- [`research/decision-trees/compute-selection.md`](research/decision-trees/compute-selection.md) — §3.3 hardware (Reduction Server is the high-yield item)
-- [`research/decision-trees/pipelines-comparison.md`](research/decision-trees/pipelines-comparison.md) — §5 orchestrator picks (highest exam weight, 22%)
-- [`research/decision-trees/tabular-modeling.md`](research/decision-trees/tabular-modeling.md) — §1.1 BQML vs AutoML vs custom training
-- [`research/concepts/serving-deep-dive.md`](research/concepts/serving-deep-dive.md) — §4 online/batch/Dataflow/BQML serving paths
-- [`research/concepts/metadata-lineage.md`](research/concepts/metadata-lineage.md) — §5.3 Vertex AI Experiments + ML Metadata
-- [`research/concepts/feature-store.md`](research/concepts/feature-store.md) — §2 Feature Store (Legacy + Optimized sunset Feb 17, 2027)
-- [`research/concepts/hyperparameter-tuning.md`](research/concepts/hyperparameter-tuning.md) — §3.2 Vizier + algorithms + budgeting
-- [`research/concepts/responsible-ai-security.md`](research/concepts/responsible-ai-security.md) — §6.1 RAI + security (Explainable AI deprecated Mar 16, 2026)
-- [`research/concepts/iam-for-ml.md`](research/concepts/iam-for-ml.md) — cross-cutting IAM, VPC-SC, private endpoints, Workload Identity
-- [`research/genai/vertex-ai-overview.md`](research/genai/vertex-ai-overview.md) — v3.1 GenAI map + rename history
+- [Google Skills ML Engineer learning path](https://www.skills.google/paths/17) — full Skills Boost inventory + sequencing rationale
+- [Andrei Paraschiv's PMLE pass writeup (Feb 2026)](https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4) — passer themes + Narvaez template + day-of-exam surprises
+- [AndyTheFactory gcp-pmle-quiz repo](https://github.com/AndyTheFactory/gcp-pmle-quiz) — 3-bank stack + ethical guidance
+- [Vertex AI Model Monitoring overview](https://docs.cloud.google.com/vertex-ai/docs/model-monitoring/overview) — §6 critical concept (memorize the one-liner)
+- [Vertex AI training compute config](https://docs.cloud.google.com/vertex-ai/docs/training/configure-compute) — §3.3 hardware (Reduction Server is the high-yield item)
+- [Vertex AI Pipelines introduction](https://docs.cloud.google.com/vertex-ai/docs/pipelines/introduction) — §5 orchestrator picks (highest exam weight, 22%)
+- [BigQuery ML introduction](https://docs.cloud.google.com/bigquery/docs/bqml-introduction) — §1.1 BQML vs AutoML vs custom training
+- [Vertex AI predictions overview](https://docs.cloud.google.com/vertex-ai/docs/predictions/overview) — §4 online/batch/Dataflow/BQML serving paths
+- [Vertex AI Experiments intro](https://docs.cloud.google.com/vertex-ai/docs/experiments/intro-vertex-ai-experiments) — §5.3 Vertex AI Experiments + ML Metadata
+- [Vertex AI Feature Store overview](https://docs.cloud.google.com/vertex-ai/docs/featurestore/latest/overview) — §2 Feature Store (Legacy + Optimized sunset Feb 17, 2027)
+- [Vertex AI hyperparameter tuning overview](https://docs.cloud.google.com/vertex-ai/docs/training/hyperparameter-tuning-overview) — §3.2 Vizier + algorithms + budgeting
+- [Google AI Principles](https://ai.google/principles/) — §6.1 RAI + security (Explainable AI deprecated Mar 16, 2026)
+- [IAM overview](https://docs.cloud.google.com/iam/docs/overview) — cross-cutting IAM, VPC-SC, private endpoints, Workload Identity
+- [Gemini Enterprise Agent Platform](https://cloud.google.com/products/agent-builder) — v3.1 GenAI map + rename history
 
 ### App
 - [`gcp-pmle-quiz/`](gcp-pmle-quiz/) — Streamlit quiz app (workhorse: 841 Qs, 537 GenAI-flagged)

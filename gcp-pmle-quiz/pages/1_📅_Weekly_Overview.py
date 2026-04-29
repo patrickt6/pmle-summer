@@ -12,6 +12,7 @@ import streamlit as st
 
 from utils import load_progress, set_css_style
 from utils.labs import LabProgress, load_lab_progress, load_labs
+from utils.research_links import label_for
 from utils.session import cache_session
 from utils.weekly import (
     Rebrand,
@@ -24,11 +25,6 @@ from utils.weekly import (
 )
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-
-
-def _resolve_research_path(rel_path: str) -> Path:
-    """research_files paths in weeks.json are repo-root-relative."""
-    return REPO_ROOT / rel_path
 
 
 def _section_question_counts(week: Week) -> tuple[int, int]:
@@ -88,39 +84,23 @@ def _render_plan_tab(week: Week) -> None:
 
 def _render_research_tab(week: Week) -> None:
     if not week.research_files:
-        st.info("No research files mapped to this week.")
+        st.info("No canonical sources mapped to this week.")
         return
 
     decision_set = set(week.decision_trees)
-    decision_files = [f for f in week.research_files if f in decision_set]
-    other_files = [f for f in week.research_files if f not in decision_set]
+    decision_urls = [f for f in week.research_files if f in decision_set]
+    other_urls = [f for f in week.research_files if f not in decision_set]
 
-    if decision_files:
+    if decision_urls:
         st.subheader("⭐ Decision Trees")
-        for f in decision_files:
-            _render_research_expander(f)
+        for url in decision_urls:
+            st.markdown(f"- 📖 [{label_for(url)} ↗]({url})")
         st.divider()
 
-    if other_files:
-        st.subheader("Concept reports")
-        for f in other_files:
-            _render_research_expander(f)
-
-
-def _render_research_expander(rel_path: str) -> None:
-    fpath = _resolve_research_path(rel_path)
-    label = rel_path
-    with st.expander(label, expanded=False):
-        if not fpath.exists():
-            st.error(f"Missing file: {rel_path}")
-            return
-        try:
-            body = fpath.read_text(encoding="utf-8")
-        except OSError as exc:
-            st.error(f"Could not read {rel_path}: {exc}")
-            return
-        # Trusted research files authored by the team — html ok.
-        st.markdown(body, unsafe_allow_html=True)
+    if other_urls:
+        st.subheader("Reference docs")
+        for url in other_urls:
+            st.markdown(f"- 📖 [{label_for(url)} ↗]({url})")
 
 
 def _render_drill_tab(week: Week) -> None:

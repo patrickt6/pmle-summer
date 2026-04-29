@@ -289,7 +289,7 @@ def main() -> None:
 
     st.title("🧪 Labs")
     st.caption(
-        "20 Skills Boost items from `research/labs/skills-boost-path.md`, promoted to "
+        "20 Skills Boost items from [Google Skills ML Engineer learning path](https://www.skills.google/paths/17), promoted to "
         "first-class study artifacts. Track status, share notes, capture insights, "
         "and run a 15-Q drill scoped to each lab's exam sections."
     )

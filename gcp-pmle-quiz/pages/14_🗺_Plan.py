@@ -96,7 +96,10 @@ def _render_day_block(week: Week, day: Day | None, day_index: int, status: str) 
         with sub_cols[0]:
             st.markdown(f"<div style='font-size:1.5em;'>{TASK_ICONS.get(t.type, '•')}</div>", unsafe_allow_html=True)
         with sub_cols[1]:
-            if t.ref and t.ref.startswith("http"):
+            # If the label already contains a markdown link, leave it alone —
+            # wrapping it in `[label](ref)` would nest brackets and break the
+            # parser. Only wrap plain-text labels in a link to ``t.ref``.
+            if t.ref and t.ref.startswith("http") and "](" not in t.label:
                 st.markdown(f"[{t.label}]({t.ref})")
             else:
                 st.markdown(t.label)

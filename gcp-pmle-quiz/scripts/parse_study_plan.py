@@ -90,6 +90,10 @@ def _classify_task(description: str, links: list[TaskLink]) -> tuple[str, str | 
         if url.startswith("http"):
             if any(kw in lower for kw in ("quiz mode", "drill", "wrong-answer", "quiz a")):
                 return ("drill", primary_ref)
+            # Public docs the plan now points at instead of local .md files —
+            # treat as a read when the bullet's verb says so.
+            if any(kw in lower for kw in ("read ", "skim ", "review ")):
+                return ("read", primary_ref)
             return ("external", primary_ref)
 
     if any(kw in lower for kw in ("quiz mode", "drill", "wrong-answer", "quiz a", "quiz b", "quiz c")):

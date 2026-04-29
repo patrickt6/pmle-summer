@@ -195,8 +195,8 @@ def main() -> None:
         st.markdown(
             "- 🟦 **Section** — exam blueprint (§1.1 … §6.2)\n"
             "- 🟩 **Product** — GCP service (curated from knowledge.json)\n"
-            "- 🟪 **Concept** — research/concepts/*.md\n"
-            "- 🔷 **Decision tree** — research/decision-trees/*.md (high-yield)\n"
+            "- 🟪 **Concept** — exam-section concept card\n"
+            "- 🔷 **Decision tree** — high-yield product-selection card\n"
             "- 🟧 **Lab** — Skills Boost item\n"
             "- ⚪ **Rebrand-old** — historical product name (grey, dashed edge to current name)"
         )

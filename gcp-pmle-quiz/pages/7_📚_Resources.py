@@ -1,11 +1,8 @@
 """Resources — every mock-question bank and resource from the research, in one place.
 
-Source files:
-  - research/question-banks/audit.md
-  - research/labs/skills-boost-path.md
-  - research/anecdotes/recent-passers.md
-  - research/genai/vertex-ai-overview.md
-  - CLAUDE.md (live state + rebrand alerts)
+All entries link to public sources: AndyTheFactory's repo, the Google Skills
+ML Engineer path, Andrei Paraschiv's pass writeup, and the canonical Vertex
+AI / Gemini Enterprise Agent Platform docs.
 """
 
 from pathlib import Path
@@ -22,7 +19,7 @@ def main():
     st.title("📚 Question Banks & Resources to Add")
     st.caption(
         "Master list, ranked and audited as of 2026-04-26. "
-        "Source: `research/question-banks/audit.md` + `research/labs/skills-boost-path.md`."
+        "Source: [AndyTheFactory gcp-pmle-quiz repo](https://github.com/AndyTheFactory/gcp-pmle-quiz) + [Google Skills ML Engineer learning path](https://www.skills.google/paths/17)."
     )
 
     st.divider()
@@ -189,25 +186,25 @@ For embedded playable videos see the **📺 Useful Videos** page. Sources to con
     st.divider()
 
     # ---------------------------------------------------------------------
-    st.header("📦 Already on this site")
+    st.header("📦 Canonical references this site cites")
     st.markdown(
         """
-Local research files synthesizing the above into action items. Open via the **📅 Weekly Overview** page or read directly:
+The Plan, Study Guide, and Knowledge Library all link back to these public sources. Open via the **📅 Weekly Overview** page or jump straight to the docs:
 
-- `research/question-banks/audit.md` — the full audit this page summarizes
-- `research/labs/skills-boost-path.md` — every Skills Boost item with rating + sequencing
-- `research/anecdotes/recent-passers.md` — 10 post-v3.1 passer writeups
-- `research/decision-trees/tabular-modeling.md` — §1.1 BQML vs AutoML vs custom
-- `research/decision-trees/compute-selection.md` — §3.3 GPU/TPU/Reduction Server
-- `research/decision-trees/pipelines-comparison.md` — §5 orchestrator picks
-- `research/concepts/feature-store.md` — §2 / §4.2 Feature Store (sunset Feb 2027)
-- `research/concepts/serving-deep-dive.md` — §4 online vs batch vs Dataflow vs BQML
-- `research/concepts/skew-vs-drift.md` — §6 the one-liner to memorize
-- `research/concepts/responsible-ai-security.md` — §6.1 (Explainable AI deprecated Mar 2026)
-- `research/concepts/iam-for-ml.md` — cross-cutting IAM / VPC-SC / private endpoints
-- `research/concepts/hyperparameter-tuning.md` — §3.2 Vizier
-- `research/concepts/metadata-lineage.md` — §5.3 Experiments + ML Metadata
-- `research/genai/vertex-ai-overview.md` — full v3.1 GenAI map + rebrand history (12+ renames)
+- [AndyTheFactory gcp-pmle-quiz repo](https://github.com/AndyTheFactory/gcp-pmle-quiz) — the full audit this page summarizes
+- [Google Skills ML Engineer learning path](https://www.skills.google/paths/17) — every Skills Boost item with rating + sequencing
+- [Andrei Paraschiv's PMLE pass writeup (Feb 2026)](https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4) — 10 post-v3.1 passer writeups
+- [BigQuery ML introduction](https://docs.cloud.google.com/bigquery/docs/bqml-introduction) — §1.1 BQML vs AutoML vs custom
+- [Vertex AI training compute config](https://docs.cloud.google.com/vertex-ai/docs/training/configure-compute) — §3.3 GPU/TPU/Reduction Server
+- [Vertex AI Pipelines introduction](https://docs.cloud.google.com/vertex-ai/docs/pipelines/introduction) — §5 orchestrator picks
+- [Vertex AI Feature Store overview](https://docs.cloud.google.com/vertex-ai/docs/featurestore/latest/overview) — §2 / §4.2 Feature Store (sunset Feb 2027)
+- [Vertex AI predictions overview](https://docs.cloud.google.com/vertex-ai/docs/predictions/overview) — §4 online vs batch vs Dataflow vs BQML
+- [Vertex AI Model Monitoring overview](https://docs.cloud.google.com/vertex-ai/docs/model-monitoring/overview) — §6 the one-liner to memorize
+- [Google AI Principles](https://ai.google/principles/) — §6.1 (Explainable AI deprecated Mar 2026)
+- [IAM overview](https://docs.cloud.google.com/iam/docs/overview) — cross-cutting IAM / VPC-SC / private endpoints
+- [Vertex AI hyperparameter tuning overview](https://docs.cloud.google.com/vertex-ai/docs/training/hyperparameter-tuning-overview) — §3.2 Vizier
+- [Vertex AI Experiments intro](https://docs.cloud.google.com/vertex-ai/docs/experiments/intro-vertex-ai-experiments) — §5.3 Experiments + ML Metadata
+- [Gemini Enterprise Agent Platform](https://cloud.google.com/products/agent-builder) — full v3.1 GenAI map + rebrand history (12+ renames)
 """
     )
 

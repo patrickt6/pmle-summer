@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-04-28",
+  "as_of": "2026-04-29",
   "weeks": [
     {
       "num": 1,
@@ -84,21 +84,21 @@
       ],
       "concept_anchors": [
         "The six v3.1 sections + weights: §1=13%, §2=14%, §3=18%, §4=20%, **§5=22% ⭐**, §6=13%.",
-        "Vertex AI = umbrella for **Pipelines + Training + Model Registry + Endpoints + Feature Store + Experiments + Model Monitoring**. (Pipelines/Training/Registry/Metadata/Experiments names are intact post-rebrand; Agent Builder/Studio/Search were renamed Apr 2026 — see [vertex-ai-overview.md](research/genai/vertex-ai-overview.md).)",
+        "Vertex AI = umbrella for **Pipelines + Training + Model Registry + Endpoints + Feature Store + Experiments + Model Monitoring**. (Pipelines/Training/Registry/Metadata/Experiments names are intact post-rebrand; Agent Builder/Studio/Search were renamed Apr 2026 — see [Gemini Enterprise Agent Platform](https://cloud.google.com/products/agent-builder).)",
         "AutoML vs BQML vs Custom Training: AutoML = no code, BQML = SQL, Custom Training = your TF/PyTorch code.",
-        "Real exam = 60 Qs / 2h / pass ≥ 70%. Near-zero multi-select on the real thing (per [recent passers](research/anecdotes/recent-passers.md))."
+        "Real exam = 60 Qs / 2h / pass ≥ 70%. Near-zero multi-select on the real thing (per [recent passers](https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4))."
       ],
       "days": [
         {
           "day_label": "Mon",
           "day_index": 0,
           "estimated_min": 60,
-          "description": "Read CLAUDE.md + this file. Open the Streamlit app: `cd gcp-pmle-quiz && uv run streamlit run 🏠_Dashboard.py` and switch to **📍 Today** in the sidebar.",
+          "description": "Read this plan end-to-end. Open the Streamlit app: `cd gcp-pmle-quiz && uv run streamlit run 🏠_Dashboard.py` and switch to **📍 Today** in the sidebar.",
           "tasks": [
             {
               "type": "read",
-              "label": "Read CLAUDE.md + this file. Open the Streamlit app: `cd gcp-pmle-quiz && uv run streamlit run 🏠_Dashboard.py` and switch to **📍 Today** in the sidebar.",
-              "description": "Read CLAUDE.md + this file. Open the Streamlit app: `cd gcp-pmle-quiz && uv run streamlit run 🏠_Dashboard.py` and switch to **📍 Today** in the sidebar.",
+              "label": "Read this plan end-to-end. Open the Streamlit app: `cd gcp-pmle-quiz && uv run streamlit run 🏠_Dashboard.py` and switch to **📍 Today** in the sidebar.",
+              "description": "Read this plan end-to-end. Open the Streamlit app: `cd gcp-pmle-quiz && uv run streamlit run 🏠_Dashboard.py` and switch to **📍 Today** in the sidebar.",
               "estimated_min": 60,
               "ref": null,
               "links": []
@@ -125,18 +125,18 @@
           "day_label": "Wed",
           "day_index": 2,
           "estimated_min": 60,
-          "description": "Read v3.1 exam guide PDF §4–§6 (skim). Skim [`research/anecdotes/recent-passers.md`](research/anecdotes/recent-passers.md).",
+          "description": "Read v3.1 exam guide PDF §4–§6 (skim). Skim [Andrei Paraschiv's PMLE pass writeup (Feb 2026)](https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4).",
           "tasks": [
             {
               "type": "read",
-              "label": "Read v3.1 exam guide PDF §4–§6 (skim). Skim [`research/anecdotes/recent-passers.md`](research/anecdotes/recent-passers.md).",
-              "description": "Read v3.1 exam guide PDF §4–§6 (skim). Skim [`research/anecdotes/recent-passers.md`](research/anecdotes/recent-passers.md).",
+              "label": "Read v3.1 exam guide PDF §4–§6 (skim). Skim [Andrei Paraschiv's PMLE pass writeup (Feb 2026)](https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4).",
+              "description": "Read v3.1 exam guide PDF §4–§6 (skim). Skim [Andrei Paraschiv's PMLE pass writeup (Feb 2026)](https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4).",
               "estimated_min": 60,
-              "ref": "research/anecdotes/recent-passers.md",
+              "ref": "https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4",
               "links": [
                 {
-                  "label": "`research/anecdotes/recent-passers.md`",
-                  "url": "research/anecdotes/recent-passers.md"
+                  "label": "Andrei Paraschiv's PMLE pass writeup (Feb 2026)",
+                  "url": "https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4"
                 }
               ]
             }
@@ -249,14 +249,14 @@
         },
         {
           "type": "read",
-          "label": "📖 Skim [`research/question-banks/audit.md`](research/question-banks/audit.md) — understand the 3-bank stack you'll use.",
-          "description": "📖 Skim [`research/question-banks/audit.md`](research/question-banks/audit.md) — understand the 3-bank stack you'll use.",
+          "label": "📖 Skim [AndyTheFactory gcp-pmle-quiz repo](https://github.com/AndyTheFactory/gcp-pmle-quiz) — understand the 3-bank stack you'll use.",
+          "description": "📖 Skim [AndyTheFactory gcp-pmle-quiz repo](https://github.com/AndyTheFactory/gcp-pmle-quiz) — understand the 3-bank stack you'll use.",
           "estimated_min": null,
-          "ref": "research/question-banks/audit.md",
+          "ref": "https://github.com/AndyTheFactory/gcp-pmle-quiz",
           "links": [
             {
-              "label": "`research/question-banks/audit.md`",
-              "url": "research/question-banks/audit.md"
+              "label": "AndyTheFactory gcp-pmle-quiz repo",
+              "url": "https://github.com/AndyTheFactory/gcp-pmle-quiz"
             }
           ]
         },
@@ -309,14 +309,14 @@
         },
         {
           "type": "read",
-          "label": "Read [`research/decision-trees/tabular-modeling.md`](research/decision-trees/tabular-modeling.md) ⭐ — focus on the **AutoML scale-to-zero trap** and the BQML vs AutoML decision tree.",
-          "description": "Read [`research/decision-trees/tabular-modeling.md`](research/decision-trees/tabular-modeling.md) ⭐ — focus on the **AutoML scale-to-zero trap** and the BQML vs AutoML decision tree.",
+          "label": "Read [BigQuery ML introduction](https://docs.cloud.google.com/bigquery/docs/bqml-introduction) ⭐ — focus on the **AutoML scale-to-zero trap** and the BQML vs AutoML decision tree.",
+          "description": "Read [BigQuery ML introduction](https://docs.cloud.google.com/bigquery/docs/bqml-introduction) ⭐ — focus on the **AutoML scale-to-zero trap** and the BQML vs AutoML decision tree.",
           "estimated_min": null,
-          "ref": "research/decision-trees/tabular-modeling.md",
+          "ref": "https://docs.cloud.google.com/bigquery/docs/bqml-introduction",
           "links": [
             {
-              "label": "`research/decision-trees/tabular-modeling.md`",
-              "url": "research/decision-trees/tabular-modeling.md"
+              "label": "BigQuery ML introduction",
+              "url": "https://docs.cloud.google.com/bigquery/docs/bqml-introduction"
             }
           ]
         },
@@ -352,7 +352,7 @@
           "description": "Skim BQML docs: [Introduction to BigQuery ML](https://cloud.google.com/bigquery/docs/bqml-introduction). Watch first SB #4 module.",
           "tasks": [
             {
-              "type": "external",
+              "type": "read",
               "label": "Skim BQML docs: [Introduction to BigQuery ML](https://cloud.google.com/bigquery/docs/bqml-introduction). Watch first SB #4 module.",
               "description": "Skim BQML docs: [Introduction to BigQuery ML](https://cloud.google.com/bigquery/docs/bqml-introduction). Watch first SB #4 module.",
               "estimated_min": 45,
@@ -391,18 +391,18 @@
           "day_label": "Wed",
           "day_index": 2,
           "estimated_min": 45,
-          "description": "Read [`research/decision-trees/tabular-modeling.md`](research/decision-trees/tabular-modeling.md) — first half.",
+          "description": "Read [BigQuery ML introduction](https://docs.cloud.google.com/bigquery/docs/bqml-introduction) — first half.",
           "tasks": [
             {
               "type": "read",
-              "label": "Read [`research/decision-trees/tabular-modeling.md`](research/decision-trees/tabular-modeling.md) — first half.",
-              "description": "Read [`research/decision-trees/tabular-modeling.md`](research/decision-trees/tabular-modeling.md) — first half.",
+              "label": "Read [BigQuery ML introduction](https://docs.cloud.google.com/bigquery/docs/bqml-introduction) — first half.",
+              "description": "Read [BigQuery ML introduction](https://docs.cloud.google.com/bigquery/docs/bqml-introduction) — first half.",
               "estimated_min": 45,
-              "ref": "research/decision-trees/tabular-modeling.md",
+              "ref": "https://docs.cloud.google.com/bigquery/docs/bqml-introduction",
               "links": [
                 {
-                  "label": "`research/decision-trees/tabular-modeling.md`",
-                  "url": "research/decision-trees/tabular-modeling.md"
+                  "label": "BigQuery ML introduction",
+                  "url": "https://docs.cloud.google.com/bigquery/docs/bqml-introduction"
                 }
               ]
             }
@@ -509,7 +509,7 @@
           "links": []
         },
         {
-          "type": "external",
+          "type": "read",
           "label": "📖 Read the [BQML feature engineering best practices](https://cloud.google.com/bigquery/docs/preprocess-overview) doc — preview of Week 4.",
           "description": "📖 Read the [BQML feature engineering best practices](https://cloud.google.com/bigquery/docs/preprocess-overview) doc — preview of Week 4.",
           "estimated_min": null,
@@ -522,15 +522,15 @@
           ]
         },
         {
-          "type": "read",
-          "label": "⭐ **High-yield bonus:** drill the [`tabular-modeling.md`](research/decision-trees/tabular-modeling.md) decision tree until you can recite the AutoML / BQML / Vertex Custom Training selection rules in under 60 seconds.",
-          "description": "⭐ **High-yield bonus:** drill the [`tabular-modeling.md`](research/decision-trees/tabular-modeling.md) decision tree until you can recite the AutoML / BQML / Vertex Custom Training selection rules in under 60 seconds.",
+          "type": "drill",
+          "label": "⭐ **High-yield bonus:** drill the [BigQuery ML introduction](https://docs.cloud.google.com/bigquery/docs/bqml-introduction) decision tree until you can recite the AutoML / BQML / Vertex Custom Training selection rules in under 60 seconds.",
+          "description": "⭐ **High-yield bonus:** drill the [BigQuery ML introduction](https://docs.cloud.google.com/bigquery/docs/bqml-introduction) decision tree until you can recite the AutoML / BQML / Vertex Custom Training selection rules in under 60 seconds.",
           "estimated_min": null,
-          "ref": "research/decision-trees/tabular-modeling.md",
+          "ref": "https://docs.cloud.google.com/bigquery/docs/bqml-introduction",
           "links": [
             {
-              "label": "`tabular-modeling.md`",
-              "url": "research/decision-trees/tabular-modeling.md"
+              "label": "BigQuery ML introduction",
+              "url": "https://docs.cloud.google.com/bigquery/docs/bqml-introduction"
             }
           ]
         }
@@ -576,14 +576,14 @@
         },
         {
           "type": "read",
-          "label": "Skim [`research/genai/vertex-ai-overview.md`](research/genai/vertex-ai-overview.md) — focus on the **Apr 22 2026 rebrand** (Vertex AI Search → Agent Search; Vertex AI Studio → Agent Platform Studio; Vertex AI Agent Builder → Gemini Enterprise Agent Platform).",
-          "description": "Skim [`research/genai/vertex-ai-overview.md`](research/genai/vertex-ai-overview.md) — focus on the **Apr 22 2026 rebrand** (Vertex AI Search → Agent Search; Vertex AI Studio → Agent Platform Studio; Vertex AI Agent Builder → Gemini Enterprise Agent Platform).",
+          "label": "Skim [Gemini Enterprise Agent Platform](https://cloud.google.com/products/agent-builder) — focus on the **Apr 22 2026 rebrand** (Vertex AI Search → Agent Search; Vertex AI Studio → Agent Platform Studio; Vertex AI Agent Builder → Gemini Enterprise Agent Platform).",
+          "description": "Skim [Gemini Enterprise Agent Platform](https://cloud.google.com/products/agent-builder) — focus on the **Apr 22 2026 rebrand** (Vertex AI Search → Agent Search; Vertex AI Studio → Agent Platform Studio; Vertex AI Agent Builder → Gemini Enterprise Agent Platform).",
           "estimated_min": null,
-          "ref": "research/genai/vertex-ai-overview.md",
+          "ref": "https://cloud.google.com/products/agent-builder",
           "links": [
             {
-              "label": "`research/genai/vertex-ai-overview.md`",
-              "url": "research/genai/vertex-ai-overview.md"
+              "label": "Gemini Enterprise Agent Platform",
+              "url": "https://cloud.google.com/products/agent-builder"
             }
           ]
         },
@@ -768,7 +768,7 @@
           "links": []
         },
         {
-          "type": "external",
+          "type": "read",
           "label": "📖 Read the [Vector Search overview](https://cloud.google.com/vertex-ai/docs/vector-search/overview) — the §1.2 GenAI bullet that question banks under-cover.",
           "description": "📖 Read the [Vector Search overview](https://cloud.google.com/vertex-ai/docs/vector-search/overview) — the §1.2 GenAI bullet that question banks under-cover.",
           "estimated_min": null,
@@ -817,14 +817,14 @@
         },
         {
           "type": "read",
-          "label": "Read [`research/concepts/feature-store.md`](research/concepts/feature-store.md) ⭐ end-to-end — note the **Feb 17 2027** sunset and **Bigtable online serving** as the safe exam answer.",
-          "description": "Read [`research/concepts/feature-store.md`](research/concepts/feature-store.md) ⭐ end-to-end — note the **Feb 17 2027** sunset and **Bigtable online serving** as the safe exam answer.",
+          "label": "Read [Vertex AI Feature Store overview](https://docs.cloud.google.com/vertex-ai/docs/featurestore/latest/overview) ⭐ end-to-end — note the **Feb 17 2027** sunset and **Bigtable online serving** as the safe exam answer.",
+          "description": "Read [Vertex AI Feature Store overview](https://docs.cloud.google.com/vertex-ai/docs/featurestore/latest/overview) ⭐ end-to-end — note the **Feb 17 2027** sunset and **Bigtable online serving** as the safe exam answer.",
           "estimated_min": null,
-          "ref": "research/concepts/feature-store.md",
+          "ref": "https://docs.cloud.google.com/vertex-ai/docs/featurestore/latest/overview",
           "links": [
             {
-              "label": "`research/concepts/feature-store.md`",
-              "url": "research/concepts/feature-store.md"
+              "label": "Vertex AI Feature Store overview",
+              "url": "https://docs.cloud.google.com/vertex-ai/docs/featurestore/latest/overview"
             }
           ]
         },
@@ -925,12 +925,12 @@
           "day_label": "Thu",
           "day_index": 3,
           "estimated_min": 75,
-          "description": "[#6](https://www.skills.google/course_templates/11) finish + read [`feature-store.md`](research/concepts/feature-store.md).",
+          "description": "[#6](https://www.skills.google/course_templates/11) finish + read [Vertex AI Feature Store overview](https://docs.cloud.google.com/vertex-ai/docs/featurestore/latest/overview).",
           "tasks": [
             {
               "type": "lab",
-              "label": "[#6](https://www.skills.google/course_templates/11) finish + read [`feature-store.md`](research/concepts/feature-store.md).",
-              "description": "[#6](https://www.skills.google/course_templates/11) finish + read [`feature-store.md`](research/concepts/feature-store.md).",
+              "label": "[#6](https://www.skills.google/course_templates/11) finish + read [Vertex AI Feature Store overview](https://docs.cloud.google.com/vertex-ai/docs/featurestore/latest/overview).",
+              "description": "[#6](https://www.skills.google/course_templates/11) finish + read [Vertex AI Feature Store overview](https://docs.cloud.google.com/vertex-ai/docs/featurestore/latest/overview).",
               "estimated_min": 75,
               "ref": "https://www.skills.google/course_templates/11",
               "links": [
@@ -939,8 +939,8 @@
                   "url": "https://www.skills.google/course_templates/11"
                 },
                 {
-                  "label": "`feature-store.md`",
-                  "url": "research/concepts/feature-store.md"
+                  "label": "Vertex AI Feature Store overview",
+                  "url": "https://docs.cloud.google.com/vertex-ai/docs/featurestore/latest/overview"
                 }
               ]
             }
@@ -1031,7 +1031,7 @@
           ]
         },
         {
-          "type": "external",
+          "type": "read",
           "label": "📖 Read [Vertex AI Feature Store: streaming ingestion](https://cloud.google.com/vertex-ai/docs/featurestore/setup) — directly tested in §2.1.",
           "description": "📖 Read [Vertex AI Feature Store: streaming ingestion](https://cloud.google.com/vertex-ai/docs/featurestore/setup) — directly tested in §2.1.",
           "estimated_min": null,
@@ -1080,14 +1080,14 @@
         },
         {
           "type": "read",
-          "label": "Read [`research/concepts/hyperparameter-tuning.md`](research/concepts/hyperparameter-tuning.md) ⭐ — focus on Vizier algorithms (Bayesian, Random, Grid) + budgeting (parallel vs sequential trials).",
-          "description": "Read [`research/concepts/hyperparameter-tuning.md`](research/concepts/hyperparameter-tuning.md) ⭐ — focus on Vizier algorithms (Bayesian, Random, Grid) + budgeting (parallel vs sequential trials).",
+          "label": "Read [Vertex AI hyperparameter tuning overview](https://docs.cloud.google.com/vertex-ai/docs/training/hyperparameter-tuning-overview) ⭐ — focus on Vizier algorithms (Bayesian, Random, Grid) + budgeting (parallel vs sequential trials).",
+          "description": "Read [Vertex AI hyperparameter tuning overview](https://docs.cloud.google.com/vertex-ai/docs/training/hyperparameter-tuning-overview) ⭐ — focus on Vizier algorithms (Bayesian, Random, Grid) + budgeting (parallel vs sequential trials).",
           "estimated_min": null,
-          "ref": "research/concepts/hyperparameter-tuning.md",
+          "ref": "https://docs.cloud.google.com/vertex-ai/docs/training/hyperparameter-tuning-overview",
           "links": [
             {
-              "label": "`research/concepts/hyperparameter-tuning.md`",
-              "url": "research/concepts/hyperparameter-tuning.md"
+              "label": "Vertex AI hyperparameter tuning overview",
+              "url": "https://docs.cloud.google.com/vertex-ai/docs/training/hyperparameter-tuning-overview"
             }
           ]
         },
@@ -1162,12 +1162,12 @@
           "day_label": "Wed",
           "day_index": 2,
           "estimated_min": 60,
-          "description": "[#7](https://www.skills.google/course_templates/12) module 4 (HyperparameterTuningJob) + read [`hyperparameter-tuning.md`](research/concepts/hyperparameter-tuning.md).",
+          "description": "[#7](https://www.skills.google/course_templates/12) module 4 (HyperparameterTuningJob) + read [Vertex AI hyperparameter tuning overview](https://docs.cloud.google.com/vertex-ai/docs/training/hyperparameter-tuning-overview).",
           "tasks": [
             {
               "type": "lab",
-              "label": "[#7](https://www.skills.google/course_templates/12) module 4 (HyperparameterTuningJob) + read [`hyperparameter-tuning.md`](research/concepts/hyperparameter-tuning.md).",
-              "description": "[#7](https://www.skills.google/course_templates/12) module 4 (HyperparameterTuningJob) + read [`hyperparameter-tuning.md`](research/concepts/hyperparameter-tuning.md).",
+              "label": "[#7](https://www.skills.google/course_templates/12) module 4 (HyperparameterTuningJob) + read [Vertex AI hyperparameter tuning overview](https://docs.cloud.google.com/vertex-ai/docs/training/hyperparameter-tuning-overview).",
+              "description": "[#7](https://www.skills.google/course_templates/12) module 4 (HyperparameterTuningJob) + read [Vertex AI hyperparameter tuning overview](https://docs.cloud.google.com/vertex-ai/docs/training/hyperparameter-tuning-overview).",
               "estimated_min": 60,
               "ref": "https://www.skills.google/course_templates/12",
               "links": [
@@ -1176,8 +1176,8 @@
                   "url": "https://www.skills.google/course_templates/12"
                 },
                 {
-                  "label": "`hyperparameter-tuning.md`",
-                  "url": "research/concepts/hyperparameter-tuning.md"
+                  "label": "Vertex AI hyperparameter tuning overview",
+                  "url": "https://docs.cloud.google.com/vertex-ai/docs/training/hyperparameter-tuning-overview"
                 }
               ]
             }
@@ -1279,7 +1279,7 @@
           "links": []
         },
         {
-          "type": "external",
+          "type": "read",
           "label": "📖 Read [Vertex AI Vizier overview](https://cloud.google.com/vertex-ai/docs/vizier/overview).",
           "description": "📖 Read [Vertex AI Vizier overview](https://cloud.google.com/vertex-ai/docs/vizier/overview).",
           "estimated_min": null,
@@ -1293,14 +1293,14 @@
         },
         {
           "type": "read",
-          "label": "⭐ Skim [`compute-selection.md`](research/decision-trees/compute-selection.md) Week 6 prep — **Reduction Server** is the highest-yield distinguishing topic on the entire exam.",
-          "description": "⭐ Skim [`compute-selection.md`](research/decision-trees/compute-selection.md) Week 6 prep — **Reduction Server** is the highest-yield distinguishing topic on the entire exam.",
+          "label": "⭐ Skim [Vertex AI training compute config](https://docs.cloud.google.com/vertex-ai/docs/training/configure-compute) Week 6 prep — **Reduction Server** is the highest-yield distinguishing topic on the entire exam.",
+          "description": "⭐ Skim [Vertex AI training compute config](https://docs.cloud.google.com/vertex-ai/docs/training/configure-compute) Week 6 prep — **Reduction Server** is the highest-yield distinguishing topic on the entire exam.",
           "estimated_min": null,
-          "ref": "research/decision-trees/compute-selection.md",
+          "ref": "https://docs.cloud.google.com/vertex-ai/docs/training/configure-compute",
           "links": [
             {
-              "label": "`compute-selection.md`",
-              "url": "research/decision-trees/compute-selection.md"
+              "label": "Vertex AI training compute config",
+              "url": "https://docs.cloud.google.com/vertex-ai/docs/training/configure-compute"
             }
           ]
         }
@@ -1346,14 +1346,14 @@
         },
         {
           "type": "read",
-          "label": "Read [`research/decision-trees/compute-selection.md`](research/decision-trees/compute-selection.md) ⭐ end-to-end. **The Reduction Server one-liner = the single highest-yield exam fact.**",
-          "description": "Read [`research/decision-trees/compute-selection.md`](research/decision-trees/compute-selection.md) ⭐ end-to-end. **The Reduction Server one-liner = the single highest-yield exam fact.**",
+          "label": "Read [Vertex AI training compute config](https://docs.cloud.google.com/vertex-ai/docs/training/configure-compute) ⭐ end-to-end. **The Reduction Server one-liner = the single highest-yield exam fact.**",
+          "description": "Read [Vertex AI training compute config](https://docs.cloud.google.com/vertex-ai/docs/training/configure-compute) ⭐ end-to-end. **The Reduction Server one-liner = the single highest-yield exam fact.**",
           "estimated_min": null,
-          "ref": "research/decision-trees/compute-selection.md",
+          "ref": "https://docs.cloud.google.com/vertex-ai/docs/training/configure-compute",
           "links": [
             {
-              "label": "`research/decision-trees/compute-selection.md`",
-              "url": "research/decision-trees/compute-selection.md"
+              "label": "Vertex AI training compute config",
+              "url": "https://docs.cloud.google.com/vertex-ai/docs/training/configure-compute"
             }
           ]
         },
@@ -1441,18 +1441,18 @@
           "day_label": "Thu",
           "day_index": 3,
           "estimated_min": 60,
-          "description": "Read [`compute-selection.md`](research/decision-trees/compute-selection.md). Drill the GPU/TPU/RS selection rules.",
+          "description": "Read [Vertex AI training compute config](https://docs.cloud.google.com/vertex-ai/docs/training/configure-compute). Drill the GPU/TPU/RS selection rules.",
           "tasks": [
             {
-              "type": "read",
-              "label": "Read [`compute-selection.md`](research/decision-trees/compute-selection.md). Drill the GPU/TPU/RS selection rules.",
-              "description": "Read [`compute-selection.md`](research/decision-trees/compute-selection.md). Drill the GPU/TPU/RS selection rules.",
+              "type": "drill",
+              "label": "Read [Vertex AI training compute config](https://docs.cloud.google.com/vertex-ai/docs/training/configure-compute). Drill the GPU/TPU/RS selection rules.",
+              "description": "Read [Vertex AI training compute config](https://docs.cloud.google.com/vertex-ai/docs/training/configure-compute). Drill the GPU/TPU/RS selection rules.",
               "estimated_min": 60,
-              "ref": "research/decision-trees/compute-selection.md",
+              "ref": "https://docs.cloud.google.com/vertex-ai/docs/training/configure-compute",
               "links": [
                 {
-                  "label": "`compute-selection.md`",
-                  "url": "research/decision-trees/compute-selection.md"
+                  "label": "Vertex AI training compute config",
+                  "url": "https://docs.cloud.google.com/vertex-ai/docs/training/configure-compute"
                 }
               ]
             }
@@ -1543,7 +1543,7 @@
           ]
         },
         {
-          "type": "external",
+          "type": "read",
           "label": "📖 Read [Reduction Server algorithm overview](https://cloud.google.com/vertex-ai/docs/training/distributed-training#reduction-server) directly.",
           "description": "📖 Read [Reduction Server algorithm overview](https://cloud.google.com/vertex-ai/docs/training/distributed-training#reduction-server) directly.",
           "estimated_min": null,
@@ -1593,18 +1593,18 @@
         },
         {
           "type": "read",
-          "label": "Read [`research/concepts/serving-deep-dive.md`](research/concepts/serving-deep-dive.md) ⭐ + [`research/concepts/iam-for-ml.md`](research/concepts/iam-for-ml.md).",
-          "description": "Read [`research/concepts/serving-deep-dive.md`](research/concepts/serving-deep-dive.md) ⭐ + [`research/concepts/iam-for-ml.md`](research/concepts/iam-for-ml.md).",
+          "label": "Read [Vertex AI predictions overview](https://docs.cloud.google.com/vertex-ai/docs/predictions/overview) ⭐ + [IAM overview](https://docs.cloud.google.com/iam/docs/overview).",
+          "description": "Read [Vertex AI predictions overview](https://docs.cloud.google.com/vertex-ai/docs/predictions/overview) ⭐ + [IAM overview](https://docs.cloud.google.com/iam/docs/overview).",
           "estimated_min": null,
-          "ref": "research/concepts/serving-deep-dive.md",
+          "ref": "https://docs.cloud.google.com/vertex-ai/docs/predictions/overview",
           "links": [
             {
-              "label": "`research/concepts/serving-deep-dive.md`",
-              "url": "research/concepts/serving-deep-dive.md"
+              "label": "Vertex AI predictions overview",
+              "url": "https://docs.cloud.google.com/vertex-ai/docs/predictions/overview"
             },
             {
-              "label": "`research/concepts/iam-for-ml.md`",
-              "url": "research/concepts/iam-for-ml.md"
+              "label": "IAM overview",
+              "url": "https://docs.cloud.google.com/iam/docs/overview"
             }
           ]
         },
@@ -1798,7 +1798,7 @@
           "links": []
         },
         {
-          "type": "external",
+          "type": "read",
           "label": "📖 Read [Vertex AI prediction overview](https://cloud.google.com/vertex-ai/docs/predictions/overview) + [private endpoints](https://cloud.google.com/vertex-ai/docs/predictions/using-private-endpoints).",
           "description": "📖 Read [Vertex AI prediction overview](https://cloud.google.com/vertex-ai/docs/predictions/overview) + [private endpoints](https://cloud.google.com/vertex-ai/docs/predictions/using-private-endpoints).",
           "estimated_min": null,
@@ -1865,27 +1865,27 @@
         },
         {
           "type": "read",
-          "label": "Read [`research/decision-trees/pipelines-comparison.md`](research/decision-trees/pipelines-comparison.md) ⭐ — **the orchestrator cost lever** (Vertex Pipelines $0.03/run vs Composer $400/mo floor) is the single biggest §5 question driver.",
-          "description": "Read [`research/decision-trees/pipelines-comparison.md`](research/decision-trees/pipelines-comparison.md) ⭐ — **the orchestrator cost lever** (Vertex Pipelines $0.03/run vs Composer $400/mo floor) is the single biggest §5 question driver.",
+          "label": "Read [Vertex AI Pipelines introduction](https://docs.cloud.google.com/vertex-ai/docs/pipelines/introduction) ⭐ — **the orchestrator cost lever** (Vertex Pipelines $0.03/run vs Composer $400/mo floor) is the single biggest §5 question driver.",
+          "description": "Read [Vertex AI Pipelines introduction](https://docs.cloud.google.com/vertex-ai/docs/pipelines/introduction) ⭐ — **the orchestrator cost lever** (Vertex Pipelines $0.03/run vs Composer $400/mo floor) is the single biggest §5 question driver.",
           "estimated_min": null,
-          "ref": "research/decision-trees/pipelines-comparison.md",
+          "ref": "https://docs.cloud.google.com/vertex-ai/docs/pipelines/introduction",
           "links": [
             {
-              "label": "`research/decision-trees/pipelines-comparison.md`",
-              "url": "research/decision-trees/pipelines-comparison.md"
+              "label": "Vertex AI Pipelines introduction",
+              "url": "https://docs.cloud.google.com/vertex-ai/docs/pipelines/introduction"
             }
           ]
         },
         {
           "type": "read",
-          "label": "Read [`research/concepts/metadata-lineage.md`](research/concepts/metadata-lineage.md) — Experiments + ML Metadata are the §5.3 anchors.",
-          "description": "Read [`research/concepts/metadata-lineage.md`](research/concepts/metadata-lineage.md) — Experiments + ML Metadata are the §5.3 anchors.",
+          "label": "Read [Vertex AI Experiments intro](https://docs.cloud.google.com/vertex-ai/docs/experiments/intro-vertex-ai-experiments) — Experiments + ML Metadata are the §5.3 anchors.",
+          "description": "Read [Vertex AI Experiments intro](https://docs.cloud.google.com/vertex-ai/docs/experiments/intro-vertex-ai-experiments) — Experiments + ML Metadata are the §5.3 anchors.",
           "estimated_min": null,
-          "ref": "research/concepts/metadata-lineage.md",
+          "ref": "https://docs.cloud.google.com/vertex-ai/docs/experiments/intro-vertex-ai-experiments",
           "links": [
             {
-              "label": "`research/concepts/metadata-lineage.md`",
-              "url": "research/concepts/metadata-lineage.md"
+              "label": "Vertex AI Experiments intro",
+              "url": "https://docs.cloud.google.com/vertex-ai/docs/experiments/intro-vertex-ai-experiments"
             }
           ]
         },
@@ -1983,22 +1983,22 @@
           "day_label": "Thu",
           "day_index": 3,
           "estimated_min": 60,
-          "description": "Read [`pipelines-comparison.md`](research/decision-trees/pipelines-comparison.md) + [`metadata-lineage.md`](research/concepts/metadata-lineage.md).",
+          "description": "Read [Vertex AI Pipelines introduction](https://docs.cloud.google.com/vertex-ai/docs/pipelines/introduction) + [Vertex AI Experiments intro](https://docs.cloud.google.com/vertex-ai/docs/experiments/intro-vertex-ai-experiments).",
           "tasks": [
             {
               "type": "read",
-              "label": "Read [`pipelines-comparison.md`](research/decision-trees/pipelines-comparison.md) + [`metadata-lineage.md`](research/concepts/metadata-lineage.md).",
-              "description": "Read [`pipelines-comparison.md`](research/decision-trees/pipelines-comparison.md) + [`metadata-lineage.md`](research/concepts/metadata-lineage.md).",
+              "label": "Read [Vertex AI Pipelines introduction](https://docs.cloud.google.com/vertex-ai/docs/pipelines/introduction) + [Vertex AI Experiments intro](https://docs.cloud.google.com/vertex-ai/docs/experiments/intro-vertex-ai-experiments).",
+              "description": "Read [Vertex AI Pipelines introduction](https://docs.cloud.google.com/vertex-ai/docs/pipelines/introduction) + [Vertex AI Experiments intro](https://docs.cloud.google.com/vertex-ai/docs/experiments/intro-vertex-ai-experiments).",
               "estimated_min": 60,
-              "ref": "research/decision-trees/pipelines-comparison.md",
+              "ref": "https://docs.cloud.google.com/vertex-ai/docs/pipelines/introduction",
               "links": [
                 {
-                  "label": "`pipelines-comparison.md`",
-                  "url": "research/decision-trees/pipelines-comparison.md"
+                  "label": "Vertex AI Pipelines introduction",
+                  "url": "https://docs.cloud.google.com/vertex-ai/docs/pipelines/introduction"
                 },
                 {
-                  "label": "`metadata-lineage.md`",
-                  "url": "research/concepts/metadata-lineage.md"
+                  "label": "Vertex AI Experiments intro",
+                  "url": "https://docs.cloud.google.com/vertex-ai/docs/experiments/intro-vertex-ai-experiments"
                 }
               ]
             }
@@ -2084,7 +2084,7 @@
           "links": []
         },
         {
-          "type": "external",
+          "type": "read",
           "label": "📖 Read [KFP v2 SDK reference](https://www.kubeflow.org/docs/components/pipelines/) — the v2 syntax shows up in `kfp.v2.dsl.component` answer choices.",
           "description": "📖 Read [KFP v2 SDK reference](https://www.kubeflow.org/docs/components/pipelines/) — the v2 syntax shows up in `kfp.v2.dsl.component` answer choices.",
           "estimated_min": null,
@@ -2097,15 +2097,15 @@
           ]
         },
         {
-          "type": "read",
-          "label": "⭐ **High-yield bonus:** drill the [`pipelines-comparison.md`](research/decision-trees/pipelines-comparison.md) cost numbers until you can recite them. Single biggest input to §5 question answers.",
-          "description": "⭐ **High-yield bonus:** drill the [`pipelines-comparison.md`](research/decision-trees/pipelines-comparison.md) cost numbers until you can recite them. Single biggest input to §5 question answers.",
+          "type": "drill",
+          "label": "⭐ **High-yield bonus:** drill the [Vertex AI Pipelines introduction](https://docs.cloud.google.com/vertex-ai/docs/pipelines/introduction) cost numbers until you can recite them. Single biggest input to §5 question answers.",
+          "description": "⭐ **High-yield bonus:** drill the [Vertex AI Pipelines introduction](https://docs.cloud.google.com/vertex-ai/docs/pipelines/introduction) cost numbers until you can recite them. Single biggest input to §5 question answers.",
           "estimated_min": null,
-          "ref": "research/decision-trees/pipelines-comparison.md",
+          "ref": "https://docs.cloud.google.com/vertex-ai/docs/pipelines/introduction",
           "links": [
             {
-              "label": "`pipelines-comparison.md`",
-              "url": "research/decision-trees/pipelines-comparison.md"
+              "label": "Vertex AI Pipelines introduction",
+              "url": "https://docs.cloud.google.com/vertex-ai/docs/pipelines/introduction"
             }
           ]
         },
@@ -2146,27 +2146,27 @@
         },
         {
           "type": "read",
-          "label": "Read [`research/concepts/skew-vs-drift.md`](research/concepts/skew-vs-drift.md) ⭐ — memorize the one-liner: **\"Skew is training vs production. Drift is production vs production-yesterday.\"**",
-          "description": "Read [`research/concepts/skew-vs-drift.md`](research/concepts/skew-vs-drift.md) ⭐ — memorize the one-liner: **\"Skew is training vs production. Drift is production vs production-yesterday.\"**",
+          "label": "Read [Vertex AI Model Monitoring overview](https://docs.cloud.google.com/vertex-ai/docs/model-monitoring/overview) ⭐ — memorize the one-liner: **\"Skew is training vs production. Drift is production vs production-yesterday.\"**",
+          "description": "Read [Vertex AI Model Monitoring overview](https://docs.cloud.google.com/vertex-ai/docs/model-monitoring/overview) ⭐ — memorize the one-liner: **\"Skew is training vs production. Drift is production vs production-yesterday.\"**",
           "estimated_min": null,
-          "ref": "research/concepts/skew-vs-drift.md",
+          "ref": "https://docs.cloud.google.com/vertex-ai/docs/model-monitoring/overview",
           "links": [
             {
-              "label": "`research/concepts/skew-vs-drift.md`",
-              "url": "research/concepts/skew-vs-drift.md"
+              "label": "Vertex AI Model Monitoring overview",
+              "url": "https://docs.cloud.google.com/vertex-ai/docs/model-monitoring/overview"
             }
           ]
         },
         {
           "type": "read",
-          "label": "Read [`research/concepts/responsible-ai-security.md`](research/concepts/responsible-ai-security.md) ⭐ — note Vertex Explainable AI **deprecated Mar 16 2026**, shutdown Mar 16 2027. Still tested in v3.1.",
-          "description": "Read [`research/concepts/responsible-ai-security.md`](research/concepts/responsible-ai-security.md) ⭐ — note Vertex Explainable AI **deprecated Mar 16 2026**, shutdown Mar 16 2027. Still tested in v3.1.",
+          "label": "Read [Google AI Principles](https://ai.google/principles/) ⭐ — note Vertex Explainable AI **deprecated Mar 16 2026**, shutdown Mar 16 2027. Still tested in v3.1.",
+          "description": "Read [Google AI Principles](https://ai.google/principles/) ⭐ — note Vertex Explainable AI **deprecated Mar 16 2026**, shutdown Mar 16 2027. Still tested in v3.1.",
           "estimated_min": null,
-          "ref": "research/concepts/responsible-ai-security.md",
+          "ref": "https://ai.google/principles/",
           "links": [
             {
-              "label": "`research/concepts/responsible-ai-security.md`",
-              "url": "research/concepts/responsible-ai-security.md"
+              "label": "Google AI Principles",
+              "url": "https://ai.google/principles/"
             }
           ]
         },
@@ -2242,12 +2242,12 @@
           "day_label": "Wed",
           "day_index": 2,
           "estimated_min": 90,
-          "description": "[#16](https://www.skills.google/course_templates/684) modules 5–6 + read [`skew-vs-drift.md`](research/concepts/skew-vs-drift.md).",
+          "description": "[#16](https://www.skills.google/course_templates/684) modules 5–6 + read [Vertex AI Model Monitoring overview](https://docs.cloud.google.com/vertex-ai/docs/model-monitoring/overview).",
           "tasks": [
             {
               "type": "lab",
-              "label": "[#16](https://www.skills.google/course_templates/684) modules 5–6 + read [`skew-vs-drift.md`](research/concepts/skew-vs-drift.md).",
-              "description": "[#16](https://www.skills.google/course_templates/684) modules 5–6 + read [`skew-vs-drift.md`](research/concepts/skew-vs-drift.md).",
+              "label": "[#16](https://www.skills.google/course_templates/684) modules 5–6 + read [Vertex AI Model Monitoring overview](https://docs.cloud.google.com/vertex-ai/docs/model-monitoring/overview).",
+              "description": "[#16](https://www.skills.google/course_templates/684) modules 5–6 + read [Vertex AI Model Monitoring overview](https://docs.cloud.google.com/vertex-ai/docs/model-monitoring/overview).",
               "estimated_min": 90,
               "ref": "https://www.skills.google/course_templates/684",
               "links": [
@@ -2256,8 +2256,8 @@
                   "url": "https://www.skills.google/course_templates/684"
                 },
                 {
-                  "label": "`skew-vs-drift.md`",
-                  "url": "research/concepts/skew-vs-drift.md"
+                  "label": "Vertex AI Model Monitoring overview",
+                  "url": "https://docs.cloud.google.com/vertex-ai/docs/model-monitoring/overview"
                 }
               ]
             }
@@ -2267,18 +2267,18 @@
           "day_label": "Thu",
           "day_index": 3,
           "estimated_min": 90,
-          "description": "Read [`responsible-ai-security.md`](research/concepts/responsible-ai-security.md). Drill the deprecation timeline.",
+          "description": "Read [Google AI Principles](https://ai.google/principles/). Drill the deprecation timeline.",
           "tasks": [
             {
-              "type": "read",
-              "label": "Read [`responsible-ai-security.md`](research/concepts/responsible-ai-security.md). Drill the deprecation timeline.",
-              "description": "Read [`responsible-ai-security.md`](research/concepts/responsible-ai-security.md). Drill the deprecation timeline.",
+              "type": "drill",
+              "label": "Read [Google AI Principles](https://ai.google/principles/). Drill the deprecation timeline.",
+              "description": "Read [Google AI Principles](https://ai.google/principles/). Drill the deprecation timeline.",
               "estimated_min": 90,
-              "ref": "research/concepts/responsible-ai-security.md",
+              "ref": "https://ai.google/principles/",
               "links": [
                 {
-                  "label": "`responsible-ai-security.md`",
-                  "url": "research/concepts/responsible-ai-security.md"
+                  "label": "Google AI Principles",
+                  "url": "https://ai.google/principles/"
                 }
               ]
             }
@@ -2364,7 +2364,7 @@
           "links": []
         },
         {
-          "type": "external",
+          "type": "read",
           "label": "📖 Read [Vertex AI Model Monitoring v2 overview](https://cloud.google.com/vertex-ai/docs/model-monitoring/overview-v2).",
           "description": "📖 Read [Vertex AI Model Monitoring v2 overview](https://cloud.google.com/vertex-ai/docs/model-monitoring/overview-v2).",
           "estimated_min": null,
@@ -2461,14 +2461,14 @@
         },
         {
           "type": "read",
-          "label": "Read [`research/genai/vertex-ai-overview.md`](research/genai/vertex-ai-overview.md) ⭐ — full rebrand history + GenAI surface map.",
-          "description": "Read [`research/genai/vertex-ai-overview.md`](research/genai/vertex-ai-overview.md) ⭐ — full rebrand history + GenAI surface map.",
+          "label": "Read [Gemini Enterprise Agent Platform](https://cloud.google.com/products/agent-builder) ⭐ — full rebrand history + GenAI surface map.",
+          "description": "Read [Gemini Enterprise Agent Platform](https://cloud.google.com/products/agent-builder) ⭐ — full rebrand history + GenAI surface map.",
           "estimated_min": null,
-          "ref": "research/genai/vertex-ai-overview.md",
+          "ref": "https://cloud.google.com/products/agent-builder",
           "links": [
             {
-              "label": "`research/genai/vertex-ai-overview.md`",
-              "url": "research/genai/vertex-ai-overview.md"
+              "label": "Gemini Enterprise Agent Platform",
+              "url": "https://cloud.google.com/products/agent-builder"
             }
           ]
         },
@@ -2499,12 +2499,12 @@
           "day_label": "Mon",
           "day_index": 0,
           "estimated_min": 45,
-          "description": "[#11](https://www.skills.google/course_templates/536) + [#12](https://www.skills.google/course_templates/539). Read [`vertex-ai-overview.md`](research/genai/vertex-ai-overview.md) §1–2.",
+          "description": "[#11](https://www.skills.google/course_templates/536) + [#12](https://www.skills.google/course_templates/539). Read [Gemini Enterprise Agent Platform](https://cloud.google.com/products/agent-builder) §1–2.",
           "tasks": [
             {
               "type": "lab",
-              "label": "[#11](https://www.skills.google/course_templates/536) + [#12](https://www.skills.google/course_templates/539). Read [`vertex-ai-overview.md`](research/genai/vertex-ai-overview.md) §1–2.",
-              "description": "[#11](https://www.skills.google/course_templates/536) + [#12](https://www.skills.google/course_templates/539). Read [`vertex-ai-overview.md`](research/genai/vertex-ai-overview.md) §1–2.",
+              "label": "[#11](https://www.skills.google/course_templates/536) + [#12](https://www.skills.google/course_templates/539). Read [Gemini Enterprise Agent Platform](https://cloud.google.com/products/agent-builder) §1–2.",
+              "description": "[#11](https://www.skills.google/course_templates/536) + [#12](https://www.skills.google/course_templates/539). Read [Gemini Enterprise Agent Platform](https://cloud.google.com/products/agent-builder) §1–2.",
               "estimated_min": 45,
               "ref": "https://www.skills.google/course_templates/536",
               "links": [
@@ -2517,8 +2517,8 @@
                   "url": "https://www.skills.google/course_templates/539"
                 },
                 {
-                  "label": "`vertex-ai-overview.md`",
-                  "url": "research/genai/vertex-ai-overview.md"
+                  "label": "Gemini Enterprise Agent Platform",
+                  "url": "https://cloud.google.com/products/agent-builder"
                 }
               ]
             }
@@ -2549,12 +2549,12 @@
           "day_label": "Wed",
           "day_index": 2,
           "estimated_min": 60,
-          "description": "[#14](https://www.skills.google/course_templates/1080) entirely + read [`vertex-ai-overview.md`](research/genai/vertex-ai-overview.md) rebrand history.",
+          "description": "[#14](https://www.skills.google/course_templates/1080) entirely + read [Gemini Enterprise Agent Platform](https://cloud.google.com/products/agent-builder) rebrand history.",
           "tasks": [
             {
               "type": "lab",
-              "label": "[#14](https://www.skills.google/course_templates/1080) entirely + read [`vertex-ai-overview.md`](research/genai/vertex-ai-overview.md) rebrand history.",
-              "description": "[#14](https://www.skills.google/course_templates/1080) entirely + read [`vertex-ai-overview.md`](research/genai/vertex-ai-overview.md) rebrand history.",
+              "label": "[#14](https://www.skills.google/course_templates/1080) entirely + read [Gemini Enterprise Agent Platform](https://cloud.google.com/products/agent-builder) rebrand history.",
+              "description": "[#14](https://www.skills.google/course_templates/1080) entirely + read [Gemini Enterprise Agent Platform](https://cloud.google.com/products/agent-builder) rebrand history.",
               "estimated_min": 60,
               "ref": "https://www.skills.google/course_templates/1080",
               "links": [
@@ -2563,8 +2563,8 @@
                   "url": "https://www.skills.google/course_templates/1080"
                 },
                 {
-                  "label": "`vertex-ai-overview.md`",
-                  "url": "research/genai/vertex-ai-overview.md"
+                  "label": "Gemini Enterprise Agent Platform",
+                  "url": "https://cloud.google.com/products/agent-builder"
                 }
               ]
             }
@@ -2671,7 +2671,7 @@
           ]
         },
         {
-          "type": "external",
+          "type": "read",
           "label": "📖 Read the full [Vertex AI generative-AI overview](https://cloud.google.com/vertex-ai/generative-ai/docs/overview).",
           "description": "📖 Read the full [Vertex AI generative-AI overview](https://cloud.google.com/vertex-ai/generative-ai/docs/overview).",
           "estimated_min": null,
@@ -2732,22 +2732,22 @@
         },
         {
           "type": "read",
-          "label": "Rapid-review all decision trees: [tabular-modeling](research/decision-trees/tabular-modeling.md), [compute-selection](research/decision-trees/compute-selection.md), [pipelines-comparison](research/decision-trees/pipelines-comparison.md). 30 min each.",
-          "description": "Rapid-review all decision trees: [tabular-modeling](research/decision-trees/tabular-modeling.md), [compute-selection](research/decision-trees/compute-selection.md), [pipelines-comparison](research/decision-trees/pipelines-comparison.md). 30 min each.",
+          "label": "Rapid-review all decision trees: [tabular-modeling](https://docs.cloud.google.com/bigquery/docs/bqml-introduction), [compute-selection](https://docs.cloud.google.com/vertex-ai/docs/training/configure-compute), [pipelines-comparison](https://docs.cloud.google.com/vertex-ai/docs/pipelines/introduction). 30 min each.",
+          "description": "Rapid-review all decision trees: [tabular-modeling](https://docs.cloud.google.com/bigquery/docs/bqml-introduction), [compute-selection](https://docs.cloud.google.com/vertex-ai/docs/training/configure-compute), [pipelines-comparison](https://docs.cloud.google.com/vertex-ai/docs/pipelines/introduction). 30 min each.",
           "estimated_min": null,
-          "ref": "research/decision-trees/tabular-modeling.md",
+          "ref": "https://docs.cloud.google.com/bigquery/docs/bqml-introduction",
           "links": [
             {
               "label": "tabular-modeling",
-              "url": "research/decision-trees/tabular-modeling.md"
+              "url": "https://docs.cloud.google.com/bigquery/docs/bqml-introduction"
             },
             {
               "label": "compute-selection",
-              "url": "research/decision-trees/compute-selection.md"
+              "url": "https://docs.cloud.google.com/vertex-ai/docs/training/configure-compute"
             },
             {
               "label": "pipelines-comparison",
-              "url": "research/decision-trees/pipelines-comparison.md"
+              "url": "https://docs.cloud.google.com/vertex-ai/docs/pipelines/introduction"
             }
           ]
         },
@@ -2828,22 +2828,22 @@
           "day_label": "Wed",
           "day_index": 2,
           "estimated_min": 60,
-          "description": "Decision-tree review: [tabular-modeling](research/decision-trees/tabular-modeling.md) + [compute-selection](research/decision-trees/compute-selection.md).",
+          "description": "Decision-tree review: [tabular-modeling](https://docs.cloud.google.com/bigquery/docs/bqml-introduction) + [compute-selection](https://docs.cloud.google.com/vertex-ai/docs/training/configure-compute).",
           "tasks": [
             {
-              "type": "read",
-              "label": "Decision-tree review: [tabular-modeling](research/decision-trees/tabular-modeling.md) + [compute-selection](research/decision-trees/compute-selection.md).",
-              "description": "Decision-tree review: [tabular-modeling](research/decision-trees/tabular-modeling.md) + [compute-selection](research/decision-trees/compute-selection.md).",
+              "type": "external",
+              "label": "Decision-tree review: [tabular-modeling](https://docs.cloud.google.com/bigquery/docs/bqml-introduction) + [compute-selection](https://docs.cloud.google.com/vertex-ai/docs/training/configure-compute).",
+              "description": "Decision-tree review: [tabular-modeling](https://docs.cloud.google.com/bigquery/docs/bqml-introduction) + [compute-selection](https://docs.cloud.google.com/vertex-ai/docs/training/configure-compute).",
               "estimated_min": 60,
-              "ref": "research/decision-trees/tabular-modeling.md",
+              "ref": "https://docs.cloud.google.com/bigquery/docs/bqml-introduction",
               "links": [
                 {
                   "label": "tabular-modeling",
-                  "url": "research/decision-trees/tabular-modeling.md"
+                  "url": "https://docs.cloud.google.com/bigquery/docs/bqml-introduction"
                 },
                 {
                   "label": "compute-selection",
-                  "url": "research/decision-trees/compute-selection.md"
+                  "url": "https://docs.cloud.google.com/vertex-ai/docs/training/configure-compute"
                 }
               ]
             }
@@ -2853,22 +2853,22 @@
           "day_label": "Thu",
           "day_index": 3,
           "estimated_min": 60,
-          "description": "Decision-tree review: [pipelines-comparison](research/decision-trees/pipelines-comparison.md). Read [`recent-passers.md`](research/anecdotes/recent-passers.md) day-of-exam tips.",
+          "description": "Decision-tree review: [pipelines-comparison](https://docs.cloud.google.com/vertex-ai/docs/pipelines/introduction). Read [Andrei Paraschiv's PMLE pass writeup (Feb 2026)](https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4) day-of-exam tips.",
           "tasks": [
             {
               "type": "read",
-              "label": "Decision-tree review: [pipelines-comparison](research/decision-trees/pipelines-comparison.md). Read [`recent-passers.md`](research/anecdotes/recent-passers.md) day-of-exam tips.",
-              "description": "Decision-tree review: [pipelines-comparison](research/decision-trees/pipelines-comparison.md). Read [`recent-passers.md`](research/anecdotes/recent-passers.md) day-of-exam tips.",
+              "label": "Decision-tree review: [pipelines-comparison](https://docs.cloud.google.com/vertex-ai/docs/pipelines/introduction). Read [Andrei Paraschiv's PMLE pass writeup (Feb 2026)](https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4) day-of-exam tips.",
+              "description": "Decision-tree review: [pipelines-comparison](https://docs.cloud.google.com/vertex-ai/docs/pipelines/introduction). Read [Andrei Paraschiv's PMLE pass writeup (Feb 2026)](https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4) day-of-exam tips.",
               "estimated_min": 60,
-              "ref": "research/decision-trees/pipelines-comparison.md",
+              "ref": "https://docs.cloud.google.com/vertex-ai/docs/pipelines/introduction",
               "links": [
                 {
                   "label": "pipelines-comparison",
-                  "url": "research/decision-trees/pipelines-comparison.md"
+                  "url": "https://docs.cloud.google.com/vertex-ai/docs/pipelines/introduction"
                 },
                 {
-                  "label": "`recent-passers.md`",
-                  "url": "research/anecdotes/recent-passers.md"
+                  "label": "Andrei Paraschiv's PMLE pass writeup (Feb 2026)",
+                  "url": "https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4"
                 }
               ]
             }
@@ -2941,7 +2941,7 @@
           "links": []
         },
         {
-          "type": "external",
+          "type": "read",
           "label": "📖 Skim [Cloud Next 2026 keynote announcements](https://cloud.google.com/blog/topics/google-cloud-next/2026) for any post-rebrand context.",
           "description": "📖 Skim [Cloud Next 2026 keynote announcements](https://cloud.google.com/blog/topics/google-cloud-next/2026) for any post-rebrand context.",
           "estimated_min": null,
@@ -3120,18 +3120,18 @@
           "day_label": "Thu",
           "day_index": 3,
           "estimated_min": 60,
-          "description": "Wrong-answer drill on Mock #2 wrong questions. Read [`recent-passers.md`](research/anecdotes/recent-passers.md) one more time.",
+          "description": "Wrong-answer drill on Mock #2 wrong questions. Read [Andrei Paraschiv's PMLE pass writeup (Feb 2026)](https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4) one more time.",
           "tasks": [
             {
-              "type": "read",
-              "label": "Wrong-answer drill on Mock #2 wrong questions. Read [`recent-passers.md`](research/anecdotes/recent-passers.md) one more time.",
-              "description": "Wrong-answer drill on Mock #2 wrong questions. Read [`recent-passers.md`](research/anecdotes/recent-passers.md) one more time.",
+              "type": "drill",
+              "label": "Wrong-answer drill on Mock #2 wrong questions. Read [Andrei Paraschiv's PMLE pass writeup (Feb 2026)](https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4) one more time.",
+              "description": "Wrong-answer drill on Mock #2 wrong questions. Read [Andrei Paraschiv's PMLE pass writeup (Feb 2026)](https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4) one more time.",
               "estimated_min": 60,
-              "ref": "research/anecdotes/recent-passers.md",
+              "ref": "https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4",
               "links": [
                 {
-                  "label": "`recent-passers.md`",
-                  "url": "research/anecdotes/recent-passers.md"
+                  "label": "Andrei Paraschiv's PMLE pass writeup (Feb 2026)",
+                  "url": "https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4"
                 }
               ]
             }
@@ -3175,14 +3175,14 @@
       "above_and_beyond": [
         {
           "type": "read",
-          "label": "📖 Re-read all 14 [`research/`](research/) reports' **first paragraph only** (10 min total).",
-          "description": "📖 Re-read all 14 [`research/`](research/) reports' **first paragraph only** (10 min total).",
+          "label": "📖 Re-skim the canonical references in the [Resources index](#resources-index) — first paragraph only (10 min total).",
+          "description": "📖 Re-skim the canonical references in the [Resources index](#resources-index) — first paragraph only (10 min total).",
           "estimated_min": null,
-          "ref": "research/",
+          "ref": "#resources-index",
           "links": [
             {
-              "label": "`research/`",
-              "url": "research/"
+              "label": "Resources index",
+              "url": "#resources-index"
             }
           ]
         },

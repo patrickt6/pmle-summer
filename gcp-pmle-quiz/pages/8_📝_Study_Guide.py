@@ -1,8 +1,9 @@
 """Study Guide — long-form synthesis of every research conclusion.
 
-Source files: CLAUDE.md, study_plan.md, research/anecdotes/recent-passers.md,
-research/question-banks/audit.md, research/labs/skills-boost-path.md, and
-all eight research/concepts + research/decision-trees + research/genai files.
+Public sources cited inline: the v3.1 exam guide PDF, Andrei Paraschiv's
+PMLE pass writeup (Feb 2026), the AndyTheFactory gcp-pmle-quiz repo, the
+Google Skills ML Engineer learning path, and the Vertex AI / Gemini
+Enterprise Agent Platform docs.
 """
 
 from pathlib import Path
@@ -155,7 +156,7 @@ Model Monitoring v1's default drift threshold = **0.3** (don't over-memorize thi
 — v2 SDK examples use much smaller defaults, and v2 is still Pre-GA as of Apr
 2026 but exam-fair).
 
-Source: `research/concepts/skew-vs-drift.md`.
+Source: [Vertex AI Model Monitoring overview](https://docs.cloud.google.com/vertex-ai/docs/model-monitoring/overview).
 
 #### 4.2 Reduction Server (§3.3) — the highest-yield distinguishing topic, full stop
 
@@ -166,7 +167,7 @@ question asks how to speed up multi-GPU training without rewriting the code,
 **Reduction Server** is almost always the answer. It implements an optimized
 all-reduce on dedicated reducer VMs.
 
-Source: `research/decision-trees/compute-selection.md`.
+Source: [Vertex AI training compute config](https://docs.cloud.google.com/vertex-ai/docs/training/configure-compute).
 
 #### 4.3 §5 orchestrator cost lever — Pipelines vs Composer
 
@@ -180,7 +181,7 @@ mentions cost, ML-only workloads, or a small team, **Vertex AI Pipelines wins**.
 If it mentions multi-step workflows touching many GCP services beyond ML,
 **Composer wins**.
 
-Source: `research/decision-trees/pipelines-comparison.md`.
+Source: [Vertex AI Pipelines introduction](https://docs.cloud.google.com/vertex-ai/docs/pipelines/introduction).
 
 #### 4.4 AutoML endpoint scale-to-zero trap (§4.1)
 
@@ -192,7 +193,7 @@ If a question describes a low-traffic use case ("nightly", "weekly batch",
 "few requests per hour") and offers AutoML-endpoint as an option,
 **batch prediction is the right answer**.
 
-Source: `research/decision-trees/tabular-modeling.md`.
+Source: [BigQuery ML introduction](https://docs.cloud.google.com/bigquery/docs/bqml-introduction).
 
 #### 4.5 Gemini SFT is LoRA-based PEFT under the hood
 
@@ -202,7 +203,7 @@ which is a form of PEFT (Parameter-Efficient Fine-Tuning). Adapter sizes
 tunable. Pro maxes at **adapter size 8**. **Preference tuning** (RLHF-style)
 is **Flash and Flash-Lite only**.
 
-Source: `research/genai/vertex-ai-overview.md`.
+Source: [Gemini Enterprise Agent Platform](https://cloud.google.com/products/agent-builder).
 """
     )
 
@@ -269,7 +270,7 @@ Aggregated from the 10 passer writeups:
    pattern, after which questions accelerate. Mock exams (Weeks 11-12) are
    where you build this muscle.
 
-Source: `research/anecdotes/recent-passers.md` §6.
+Source: [Andrei Paraschiv's PMLE pass writeup (Feb 2026)](https://medium.com/@andy_p_/how-i-passed-the-google-cloud-professional-machine-learning-engineer-pmle-exam-in-30-days-and-so-ac9bc1e887d4) §6.
 """
     )
 
@@ -298,7 +299,7 @@ And one major rebrand:
   See the 🪧 Rebrand alerts tab on each Weekly Overview week for which
   weeks this affects.
 
-Source: `CLAUDE.md` "Live state and rebrand alerts".
+Source: [Google Cloud Next 2026 announcement](https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform).
 """
     )
 
@@ -382,7 +383,7 @@ ambitious and undisciplined.
 3. Each partner names: 1 thing learned, 1 stuck-on, 1 ahead-of-plan
 4. Set Monday's first 30-min focus
 
-Source: `study_plan.md`.
+Source: the in-app **🗺 Plan** view (top of the sidebar).
 """
     )
 
@@ -416,8 +417,11 @@ What's left is the actual content of the exam. Go drill.
 
     st.markdown(
         "<p style='text-align:center;color:#888;font-size:0.9em;'>"
-        "📂 Sources: <code>CLAUDE.md</code> · <code>study_plan.md</code> · "
-        "<code>research/</code> (14 reports) · 10 passer writeups (April 2025+).<br>"
+        "📂 Sources: the "
+        "<a href='https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf'>v3.1 exam guide</a>, "
+        "<a href='https://www.skills.google/paths/17'>Google Skills ML Engineer path</a>, "
+        "<a href='https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform'>Cloud Next 2026 keynote</a>, "
+        "and 10 PMLE passer writeups on Medium (April 2025+).<br>"
         "All claims with publication dates. Re-validate Q3 2026 if a v3.2 exam guide drops."
         "</p>",
         unsafe_allow_html=True,

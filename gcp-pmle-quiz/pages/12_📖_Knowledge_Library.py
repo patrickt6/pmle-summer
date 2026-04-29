@@ -1,7 +1,8 @@
 """Phase 5 Move 2 — Knowledge Library.
 
-Searchable / browsable cards for concepts, products, decision trees. Bridges
-the gap between long-form research/ markdown and a need for quick reference.
+Searchable / browsable cards for concepts, products, decision trees. Each
+card carries a ``canonical_url`` pointing at the public source it
+summarizes (Google Cloud docs, Skills Boost path, etc.).
 """
 
 from __future__ import annotations
@@ -15,18 +16,11 @@ from utils.knowledge import (
     KnowledgeCard,
     all_cards,
     count_questions_for_card,
-    extract_toc,
     filter_by_section,
     load_knowledge,
     related_cards,
     search_cards,
 )
-
-REPO_ROOT = Path(__file__).resolve().parents[2]
-
-
-def _resolve_research(rel_path: str) -> Path:
-    return REPO_ROOT / rel_path
 
 
 def _render_card(card: KnowledgeCard, payload) -> None:
@@ -53,20 +47,8 @@ def _render_card(card: KnowledgeCard, payload) -> None:
                     rc_prefix = "🏆 " if rc.high_yield else ""
                     st.markdown(f"- {rc_prefix}**{rc.title}** — {rc.blurb}")
 
-        if card.research_file:
-            with st.expander("📖 Read full research"):
-                fpath = _resolve_research(card.research_file)
-                if fpath.exists():
-                    md_text = fpath.read_text(encoding="utf-8")
-                    toc = extract_toc(md_text)
-                    if toc:
-                        toc_md = "\n".join(
-                            f"{'  ' * (e.level - 1)}- {e.text}" for e in toc[:25]
-                        )
-                        st.markdown(f"**Contents**\n\n{toc_md}\n\n---\n")
-                    st.markdown(md_text, unsafe_allow_html=True)
-                else:
-                    st.warning(f"Missing file: {card.research_file}")
+        if card.canonical_url:
+            st.markdown(f"📖 [Read the canonical source ↗]({card.canonical_url})")
 
 
 def _render_card_list(cards: list[KnowledgeCard], payload) -> None:
@@ -85,9 +67,9 @@ def main() -> None:
 
     st.title("📖 Knowledge Library")
     st.caption(
-        "Quick-reference cards for the concepts, products, and decision trees that "
-        "the research reports cover. 🏆 = high-yield distinguishing topic. Click any "
-        "card's expander to read the full report inline."
+        "Quick-reference cards for the concepts, products, and decision trees the "
+        "exam covers. 🏆 = high-yield distinguishing topic. Each card links to the "
+        "canonical public source it summarizes."
     )
 
     payload = load_knowledge()

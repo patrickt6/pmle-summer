@@ -62,14 +62,15 @@ def test_filter_by_section_no_match():
     assert filter_by_section("§99") == []
 
 
-def test_research_files_resolve():
-    repo_root = Path(__file__).resolve().parents[2]
+def test_canonical_urls_are_https():
+    """Every card with a canonical_url must point at an https URL."""
     p = load_knowledge()
     for c in all_cards(p):
-        if not c.research_file:
+        if not c.canonical_url:
             continue
-        full = repo_root / c.research_file
-        assert full.exists(), f"Research file missing for {c.id}: {c.research_file}"
+        assert c.canonical_url.startswith("https://"), (
+            f"canonical_url for {c.id} is not https: {c.canonical_url}"
+        )
 
 
 def test_card_tags_have_section_format():
@@ -105,18 +106,13 @@ def test_extract_toc_handles_empty():
     assert extract_toc("plain prose with no headings") == []
 
 
-def test_extract_toc_real_research_files_have_headings():
-    """Every research/*.md referenced by a card should have ≥ 1 heading."""
-    repo_root = Path(__file__).resolve().parents[2]
+def test_high_yield_cards_have_canonical_url():
+    """High-yield cards must link to a public source so external readers can follow them."""
     p = load_knowledge()
     for c in all_cards(p):
-        if not c.research_file:
+        if not c.high_yield:
             continue
-        path = repo_root / c.research_file
-        if not path.exists():
-            continue
-        toc = extract_toc(path.read_text(encoding="utf-8"))
-        assert toc, f"No headings extracted from {c.research_file}"
+        assert c.canonical_url, f"High-yield card {c.id} is missing canonical_url"
 
 
 def test_related_cards_excludes_self():

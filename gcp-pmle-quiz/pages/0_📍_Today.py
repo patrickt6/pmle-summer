@@ -65,8 +65,8 @@ def render_header(ctx, profile) -> None:
     if ctx.is_pre_start:
         st.warning(
             f"📅 Plan starts on **{profile.study_start_date}**. Use this time to "
-            "skim CLAUDE.md and the v3.1 exam guide PDF, or set a different "
-            "start date in the sidebar."
+            "skim the [v3.1 exam guide PDF](https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_3.1_final.pdf), "
+            "or set a different start date in the sidebar."
         )
         return
     if ctx.is_post_plan:

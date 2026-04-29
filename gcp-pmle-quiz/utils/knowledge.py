@@ -1,9 +1,10 @@
 """Phase 5 — Knowledge library loader (extended in Phase 6a.5).
 
 Reads ``data/knowledge.json`` (concepts + products + decision-trees with
-tags and links to the underlying ``research/`` markdown). Phase 6a.5
-adds TOC extraction, related-card discovery, and question-count
-back-references so the Library page can be navigated as a hub.
+tags and a ``canonical_url`` pointing at the public source the card
+summarizes — Google Cloud docs, Skills Boost path, etc.). Phase 6a.5
+adds related-card discovery and question-count back-references so the
+Library page can be navigated as a hub.
 """
 
 from __future__ import annotations
@@ -28,7 +29,7 @@ class KnowledgeCard(BaseModel):
     title: str
     blurb: str
     tags: list[str] = Field(default_factory=list)
-    research_file: str = ""
+    canonical_url: str = ""
     high_yield: bool = False
 
 

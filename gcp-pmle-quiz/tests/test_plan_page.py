@@ -134,11 +134,11 @@ def test_resolve_day_out_of_range():
     assert plan_page._resolve_day(week, 9) is None
 
 
-# ---------- Deep links resolve to real files ----------
+# ---------- Deep links are public URLs ----------
 
 
-def test_real_plan_research_links_resolve(tmp_app, monkeypatch):
-    """Every research/*.md ref in the parsed plan must point to a real file."""
+def test_real_plan_links_are_public(tmp_app, monkeypatch):
+    """No task link should still point at a local research/*.md file."""
     repo_root = _APP_DIR.parent
     md_path = repo_root / "study_plan.md"
     if not md_path.exists():
@@ -150,7 +150,7 @@ def test_real_plan_research_links_resolve(tmp_app, monkeypatch):
     spec.loader.exec_module(parser)  # type: ignore[union-attr]
     plan = parser.parse_study_plan(md_path.read_text(encoding="utf-8"))
 
-    seen = 0
+    http_links = 0
     for w in plan.weeks:
         all_tasks: list[Task] = []
         all_tasks.extend(w.deliverables)
@@ -163,9 +163,9 @@ def test_real_plan_research_links_resolve(tmp_app, monkeypatch):
             all_tasks.extend(w.sunday.tasks)
         for t in all_tasks:
             for link in t.links:
-                if link.url.startswith("research/") or link.url.endswith(".md"):
-                    if not link.url.startswith("http"):
-                        candidate = repo_root / link.url
-                        assert candidate.exists(), f"Week {w.num} task '{t.label[:40]}…' → {link.url} not found"
-                        seen += 1
-    assert seen > 5, "Expected several research/*.md deep links across the plan"
+                assert not link.url.startswith("research/"), (
+                    f"Week {w.num} task '{t.label[:40]}…' still points at {link.url}"
+                )
+                if link.url.startswith("http"):
+                    http_links += 1
+    assert http_links > 30, "Expected the plan to be peppered with public http(s) links"
